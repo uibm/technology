@@ -19,13 +19,24 @@ jobs:
     
     concurrency: 
       group: ${{ github.workflow }}-${{ github.ref }}
-      cancel-in-progress: true  # Cancel any in-progress job from previous run
+      cancel-in-progress: true
     
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
+      # First create requirements.txt
+      - name: Create requirements file
+        run: |
+          cat > requirements.txt << 'EOF'
+          feedparser==6.0.11
+          markdown==3.5.2
+          PyYAML==6.0.1
+          python-dateutil==2.8.2
+          pytz==2024.1
+          EOF
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -36,7 +47,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install feedparser markdown PyYAML python-dateutil
+          pip install -r requirements.txt
 
       - name: Fetch and process RSS feed
         run: |
@@ -59,14 +70,13 @@ jobs:
               return []
 
           def fetch_bbc_feed():
-              # Add retry mechanism
               max_retries = 3
               for attempt in range(max_retries):
                   try:
                       feed = feedparser.parse('https://feeds.bbci.co.uk/news/technology/rss.xml')
-                      if feed.status == 200:
+                      if hasattr(feed, 'status') and feed.status == 200:
                           return feed.entries
-                      time.sleep(2 ** attempt)  # Exponential backoff
+                      time.sleep(2 ** attempt)
                   except Exception as e:
                       if attempt == max_retries - 1:
                           raise e
@@ -83,39 +93,29 @@ jobs:
               }
 
           def update_changelog():
-              # Create _data directory if it doesn't exist
               os.makedirs('_data', exist_ok=True)
               
-              # Load existing entries
               existing_entries = load_existing_entries()
               existing_guids = {entry['guid'] for entry in existing_entries}
               
-              # Fetch new entries
               new_entries = fetch_bbc_feed()
               
-              # Process new entries
               updates = []
               for entry in new_entries:
                   if entry.guid not in existing_guids:
                       updates.append(create_changelog_entry(entry))
               
-              # Skip if no new entries
               if not updates:
                   print("No new entries found")
                   return False
               
-              # Combine and sort entries
               all_entries = updates + existing_entries
               all_entries.sort(key=lambda x: x['published'], reverse=True)
-              
-              # Keep only last 100 entries to maintain performance
               all_entries = all_entries[:100]
               
-              # Save updated changelog
               with open('_data/changelog.yml', 'w', encoding='utf-8') as f:
                   yaml.dump(all_entries, f, allow_unicode=True, sort_keys=False)
               
-              # Generate HTML changelog
               with open('index.html', 'w', encoding='utf-8') as f:
                   f.write('''
           <!DOCTYPE html>
@@ -178,6 +178,14 @@ jobs:
                       font-size: 0.8em;
                       margin-bottom: 30px;
                   }
+                  @media (max-width: 600px) {
+                      body {
+                          padding: 10px;
+                      }
+                      .entry {
+                          padding: 15px;
+                      }
+                  }
               </style>
           </head>
           <body>
@@ -192,7 +200,7 @@ jobs:
               </div>
           ''')
                   
-                  for entry in all_entries:  # Show all entries in the list
+                  for entry in all_entries:
                       published = parser.parse(entry['published']).strftime('%Y-%m-%d %H:%M:%S UTC')
                       f.write(f'''
               <div class="entry">
@@ -233,6 +241,6 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add _data/changelog.yml index.html
+          git add _data/changelog.yml index.html requirements.txt
           git diff --quiet && git diff --staged --quiet || git commit -m "Update changelog with latest BBC Tech news"
           git push
