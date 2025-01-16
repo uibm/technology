@@ -2,7 +2,7 @@ name: Update BBC Tech News Changelog
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Run every hour
+    - cron: '* * * * *'  # Run every minute
   workflow_dispatch:      # Allow manual trigger
 
 permissions:
@@ -16,12 +16,16 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
+    
+    concurrency: 
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: true  # Cancel any in-progress job from previous run
+    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Fetch all history for changelog
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -43,6 +47,7 @@ jobs:
           import os
           from dateutil import parser
           import pytz
+          import time
 
           def load_existing_entries():
               if os.path.exists('_data/changelog.yml'):
@@ -54,8 +59,19 @@ jobs:
               return []
 
           def fetch_bbc_feed():
-              feed = feedparser.parse('https://feeds.bbci.co.uk/news/technology/rss.xml')
-              return feed.entries
+              # Add retry mechanism
+              max_retries = 3
+              for attempt in range(max_retries):
+                  try:
+                      feed = feedparser.parse('https://feeds.bbci.co.uk/news/technology/rss.xml')
+                      if feed.status == 200:
+                          return feed.entries
+                      time.sleep(2 ** attempt)  # Exponential backoff
+                  except Exception as e:
+                      if attempt == max_retries - 1:
+                          raise e
+                      time.sleep(2 ** attempt)
+              return []
 
           def create_changelog_entry(entry):
               return {
@@ -83,9 +99,17 @@ jobs:
                   if entry.guid not in existing_guids:
                       updates.append(create_changelog_entry(entry))
               
+              # Skip if no new entries
+              if not updates:
+                  print("No new entries found")
+                  return False
+              
               # Combine and sort entries
               all_entries = updates + existing_entries
               all_entries.sort(key=lambda x: x['published'], reverse=True)
+              
+              # Keep only last 100 entries to maintain performance
+              all_entries = all_entries[:100]
               
               # Save updated changelog
               with open('_data/changelog.yml', 'w', encoding='utf-8') as f:
@@ -99,6 +123,7 @@ jobs:
           <head>
               <meta charset="UTF-8">
               <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <meta http-equiv="refresh" content="60">
               <title>BBC Technology News Changelog</title>
               <style>
                   body {
@@ -115,6 +140,11 @@ jobs:
                       margin-bottom: 20px;
                       border-radius: 8px;
                       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                      transition: transform 0.2s ease;
+                  }
+                  .entry:hover {
+                      transform: translateY(-2px);
+                      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
                   }
                   .entry h2 {
                       margin-top: 0;
@@ -140,6 +170,13 @@ jobs:
                       text-align: center;
                       color: #666;
                       margin-bottom: 20px;
+                      font-size: 0.9em;
+                  }
+                  .auto-refresh {
+                      text-align: center;
+                      color: #666;
+                      font-size: 0.8em;
+                      margin-bottom: 30px;
                   }
               </style>
           </head>
@@ -150,9 +187,12 @@ jobs:
               <div class="last-updated">
                   Last updated: ''' + datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC') + '''
               </div>
+              <div class="auto-refresh">
+                  Page auto-refreshes every minute
+              </div>
           ''')
                   
-                  for entry in all_entries[:50]:  # Show only last 50 entries
+                  for entry in all_entries:  # Show all entries in the list
                       published = parser.parse(entry['published']).strftime('%Y-%m-%d %H:%M:%S UTC')
                       f.write(f'''
               <div class="entry">
@@ -168,6 +208,8 @@ jobs:
               </body>
           </html>
           ''')
+              
+              return True
 
           if __name__ == '__main__':
               update_changelog()
