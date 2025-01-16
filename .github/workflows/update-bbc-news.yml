@@ -2,7 +2,7 @@ name: Update BBC Tech News Changelog
 
 on:
   schedule:
-    - cron: '57 21 * * *'  # 21:54 UTC = 03:23 IST next day
+    - cron: '*/5 * * * *'  # Every 5 minutes for testing
   workflow_dispatch:      # Allow manual trigger
 
 permissions:
@@ -16,10 +16,6 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    
-    concurrency: 
-      group: ${{ github.workflow }}-${{ github.ref }}
-      cancel-in-progress: true
     
     steps:
       - name: Check execution time
@@ -52,6 +48,10 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+
+      - name: Create initial directories
+        run: |
+          mkdir -p _data
 
       - name: Fetch and process RSS feed
         run: |
@@ -134,7 +134,7 @@ jobs:
               
               all_entries = updates + existing_entries
               all_entries.sort(key=lambda x: x['published'], reverse=True)
-              all_entries = all_entries[:100]  # Keep last 100 entries
+              all_entries = all_entries[:100]
               
               with open('_data/changelog.yml', 'w', encoding='utf-8') as f:
                   yaml.dump(all_entries, f, allow_unicode=True, sort_keys=False)
@@ -176,8 +176,6 @@ jobs:
                       color: #666;
                       font-size: 0.9em;
                       margin-bottom: 10px;
-                      display: flex;
-                      justify-content: space-between;
                   }
                   a {
                       color: #3498db;
@@ -201,9 +199,6 @@ jobs:
                       color: #666;
                       font-size: 0.8em;
                       margin-bottom: 30px;
-                      padding: 10px;
-                      background: #fff;
-                      border-radius: 4px;
                   }
                   @media (max-width: 600px) {
                       body {
@@ -211,9 +206,6 @@ jobs:
                       }
                       .entry {
                           padding: 15px;
-                      }
-                      .entry-meta {
-                          flex-direction: column;
                       }
                   }
               </style>
@@ -226,7 +218,7 @@ jobs:
                   Last updated: ''' + datetime.now(pytz.timezone('Asia/Kolkata')).strftime('%Y-%m-%d %H:%M:%S IST') + '''
               </div>
               <div class="schedule-info">
-                  Updated daily at 3:23 AM IST
+                  Updated every 5 minutes
               </div>
           ''')
                   
@@ -236,8 +228,8 @@ jobs:
               <div class="entry">
                   <h2><a href="{entry['link']}">{entry['title']}</a></h2>
                   <div class="entry-meta">
-                      <span>Published: {published}</span>
-                      <span>Fetched: {entry.get('fetched_at', 'N/A')}</span>
+                      Published: {published}<br>
+                      Fetched: {entry.get('fetched_at', 'N/A')}
                   </div>
                   <div class="entry-content">
                       {entry['summary']}
@@ -272,8 +264,8 @@ jobs:
 
       - name: Commit changes
         run: |
-          git config --local user.email "ujjwal@xyz.com"
-          git config --local user.name "ujjwal-xyz"
+          git config --local user.email "ujjwal.kumar1@ibm.com"
+          git config --local user.name "ujjwal-ibm"
           echo "Commit time UTC: $(date -u)" >> commit_time.txt
           echo "Commit time IST: $(TZ=Asia/Kolkata date)" >> commit_time.txt
           git add _data/changelog.yml index.html requirements.txt commit_time.txt
