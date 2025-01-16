@@ -2,7 +2,7 @@ name: Update BBC Tech News Changelog
 
 on:
   schedule:
-    - cron: '* * * * *'  # Run every minute
+    - cron: '54 21 * * *'  # 21:54 UTC = 03:23 IST next day
   workflow_dispatch:      # Allow manual trigger
 
 permissions:
@@ -22,12 +22,16 @@ jobs:
       cancel-in-progress: true
     
     steps:
+      - name: Check execution time
+        run: |
+          echo "Current UTC time: $(date -u)"
+          echo "Current IST time: $(TZ=Asia/Kolkata date)"
+
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      # First create requirements.txt
       - name: Create requirements file
         run: |
           cat > requirements.txt << 'EOF'
@@ -59,6 +63,12 @@ jobs:
           from dateutil import parser
           import pytz
           import time
+          import hashlib
+
+          def generate_entry_hash(entry):
+              """Generate a unique hash for an entry based on its content"""
+              content = f"{entry.title}{entry.summary}{entry.link}"
+              return hashlib.md5(content.encode()).hexdigest()
 
           def load_existing_entries():
               if os.path.exists('_data/changelog.yml'):
@@ -75,43 +85,56 @@ jobs:
                   try:
                       feed = feedparser.parse('https://feeds.bbci.co.uk/news/technology/rss.xml')
                       if hasattr(feed, 'status') and feed.status == 200:
+                          print(f"Successfully fetched RSS feed with {len(feed.entries)} entries")
                           return feed.entries
                       time.sleep(2 ** attempt)
                   except Exception as e:
+                      print(f"Attempt {attempt + 1} failed: {str(e)}")
                       if attempt == max_retries - 1:
                           raise e
                       time.sleep(2 ** attempt)
               return []
 
           def create_changelog_entry(entry):
+              ist_tz = pytz.timezone('Asia/Kolkata')
+              current_time = datetime.now(ist_tz)
+              
               return {
                   'title': entry.title,
                   'link': entry.link,
-                  'published': parser.parse(entry.published).astimezone(pytz.UTC).isoformat(),
+                  'published': parser.parse(entry.published).astimezone(ist_tz).isoformat(),
                   'summary': entry.summary,
-                  'guid': entry.guid
+                  'guid': entry.guid,
+                  'hash': generate_entry_hash(entry),
+                  'timestamp': current_time.isoformat(),
+                  'fetched_at': current_time.strftime('%Y-%m-%d %H:%M:%S IST')
               }
 
           def update_changelog():
+              print(f"Starting changelog update at {datetime.now(pytz.timezone('Asia/Kolkata')).strftime('%Y-%m-%d %H:%M:%S IST')}")
+              
               os.makedirs('_data', exist_ok=True)
               
               existing_entries = load_existing_entries()
-              existing_guids = {entry['guid'] for entry in existing_entries}
+              existing_hashes = {entry['hash'] for entry in existing_entries}
               
               new_entries = fetch_bbc_feed()
               
               updates = []
               for entry in new_entries:
-                  if entry.guid not in existing_guids:
+                  entry_hash = generate_entry_hash(entry)
+                  if entry_hash not in existing_hashes:
                       updates.append(create_changelog_entry(entry))
               
+              print(f"Found {len(updates)} new unique entries")
+              
               if not updates:
-                  print("No new entries found")
+                  print("No new unique entries found")
                   return False
               
               all_entries = updates + existing_entries
               all_entries.sort(key=lambda x: x['published'], reverse=True)
-              all_entries = all_entries[:100]
+              all_entries = all_entries[:100]  # Keep last 100 entries
               
               with open('_data/changelog.yml', 'w', encoding='utf-8') as f:
                   yaml.dump(all_entries, f, allow_unicode=True, sort_keys=False)
@@ -123,8 +146,7 @@ jobs:
           <head>
               <meta charset="UTF-8">
               <meta name="viewport" content="width=device-width, initial-scale=1.0">
-              <meta http-equiv="refresh" content="60">
-              <title>BBC Technology News Changelog</title>
+              <title>BBC Technology News Daily Changelog</title>
               <style>
                   body {
                       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
@@ -154,6 +176,8 @@ jobs:
                       color: #666;
                       font-size: 0.9em;
                       margin-bottom: 10px;
+                      display: flex;
+                      justify-content: space-between;
                   }
                   a {
                       color: #3498db;
@@ -172,11 +196,14 @@ jobs:
                       margin-bottom: 20px;
                       font-size: 0.9em;
                   }
-                  .auto-refresh {
+                  .schedule-info {
                       text-align: center;
                       color: #666;
                       font-size: 0.8em;
                       margin-bottom: 30px;
+                      padding: 10px;
+                      background: #fff;
+                      border-radius: 4px;
                   }
                   @media (max-width: 600px) {
                       body {
@@ -185,27 +212,33 @@ jobs:
                       .entry {
                           padding: 15px;
                       }
+                      .entry-meta {
+                          flex-direction: column;
+                      }
                   }
               </style>
           </head>
           <body>
               <div class="header">
-                  <h1>BBC Technology News Changelog</h1>
+                  <h1>BBC Technology News Daily Changelog</h1>
               </div>
               <div class="last-updated">
-                  Last updated: ''' + datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC') + '''
+                  Last updated: ''' + datetime.now(pytz.timezone('Asia/Kolkata')).strftime('%Y-%m-%d %H:%M:%S IST') + '''
               </div>
-              <div class="auto-refresh">
-                  Page auto-refreshes every minute
+              <div class="schedule-info">
+                  Updated daily at 3:23 AM IST
               </div>
           ''')
                   
                   for entry in all_entries:
-                      published = parser.parse(entry['published']).strftime('%Y-%m-%d %H:%M:%S UTC')
+                      published = parser.parse(entry['published']).strftime('%Y-%m-%d %H:%M:%S IST')
                       f.write(f'''
               <div class="entry">
                   <h2><a href="{entry['link']}">{entry['title']}</a></h2>
-                  <div class="entry-meta">Published: {published}</div>
+                  <div class="entry-meta">
+                      <span>Published: {published}</span>
+                      <span>Fetched: {entry.get('fetched_at', 'N/A')}</span>
+                  </div>
                   <div class="entry-content">
                       {entry['summary']}
                   </div>
@@ -239,8 +272,9 @@ jobs:
 
       - name: Commit changes
         run: |
-          git config --local user.email "ujjwal.kumar1@ibm.com"
-          git config --local user.name "ujjwal-ibm"
-          git add _data/changelog.yml index.html requirements.txt
-          git diff --quiet && git diff --staged --quiet || git commit -m "Update changelog with latest BBC Tech news"
-          git push
+          git config --local user.email "ujjwal@xyz.com"
+          git config --local user.name "ujjwal-xyz"
+          echo "Commit time UTC: $(date -u)" >> commit_time.txt
+          echo "Commit time IST: $(TZ=Asia/Kolkata date)" >> commit_time.txt
+          git add _data/changelog.yml index.html requirements.txt commit_time.txt
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update changelog with latest BBC Tech news [$(TZ=Asia/Kolkata date '+%Y-%m-%d %H:%M:%S IST')]" && git push)
