@@ -2,7 +2,7 @@ name: Update BBC Tech News Changelog
 
 on:
   schedule:
-    - cron: '54 21 * * *'  # 21:54 UTC = 03:23 IST next day
+    - cron: '57 21 * * *'  # 21:54 UTC = 03:23 IST next day
   workflow_dispatch:      # Allow manual trigger
 
 permissions:
