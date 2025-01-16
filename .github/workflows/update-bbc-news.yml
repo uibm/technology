@@ -163,89 +163,191 @@ jobs:
               <meta name="viewport" content="width=device-width, initial-scale=1.0">
               <title>BBC Technology News Daily Changelog</title>
               <style>
+                  :root {
+                      --primary-color: #2c3e50;
+                      --accent-color: #3498db;
+                      --bg-color: #f5f5f5;
+                      --card-bg: #ffffff;
+                      --text-color: #2c3e50;
+                      --meta-color: #666;
+                      --shadow: rgba(0, 0, 0, 0.1);
+                  }
+
+                  * {
+                      margin: 0;
+                      padding: 0;
+                      box-sizing: border-box;
+                  }
+
                   body {
                       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
                       line-height: 1.6;
-                      max-width: 800px;
+                      background: var(--bg-color);
+                      color: var(--text-color);
+                      padding: 2rem;
+                  }
+
+                  .container {
+                      max-width: 1200px;
                       margin: 0 auto;
-                      padding: 20px;
-                      background: #f5f5f5;
                   }
-                  .entry {
-                      background: white;
-                      padding: 20px;
-                      margin-bottom: 20px;
-                      border-radius: 8px;
-                      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-                      transition: transform 0.2s ease;
-                  }
-                  .entry:hover {
-                      transform: translateY(-2px);
-                      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-                  }
-                  .entry h2 {
-                      margin-top: 0;
-                      color: #2c3e50;
-                  }
-                  .entry-meta {
-                      color: #666;
-                      font-size: 0.9em;
-                      margin-bottom: 10px;
-                  }
-                  a {
-                      color: #3498db;
-                      text-decoration: none;
-                  }
-                  a:hover {
-                      text-decoration: underline;
-                  }
+
                   .header {
                       text-align: center;
-                      margin-bottom: 40px;
+                      margin-bottom: 3rem;
+                      padding: 2rem;
+                      background: var(--card-bg);
+                      border-radius: 12px;
+                      box-shadow: 0 4px 6px var(--shadow);
                   }
+
+                  .header h1 {
+                      color: var(--primary-color);
+                      font-size: 2.5rem;
+                      margin-bottom: 1rem;
+                  }
+
+                  .meta-info {
+                      background: var(--card-bg);
+                      padding: 1rem;
+                      border-radius: 8px;
+                      margin-bottom: 2rem;
+                      text-align: center;
+                      box-shadow: 0 2px 4px var(--shadow);
+                  }
+
                   .last-updated {
-                      text-align: center;
-                      color: #666;
-                      margin-bottom: 20px;
-                      font-size: 0.9em;
+                      color: var(--meta-color);
+                      font-size: 0.9rem;
+                      margin-bottom: 0.5rem;
                   }
+
                   .schedule-info {
-                      text-align: center;
-                      color: #666;
-                      font-size: 0.8em;
-                      margin-bottom: 30px;
+                      color: var(--meta-color);
+                      font-size: 0.8rem;
+                  }
+
+                  .grid {
+                      display: grid;
+                      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                      gap: 2rem;
+                      padding: 1rem;
+                  }
+
+                  .entry {
+                      background: var(--card-bg);
+                      border-radius: 12px;
+                      overflow: hidden;
+                      box-shadow: 0 4px 6px var(--shadow);
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                      display: flex;
+                      flex-direction: column;
+                      height: 100%;
+                  }
+
+                  .entry:hover {
+                      transform: translateY(-5px);
+                      box-shadow: 0 8px 12px var(--shadow);
+                  }
+
+                  .entry-header {
+                      padding: 1.5rem;
+                      background: var(--primary-color);
+                      color: white;
+                  }
+
+                  .entry h2 {
+                      font-size: 1.2rem;
+                      margin-bottom: 0.5rem;
+                  }
+
+                  .entry h2 a {
+                      color: white;
+                      text-decoration: none;
+                  }
+
+                  .entry h2 a:hover {
+                      text-decoration: underline;
+                  }
+
+                  .entry-meta {
+                      padding: 1rem 1.5rem;
+                      color: var(--meta-color);
+                      font-size: 0.9rem;
+                      border-bottom: 1px solid #eee;
+                      display: flex;
+                      justify-content: space-between;
+                      flex-wrap: wrap;
+                      gap: 0.5rem;
+                  }
+
+                  .entry-content {
+                      padding: 1.5rem;
+                      flex-grow: 1;
+                      font-size: 0.95rem;
+                  }
+
+                  @media (max-width: 768px) {
+                      body {
+                          padding: 1rem;
+                      }
+
+                      .grid {
+                          grid-template-columns: 1fr;
+                          gap: 1.5rem;
+                      }
+
+                      .header h1 {
+                          font-size: 2rem;
+                      }
+                  }
+
+                  @media (max-width: 480px) {
+                      .entry-meta {
+                          flex-direction: column;
+                      }
                   }
               </style>
           </head>
           <body>
-              <div class="header">
-                  <h1>BBC Technology News Daily Changelog</h1>
-              </div>
-              <div class="last-updated">
-                  Last updated: ''' + datetime.now(pytz.timezone('Asia/Kolkata')).strftime('%Y-%m-%d %H:%M:%S IST') + '''
-              </div>
-              <div class="schedule-info">
-                  Updated every 5 minutes
-              </div>
+              <div class="container">
+                  <header class="header">
+                      <h1>BBC Technology News Daily Changelog</h1>
+                  </header>
+
+                  <div class="meta-info">
+                      <div class="last-updated">
+                          Last updated: ''' + datetime.now(pytz.timezone('Asia/Kolkata')).strftime('%Y-%m-%d %H:%M:%S IST') + '''
+                      </div>
+                      <div class="schedule-info">
+                          Updated every 5 minutes
+                      </div>
+                  </div>
+
+                  <div class="grid">
           ''')
                   
                   for entry in all_entries:
                       published = parser.parse(entry['published']).strftime('%Y-%m-%d %H:%M:%S IST')
                       f.write(f'''
-              <div class="entry">
-                  <h2><a href="{entry['link']}">{entry['title']}</a></h2>
-                  <div class="entry-meta">
-                      Published: {published}<br>
-                      Fetched: {entry.get('fetched_at', 'N/A')}
-                  </div>
-                  <div class="entry-content">
-                      {entry['summary']}
-                  </div>
-              </div>
+                      <article class="entry">
+                          <div class="entry-header">
+                              <h2><a href="{entry['link']}" target="_blank">{entry['title']}</a></h2>
+                          </div>
+                          <div class="entry-meta">
+                              <span>Published: {published}</span>
+                              <span>Fetched: {entry.get('fetched_at', 'N/A')}</span>
+                          </div>
+                          <div class="entry-content">
+                              {entry['summary']}
+                          </div>
+                      </article>
           ''')
                   
                   f.write('''
-              </body>
+                  </div>
+              </div>
+          </body>
           </html>
           ''')
               
