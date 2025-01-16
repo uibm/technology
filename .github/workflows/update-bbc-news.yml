@@ -375,6 +375,34 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
+      - name: Generate tag
+        id: generate_tag
+        run: |
+          # Generate tag with timestamp in IST
+          TAG_NAME=$(TZ=Asia/Kolkata date '+release-%Y%m%d-%H%M')
+          echo "tag_name=$TAG_NAME" >> $GITHUB_OUTPUT
+          
+          # Create changelog content
+          echo "changelog<<EOF" >> $GITHUB_OUTPUT
+          echo "BBC Tech News Update ($(TZ=Asia/Kolkata date '+%Y-%m-%d %H:%M:%S IST'))" >> $GITHUB_OUTPUT
+          echo "" >> $GITHUB_OUTPUT
+          if [ -f "_data/changelog.yml" ]; then
+            echo "New articles added in this update:" >> $GITHUB_OUTPUT
+            grep "title:" _data/changelog.yml | head -n 5 | sed 's/title: /- /' >> $GITHUB_OUTPUT
+          fi
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          name: Release ${{ steps.generate_tag.outputs.tag_name }}
+          tag_name: ${{ steps.generate_tag.outputs.tag_name }}
+          body: ${{ steps.generate_tag.outputs.changelog }}
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Commit changes
         run: |
           git config --local user.email "ujjwal.kumar1@ibm.com"
