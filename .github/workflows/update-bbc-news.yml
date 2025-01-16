@@ -18,11 +18,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     
     steps:
-      - name: Check execution time
-        run: |
-          echo "Current UTC time: $(date -u)"
-          echo "Current IST time: $(TZ=Asia/Kolkata date)"
-
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
@@ -52,6 +47,10 @@ jobs:
       - name: Create initial directories
         run: |
           mkdir -p _data
+          # Initialize empty changelog if it doesn't exist
+          if [ ! -f _data/changelog.yml ]; then
+            echo "[]" > _data/changelog.yml
+          fi
 
       - name: Fetch and process RSS feed
         run: |
@@ -64,18 +63,30 @@ jobs:
           import pytz
           import time
           import hashlib
+          import sys
 
-          def generate_entry_hash(entry):
-              """Generate a unique hash for an entry based on its content"""
-              content = f"{entry.title}{entry.summary}{entry.link}"
+          def generate_entry_hash(data):
+              """Generate a unique hash based on content"""
+              if isinstance(data, feedparser.FeedParserDict):
+                  # For new RSS entries
+                  content = f"{data.title}{data.summary}{data.link}"
+              else:
+                  # For existing changelog entries
+                  content = f"{data.get('title', '')}{data.get('summary', '')}{data.get('link', '')}"
               return hashlib.md5(content.encode()).hexdigest()
 
           def load_existing_entries():
               if os.path.exists('_data/changelog.yml'):
                   with open('_data/changelog.yml', 'r', encoding='utf-8') as f:
                       try:
-                          return yaml.safe_load(f) or []
-                      except yaml.YAMLError:
+                          entries = yaml.safe_load(f) or []
+                          # Add hash if missing
+                          for entry in entries:
+                              if 'hash' not in entry:
+                                  entry['hash'] = generate_entry_hash(entry)
+                          return entries
+                      except yaml.YAMLError as e:
+                          print(f"Error loading YAML: {e}", file=sys.stderr)
                           return []
               return []
 
@@ -84,14 +95,16 @@ jobs:
               for attempt in range(max_retries):
                   try:
                       feed = feedparser.parse('https://feeds.bbci.co.uk/news/technology/rss.xml')
-                      if hasattr(feed, 'status') and feed.status == 200:
-                          print(f"Successfully fetched RSS feed with {len(feed.entries)} entries")
-                          return feed.entries
-                      time.sleep(2 ** attempt)
+                      if not hasattr(feed, 'status') or feed.status != 200:
+                          print(f"Feed status: {getattr(feed, 'status', 'unknown')}")
+                          if attempt < max_retries - 1:
+                              time.sleep(2 ** attempt)
+                              continue
+                      return feed.entries
                   except Exception as e:
                       print(f"Attempt {attempt + 1} failed: {str(e)}")
                       if attempt == max_retries - 1:
-                          raise e
+                          raise
                       time.sleep(2 ** attempt)
               return []
 
@@ -113,12 +126,12 @@ jobs:
           def update_changelog():
               print(f"Starting changelog update at {datetime.now(pytz.timezone('Asia/Kolkata')).strftime('%Y-%m-%d %H:%M:%S IST')}")
               
-              os.makedirs('_data', exist_ok=True)
-              
               existing_entries = load_existing_entries()
-              existing_hashes = {entry['hash'] for entry in existing_entries}
+              print(f"Loaded {len(existing_entries)} existing entries")
               
+              existing_hashes = {entry['hash'] for entry in existing_entries}
               new_entries = fetch_bbc_feed()
+              print(f"Fetched {len(new_entries)} entries from RSS")
               
               updates = []
               for entry in new_entries:
@@ -136,9 +149,11 @@ jobs:
               all_entries.sort(key=lambda x: x['published'], reverse=True)
               all_entries = all_entries[:100]
               
+              # Save changelog
               with open('_data/changelog.yml', 'w', encoding='utf-8') as f:
                   yaml.dump(all_entries, f, allow_unicode=True, sort_keys=False)
               
+              # Generate HTML
               with open('index.html', 'w', encoding='utf-8') as f:
                   f.write('''
           <!DOCTYPE html>
@@ -200,14 +215,6 @@ jobs:
                       font-size: 0.8em;
                       margin-bottom: 30px;
                   }
-                  @media (max-width: 600px) {
-                      body {
-                          padding: 10px;
-                      }
-                      .entry {
-                          padding: 15px;
-                      }
-                  }
               </style>
           </head>
           <body>
@@ -245,7 +252,11 @@ jobs:
               return True
 
           if __name__ == '__main__':
-              update_changelog()
+              try:
+                  update_changelog()
+              except Exception as e:
+                  print(f"Error: {str(e)}", file=sys.stderr)
+                  sys.exit(1)
           EOF
 
           python update_changelog.py
