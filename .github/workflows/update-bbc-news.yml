@@ -1,0 +1,196 @@
+name: Update BBC Tech News Changelog
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Run every hour
+  workflow_dispatch:      # Allow manual trigger
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  update-changelog:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch all history for changelog
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install feedparser markdown PyYAML python-dateutil
+
+      - name: Fetch and process RSS feed
+        run: |
+          cat > update_changelog.py << 'EOF'
+          import feedparser
+          import yaml
+          from datetime import datetime
+          import os
+          from dateutil import parser
+          import pytz
+
+          def load_existing_entries():
+              if os.path.exists('_data/changelog.yml'):
+                  with open('_data/changelog.yml', 'r', encoding='utf-8') as f:
+                      try:
+                          return yaml.safe_load(f) or []
+                      except yaml.YAMLError:
+                          return []
+              return []
+
+          def fetch_bbc_feed():
+              feed = feedparser.parse('https://feeds.bbci.co.uk/news/technology/rss.xml')
+              return feed.entries
+
+          def create_changelog_entry(entry):
+              return {
+                  'title': entry.title,
+                  'link': entry.link,
+                  'published': parser.parse(entry.published).astimezone(pytz.UTC).isoformat(),
+                  'summary': entry.summary,
+                  'guid': entry.guid
+              }
+
+          def update_changelog():
+              # Create _data directory if it doesn't exist
+              os.makedirs('_data', exist_ok=True)
+              
+              # Load existing entries
+              existing_entries = load_existing_entries()
+              existing_guids = {entry['guid'] for entry in existing_entries}
+              
+              # Fetch new entries
+              new_entries = fetch_bbc_feed()
+              
+              # Process new entries
+              updates = []
+              for entry in new_entries:
+                  if entry.guid not in existing_guids:
+                      updates.append(create_changelog_entry(entry))
+              
+              # Combine and sort entries
+              all_entries = updates + existing_entries
+              all_entries.sort(key=lambda x: x['published'], reverse=True)
+              
+              # Save updated changelog
+              with open('_data/changelog.yml', 'w', encoding='utf-8') as f:
+                  yaml.dump(all_entries, f, allow_unicode=True, sort_keys=False)
+              
+              # Generate HTML changelog
+              with open('index.html', 'w', encoding='utf-8') as f:
+                  f.write('''
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>BBC Technology News Changelog</title>
+              <style>
+                  body {
+                      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+                      line-height: 1.6;
+                      max-width: 800px;
+                      margin: 0 auto;
+                      padding: 20px;
+                      background: #f5f5f5;
+                  }
+                  .entry {
+                      background: white;
+                      padding: 20px;
+                      margin-bottom: 20px;
+                      border-radius: 8px;
+                      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                  }
+                  .entry h2 {
+                      margin-top: 0;
+                      color: #2c3e50;
+                  }
+                  .entry-meta {
+                      color: #666;
+                      font-size: 0.9em;
+                      margin-bottom: 10px;
+                  }
+                  a {
+                      color: #3498db;
+                      text-decoration: none;
+                  }
+                  a:hover {
+                      text-decoration: underline;
+                  }
+                  .header {
+                      text-align: center;
+                      margin-bottom: 40px;
+                  }
+                  .last-updated {
+                      text-align: center;
+                      color: #666;
+                      margin-bottom: 20px;
+                  }
+              </style>
+          </head>
+          <body>
+              <div class="header">
+                  <h1>BBC Technology News Changelog</h1>
+              </div>
+              <div class="last-updated">
+                  Last updated: ''' + datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC') + '''
+              </div>
+          ''')
+                  
+                  for entry in all_entries[:50]:  # Show only last 50 entries
+                      published = parser.parse(entry['published']).strftime('%Y-%m-%d %H:%M:%S UTC')
+                      f.write(f'''
+              <div class="entry">
+                  <h2><a href="{entry['link']}">{entry['title']}</a></h2>
+                  <div class="entry-meta">Published: {published}</div>
+                  <div class="entry-content">
+                      {entry['summary']}
+                  </div>
+              </div>
+          ''')
+                  
+                  f.write('''
+              </body>
+          </html>
+          ''')
+
+          if __name__ == '__main__':
+              update_changelog()
+          EOF
+
+          python update_changelog.py
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add _data/changelog.yml index.html
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update changelog with latest BBC Tech news"
+          git push
