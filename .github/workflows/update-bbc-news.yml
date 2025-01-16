@@ -239,8 +239,8 @@ jobs:
 
       - name: Commit changes
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
+          git config --local user.email "ujjwal.kumar1@ibm.com"
+          git config --local user.name "ujjwal-ibm"
           git add _data/changelog.yml index.html requirements.txt
           git diff --quiet && git diff --staged --quiet || git commit -m "Update changelog with latest BBC Tech news"
           git push
