@@ -2,7 +2,7 @@ name: Update BBC Tech News Changelog
 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # Every 5 minutes for testing
+    - cron: '0 */6 * * *'  # Every 5 minutes for testing
   workflow_dispatch:      # Allow manual trigger
 
 permissions:
