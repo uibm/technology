@@ -2,13 +2,15 @@ name: Update BBC Tech News Changelog
 
 on:
   schedule:
-    - cron: '0 */6 * * *'  # Every 5 minutes for testing
+    - cron: '0 */6 * * *'  # Every 6 hours
   workflow_dispatch:      # Allow manual trigger
 
 permissions:
   contents: write
   pages: write
   id-token: write
+  issues: write
+  pull-requests: write
 
 jobs:
   update-changelog:
@@ -411,3 +413,53 @@ jobs:
           echo "Commit time IST: $(TZ=Asia/Kolkata date)" >> commit_time.txt
           git add _data/changelog.yml index.html requirements.txt commit_time.txt
           git diff --quiet && git diff --staged --quiet || (git commit -m "Update changelog with latest BBC Tech news [$(TZ=Asia/Kolkata date '+%Y-%m-%d %H:%M:%S IST')]" && git push)
+
+      - name: Create Issue for Release
+        id: create_issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { data: issue } = await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Release ${{ steps.generate_tag.outputs.tag_name }}`,
+              body: `This issue is created for the release ${{ steps.generate_tag.outputs.tag_name }}.\n\n${{ steps.generate_tag.outputs.changelog }}`,
+            });
+            return issue.number;
+        env:
+          TAG_NAME: ${{ steps.generate_tag.outputs.tag_name }}
+          CHANGELOG: ${{ steps.generate_tag.outputs.changelog }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create branch
+        run: |
+            git checkout -b "release-${{ steps.generate_tag.outputs.tag_name }}"
+            git push origin "release-${{ steps.generate_tag.outputs.tag_name }}"
+
+      - name: Create Pull Request
+        id: create_pr
+        uses: peter-evans/create-pull-request@v4
+        with:
+          title: "Release ${{ steps.generate_tag.outputs.tag_name }}"
+          body: "This PR is created for the release ${{ steps.generate_tag.outputs.tag_name }}.\n\n${{ steps.generate_tag.outputs.changelog }}"
+          branch: "release-${{ steps.generate_tag.outputs.tag_name }}"
+          base: "main"
+          commit-message: "Update changelog with latest BBC Tech news [$(TZ=Asia/Kolkata date '+%Y-%m-%d %H:%M:%S IST')]"
+          delete-branch: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Merge Pull Request
+        id: merge_pr
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { data: pr } = await github.rest.pulls.merge({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: ${{ steps.create_pr.outputs.pull-request-number }},
+              merge_method: 'squash',
+            });
+            return pr.merged;
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
