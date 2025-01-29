@@ -1,3 +1,29 @@
+- title: Garmin users say smartwatches have stopped working
+  link: https://www.bbc.com/news/articles/c0jnd4eg6ndo
+  published: '2025-01-29T16:38:06+05:30'
+  summary: Its Fenix 8 smartwatches, which retail for just under £1,000, are some
+    of the devices to have issues.
+  guid: https://www.bbc.com/news/articles/c0jnd4eg6ndo#0
+  hash: 153d13a7a529dc29c3e280e4a22ffac6
+  timestamp: '2025-01-29T17:44:58.607193+05:30'
+  fetched_at: 2025-01-29 17:44:58 IST
+- title: OpenAI says Chinese rivals using its work for their AI apps
+  link: https://www.bbc.com/news/articles/c9vm1m8wpr9o
+  published: '2025-01-29T16:08:26+05:30'
+  summary: ChatGPT maker says it will need extra protection from US government, following
+    emergence of Chinese rival, DeepSeek.
+  guid: https://www.bbc.com/news/articles/c9vm1m8wpr9o#0
+  hash: e779a03361c8d9b6e99236c190b04e9c
+  timestamp: '2025-01-29T17:44:58.607453+05:30'
+  fetched_at: 2025-01-29 17:44:58 IST
+- title: 'Tech Life: Not as dead as a dodo?'
+  link: https://www.bbc.co.uk/sounds/play/w3ct5wng
+  published: '2025-01-29T02:00:00+05:30'
+  summary: Tech Life takes a close look at the controversial process of de-extinction.
+  guid: https://www.bbc.co.uk/sounds/play/w3ct5wng#3
+  hash: 429a6f280e0fd70a775824565d4b00a3
+  timestamp: '2025-01-29T17:44:58.607727+05:30'
+  fetched_at: 2025-01-29 17:44:58 IST
 - title: US tech stocks steady after DeepSeek AI app shock
   link: https://www.bbc.com/news/articles/c4gpq01rvd4o
   published: '2025-01-28T23:34:13+05:30'
@@ -294,6 +320,15 @@
   hash: a9b2d20a292abba6faf1ba5a45db5613
   timestamp: '2025-01-22T11:42:10.317147+05:30'
   fetched_at: 2025-01-22 11:42:10 IST
+- title: 'Tech Life: VPNs and India'
+  link: https://www.bbc.co.uk/sounds/play/w3ct5wnf
+  published: '2025-01-22T02:00:00+05:30'
+  summary: The mystery of the security and privacy apps disappearing from app stores
+    in India.
+  guid: https://www.bbc.co.uk/sounds/play/w3ct5wnf#3
+  hash: f2ae98ba1b4286f14628e690c895928a
+  timestamp: '2025-01-29T17:44:58.607880+05:30'
+  fetched_at: 2025-01-29 17:44:58 IST
 - title: Government digital document app launching in summer
   link: https://www.bbc.com/news/articles/cy48vl3p0nyo
   published: '2025-01-21T22:38:16+05:30'
@@ -855,38 +890,4 @@
   guid: https://www.bbc.com/news/articles/c74x0j47gz8o#2
   hash: 9709f7310d38ac1f30742e80307773ad
   timestamp: '2025-01-17T03:42:02.198998+05:30'
-  fetched_at: 2025-01-17 03:42:02 IST
-- title: US Supreme Court to hear TikTok challenge to potential ban
-  link: https://www.bbc.com/news/articles/cn4xw9lx02xo
-  published: '2024-12-19T10:14:28+05:30'
-  summary: The US wants the app to be sold or banned because of what it says are links
-    to the Chinese state.
-  guid: https://www.bbc.com/news/articles/cn4xw9lx02xo#2
-  hash: c5b5c3d57c6e0e034e8b725b9bded78d
-  timestamp: '2025-01-17T03:42:02.199103+05:30'
-  fetched_at: 2025-01-17 03:42:02 IST
-- title: 'Tech Life: Does the robotaxi have a future?'
-  link: https://www.bbc.co.uk/sounds/play/w3ct5wn8
-  published: '2024-12-18T02:00:00+05:30'
-  summary: How tech is transforming the way the world works, learns and plays
-  guid: https://www.bbc.co.uk/sounds/play/w3ct5wn8#3
-  hash: 3df2013f1c16f414b24ba4280bd8f472
-  timestamp: '2025-01-17T03:42:02.199633+05:30'
-  fetched_at: 2025-01-17 03:42:02 IST
-- title: 'Tech Life: Cyber warfare'
-  link: https://www.bbc.co.uk/sounds/play/w3ct5wn7
-  published: '2024-12-11T02:02:00+05:30'
-  summary: Cyber warfare, aerodynamic tech in athletics and the new Indiana Jones.
-  guid: https://www.bbc.co.uk/sounds/play/w3ct5wn7#3
-  hash: c0987e0e9bbc012344897dffcca6848e
-  timestamp: '2025-01-17T03:42:02.199738+05:30'
-  fetched_at: 2025-01-17 03:42:02 IST
-- title: Is AI any good at choosing gifts?
-  link: https://www.bbc.com/news/articles/ckgxv7jk0z1o
-  published: '2024-12-06T05:32:06+05:30'
-  summary: With vast amounts of data do draw on, AI should be able to come up with
-    good gift ideas, but does it?
-  guid: https://www.bbc.com/news/articles/ckgxv7jk0z1o#4
-  hash: 22d8555f35bdf11f8eec5158644be4d9
-  timestamp: '2025-01-17T03:42:02.200333+05:30'
   fetched_at: 2025-01-17 03:42:02 IST
