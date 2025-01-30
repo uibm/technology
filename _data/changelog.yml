@@ -1,3 +1,12 @@
+- title: Meta to pay $25m to settle Trump lawsuit over ban
+  link: https://www.bbc.com/news/articles/c79d74nppvpo
+  published: '2025-01-30T07:51:25+05:30'
+  summary: The president sued the firm in 2021 over the suspension of his accounts
+    after the 6 January Capitol riots.
+  guid: https://www.bbc.com/news/articles/c79d74nppvpo#0
+  hash: 9b8782fa7a54aba661a32ea222ce1ae8
+  timestamp: '2025-01-30T17:45:09.930664+05:30'
+  fetched_at: 2025-01-30 17:45:09 IST
 - title: Leaving X can be a tricky decision for brands
   link: https://www.bbc.com/news/articles/cqx9e0y17wwo
   published: '2025-01-30T05:48:27+05:30'
@@ -6,6 +15,15 @@
   hash: e375be6eb89c586ea17e1fc3f32ceb83
   timestamp: '2025-01-30T06:07:53.449459+05:30'
   fetched_at: 2025-01-30 06:07:53 IST
+- title: Satellites could end UK phone 'not spots', Vodafone says
+  link: https://www.bbc.com/news/articles/cgrn44nx85ro
+  published: '2025-01-30T03:31:18+05:30'
+  summary: It follows the firm carrying out what it says is the UK's first satellite-enabled
+    smart phone video call.
+  guid: https://www.bbc.com/news/articles/cgrn44nx85ro#0
+  hash: e2dbf10c640333c3c5ad52d961ae781a
+  timestamp: '2025-01-30T17:45:09.930393+05:30'
+  fetched_at: 2025-01-30 17:45:09 IST
 - title: UK's first smartphone video call via satellite made from Welsh mountain
   link: https://www.bbc.com/news/articles/cgrn44nx85ro
   published: '2025-01-30T03:31:18+05:30'
@@ -871,22 +889,4 @@
   guid: https://www.bbc.com/news/articles/cwyg4lgezj2o#2
   hash: 047485ba184e90ecd5245c0e9e2d4a94
   timestamp: '2025-01-17T03:42:02.198778+05:30'
-  fetched_at: 2025-01-17 03:42:02 IST
-- title: Tech Life's look back at the year
-  link: https://www.bbc.co.uk/sounds/play/w3ct5wn9
-  published: '2024-12-24T05:30:00+05:30'
-  summary: We look back at the high and lows of another fascinating twelve months
-    in tech
-  guid: https://www.bbc.co.uk/sounds/play/w3ct5wn9#3
-  hash: ae8cb1f53db20e71e058fb6373407d32
-  timestamp: '2025-01-17T03:42:02.199528+05:30'
-  fetched_at: 2025-01-17 03:42:02 IST
-- title: Sega considering Netflix-like game subscription service
-  link: https://www.bbc.com/news/articles/ckgnj7e8028o
-  published: '2024-12-21T04:05:07+05:30'
-  summary: It's another sign the industry is moving away from owning games - some
-    fear that means gamers having to "shell out more."
-  guid: https://www.bbc.com/news/articles/ckgnj7e8028o#2
-  hash: 64efa9ef642b603694de7332386cb6c7
-  timestamp: '2025-01-17T03:42:02.198891+05:30'
   fetched_at: 2025-01-17 03:42:02 IST
