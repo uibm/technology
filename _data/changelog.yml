@@ -1,3 +1,12 @@
+- title: Barclays customers face second day of issues after IT outage
+  link: https://www.bbc.com/news/articles/cd9qzg92g72o
+  published: '2025-02-01T23:22:39+05:30'
+  summary: Online banking, the bank's app and payments in and out of accounts are
+    all affected.
+  guid: https://www.bbc.com/news/articles/cd9qzg92g72o#0
+  hash: 4ddc1adf95697f087c37c38b9faed94b
+  timestamp: '2025-02-01T23:39:24.171968+05:30'
+  fetched_at: 2025-02-01 23:39:24 IST
 - title: Barclays customers continue to experience issues after major IT outage
   link: https://www.bbc.com/news/articles/cd9qzg92g72o
   published: '2025-02-01T14:40:06+05:30'
@@ -880,13 +889,4 @@
   guid: https://www.bbc.com/news/articles/cx27zwp7jpxo#2
   hash: 1311b852fef8a5b15bfc6c8eaa612c5a
   timestamp: '2025-01-17T03:42:02.197775+05:30'
-  fetched_at: 2025-01-17 03:42:02 IST
-- title: Nick Clegg leaves Meta ahead of Trump's return as US president
-  link: https://www.bbc.com/news/articles/cgrw785585wo
-  published: '2025-01-03T20:29:46+05:30'
-  summary: He will be replaced by Republican Joel Kaplan, a former White House deputy
-    chief of staff under President Bush.
-  guid: https://www.bbc.com/news/articles/cgrw785585wo#2
-  hash: 4a51083f6ec080374591ca16f68b0b6f
-  timestamp: '2025-01-17T03:42:02.198331+05:30'
   fetched_at: 2025-01-17 03:42:02 IST
