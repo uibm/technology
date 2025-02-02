@@ -1,3 +1,12 @@
+- title: Barclays working to update account balances after tech outage
+  link: https://www.bbc.com/news/articles/c5y7dpdje6xo
+  published: '2025-02-02T20:31:27+05:30'
+  summary: The bank says a technical issue, which began on Friday and impacted the
+    its app, online banking and payments, has been resolved.
+  guid: https://www.bbc.com/news/articles/c5y7dpdje6xo#0
+  hash: 57a4761c7ce7400bbf95c710b9010e59
+  timestamp: '2025-02-02T23:39:48.420331+05:30'
+  fetched_at: 2025-02-02 23:39:48 IST
 - title: Barclays says payment issues resolved after tech outage
   link: https://www.bbc.com/news/articles/c5y7dpdje6xo
   published: '2025-02-02T16:10:20+05:30'
@@ -880,13 +889,4 @@
   guid: https://www.bbc.com/news/articles/cr4rvr495rgo#2
   hash: 50913c0eccab3462619c01d4fed187c1
   timestamp: '2025-01-17T03:42:02.198011+05:30'
-  fetched_at: 2025-01-17 03:42:02 IST
-- title: US designates Tencent a Chinese military company
-  link: https://www.bbc.com/news/articles/c9q78wn9g8zo
-  published: '2025-01-07T13:02:16+05:30'
-  summary: China's embassy in Washington branded the move as an "unreasonable suppression"
-    of its firms.
-  guid: https://www.bbc.com/news/articles/c9q78wn9g8zo#2
-  hash: 5fc7277a2eec6c836c16a12a7fd56aa2
-  timestamp: '2025-01-17T03:42:02.197431+05:30'
   fetched_at: 2025-01-17 03:42:02 IST
