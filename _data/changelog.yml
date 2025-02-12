@@ -1,3 +1,13 @@
+- title: Elon Musk denies 'hostile takeover' of government in surprise White House
+    appearance
+  link: https://www.bbc.com/news/articles/cp820y16xvlo
+  published: '2025-02-12T08:18:36+05:30'
+  summary: The world's richest man took questions for the first time since he was
+    appointed to lead a sweeping government cost-cutting effort.
+  guid: https://www.bbc.com/news/articles/cp820y16xvlo#0
+  hash: 7b423275ec57005f3b4bfddee2efece8
+  timestamp: '2025-02-12T17:45:13.356422+05:30'
+  fetched_at: 2025-02-12 17:45:13 IST
 - title: Law firm restricts AI after 'significant' staff use
   link: https://www.bbc.com/news/articles/cglyjn7le2ko
   published: '2025-02-12T05:34:01+05:30'
@@ -7,6 +17,15 @@
   hash: 93f8b3efc55f4a625fb8efeda24f93e9
   timestamp: '2025-02-12T06:09:31.072939+05:30'
   fetched_at: 2025-02-12 06:09:31 IST
+- title: 'Tech Life: Decoding the brain'
+  link: https://www.bbc.co.uk/sounds/play/w3ct5wnj
+  published: '2025-02-12T02:02:00+05:30'
+  summary: Could AI help people with speech loss talk by interpreting signals in their
+    brain ?
+  guid: https://www.bbc.co.uk/sounds/play/w3ct5wnj#3
+  hash: 8686dc75d42ea10203f6f8f4212229a8
+  timestamp: '2025-02-12T17:45:13.356804+05:30'
+  fetched_at: 2025-02-12 17:45:13 IST
 - title: UK and US refuse to sign international AI declaration
   link: https://www.bbc.com/news/articles/c8edn0n58gwo
   published: '2025-02-11T23:08:07+05:30'
@@ -25,6 +44,15 @@
   hash: 1e970c564b5ac793f5118e8d6a216172
   timestamp: '2025-02-11T23:39:49.078636+05:30'
   fetched_at: 2025-02-11 23:39:49 IST
+- title: 'Watch: Why Google Maps renamed the Gulf of Mexico'
+  link: https://www.bbc.com/news/videos/cy7gzk8d2r0o
+  published: '2025-02-11T22:57:54+05:30'
+  summary: The Gulf of Mexico has been renamed the Gulf of America on Google Maps
+    in the US. BBC Verify explains why Google made the change.
+  guid: https://www.bbc.com/news/videos/cy7gzk8d2r0o#3
+  hash: b026d929f737e23148652bcec53d1bf3
+  timestamp: '2025-02-12T17:45:13.356960+05:30'
+  fetched_at: 2025-02-12 17:45:13 IST
 - title: '''We are not for sale,'' ChatGPT boss says after Musk bid'
   link: https://www.bbc.com/news/articles/cpdx75zgg88o
   published: '2025-02-11T22:43:57+05:30'
@@ -863,30 +891,3 @@
   hash: 39d7a8096627a3f9e2d310306368352b
   timestamp: '2025-01-19T23:39:28.025313+05:30'
   fetched_at: 2025-01-19 23:39:28 IST
-- title: 'Watch: How TikTok ''went dark'' in the US'
-  link: https://www.bbc.com/news/videos/cr462319d94o
-  published: '2025-01-19T14:31:12+05:30'
-  summary: BBC Tech Correspondent Lily Jamali explains what happened and what it means
-    for the popular platform.
-  guid: https://www.bbc.com/news/videos/cr462319d94o#3
-  hash: 90816c7124b2b29eb6561feec2dc320d
-  timestamp: '2025-01-19T17:42:34.224349+05:30'
-  fetched_at: 2025-01-19 17:42:34 IST
-- title: TikTok goes offline in the US hours before ban due to come in
-  link: https://www.bbc.com/news/articles/cz6p1g54q85o
-  published: '2025-01-19T10:16:29+05:30'
-  summary: A message appearing for US users said a law banning TikTok had been enacted,
-    meaning "you can't use TikTok for now".
-  guid: https://www.bbc.com/news/articles/cz6p1g54q85o#0
-  hash: 9a24b730a5c92f061c9e24ff5f96b700
-  timestamp: '2025-01-19T11:40:20.321392+05:30'
-  fetched_at: 2025-01-19 11:40:20 IST
-- title: UK set to introduce digital driving licences
-  link: https://www.bbc.com/news/articles/cgkjjkjy4p8o
-  published: '2025-01-18T16:48:15+05:30'
-  summary: The government says technology should "make people's lives easier" but
-    any system won't be mandatory.
-  guid: https://www.bbc.com/news/articles/cgkjjkjy4p8o#0
-  hash: fd774735fa1e7b6eef3042315838c78c
-  timestamp: '2025-01-18T17:42:47.066587+05:30'
-  fetched_at: 2025-01-18 17:42:47 IST
