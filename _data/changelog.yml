@@ -1,3 +1,21 @@
+- title: Meta plans globe-spanning sub-sea internet cable
+  link: https://www.bbc.com/news/articles/ckgrgz8271go
+  published: '2025-02-17T23:10:03+05:30'
+  summary: It is the latest move from Meta to invest more in global connectivity rather
+    than its apps.
+  guid: https://www.bbc.com/news/articles/ckgrgz8271go#0
+  hash: adc9c134a125b4ded02cd1ae2a494700
+  timestamp: '2025-02-17T23:41:05.900712+05:30'
+  fetched_at: 2025-02-17 23:41:05 IST
+- title: Argentina president faces impeachment calls over crypto crash
+  link: https://www.bbc.com/news/articles/cp9x9j89evxo
+  published: '2025-02-17T22:00:54+05:30'
+  summary: Some have accused Javier Milei of performing a "rug pull" after he promoted
+    a virtual coin on social media.
+  guid: https://www.bbc.com/news/articles/cp9x9j89evxo#0
+  hash: 9bb65032af9a054a8fae2bf37fd808b2
+  timestamp: '2025-02-17T23:41:05.900418+05:30'
+  fetched_at: 2025-02-17 23:41:05 IST
 - title: S Korea removes Deepseek from app stores over privacy concerns
   link: https://www.bbc.com/news/articles/clyzym0vn8go
   published: '2025-02-17T15:56:27+05:30'
@@ -7,6 +25,15 @@
   hash: 90bb69ba2f29456650844d4dfc708091
   timestamp: '2025-02-17T17:45:54.868904+05:30'
   fetched_at: 2025-02-17 17:45:54 IST
+- title: 'Musk v Altman: What might really be behind failed bid for OpenAI'
+  link: https://www.bbc.com/news/articles/ce8yl47p4k3o
+  published: '2025-02-17T09:20:48+05:30'
+  summary: Elon Musk's goal might be hindering the growth potential of the AI firm
+    of his rival Sam Altman, experts say.
+  guid: https://www.bbc.com/news/articles/ce8yl47p4k3o#0
+  hash: 7081a65530e1c887a2892e6a82bca17f
+  timestamp: '2025-02-17T23:41:05.900861+05:30'
+  fetched_at: 2025-02-17 23:41:05 IST
 - title: Can Musk damage OpenAI even though his bid has failed?
   link: https://www.bbc.com/news/articles/ce8yl47p4k3o
   published: '2025-02-17T09:20:48+05:30'
@@ -869,30 +896,3 @@
   hash: f2ae98ba1b4286f14628e690c895928a
   timestamp: '2025-01-29T17:44:58.607880+05:30'
   fetched_at: 2025-01-29 17:44:58 IST
-- title: Government digital document app launching in summer
-  link: https://www.bbc.com/news/articles/cy48vl3p0nyo
-  published: '2025-01-21T22:38:16+05:30'
-  summary: Veteran cards and driving licences will also be incorporated into a gov.uk
-    wallet.
-  guid: https://www.bbc.com/news/articles/cy48vl3p0nyo#0
-  hash: 2ec3a1e4a9bb3f5ce3d8d60473bac9e5
-  timestamp: '2025-01-21T23:41:15.572441+05:30'
-  fetched_at: 2025-01-21 23:41:15 IST
-- title: Instagram hides search results for 'Democrats'
-  link: https://www.bbc.com/news/articles/c4g32yxpdz0o
-  published: '2025-01-21T18:00:12+05:30'
-  summary: Meta says it is working quickly to resolve the problem, which has prompted
-    accusations of bias on social media.
-  guid: https://www.bbc.com/news/articles/c4g32yxpdz0o#0
-  hash: b3029d8a8805d295ccec3d330ae7a958
-  timestamp: '2025-01-21T23:41:15.572167+05:30'
-  fetched_at: 2025-01-21 23:41:15 IST
-- title: What does Trump's executive order mean for TikTok and who might buy it?
-  link: https://www.bbc.com/news/articles/clyng762q4eo
-  published: '2025-01-21T16:05:59+05:30'
-  summary: What does Donald Trump's executive order mean for the future of TikTok
-    in the US?
-  guid: https://www.bbc.com/news/articles/clyng762q4eo#0
-  hash: b5a0e61bac5e4ddedced36e36b09e79f
-  timestamp: '2025-01-21T23:41:15.572616+05:30'
-  fetched_at: 2025-01-21 23:41:15 IST
