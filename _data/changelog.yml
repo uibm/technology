@@ -1,3 +1,39 @@
+- title: Argentina's President Milei denies crypto fraud allegations
+  link: https://www.bbc.com/news/articles/c1w07nq8qqqo
+  published: '2025-02-18T17:18:31+05:30'
+  summary: Javier Milei says he was acting in "good faith" when he posted about a
+    crypto currency which collapsed.
+  guid: https://www.bbc.com/news/articles/c1w07nq8qqqo#0
+  hash: d39223911abdcc64f483b0f21acf3e69
+  timestamp: '2025-02-18T17:45:31.919970+05:30'
+  fetched_at: 2025-02-18 17:45:31 IST
+- title: DeepSeek 'shared user data' with TikTok owner ByteDance
+  link: https://www.bbc.com/news/articles/c4gex0x87g4o
+  published: '2025-02-18T17:10:23+05:30'
+  summary: South Korea's data protection regulator says user data was sent to the
+    Chinese owner of TikTok.
+  guid: https://www.bbc.com/news/articles/c4gex0x87g4o#0
+  hash: 72431eba97a9145df63357ce7fdd424c
+  timestamp: '2025-02-18T17:45:31.919704+05:30'
+  fetched_at: 2025-02-18 17:45:31 IST
+- title: Too many video games, too little time - but could that be changing?
+  link: https://www.bbc.com/news/articles/czxklzlxxwyo
+  published: '2025-02-18T14:54:10+05:30'
+  summary: Bigger, longer, better? Why the race to pack more hours into video games
+    might be slowing.
+  guid: https://www.bbc.com/news/articles/czxklzlxxwyo#0
+  hash: b2b533b6f5ae0a89c00de006a4f8841d
+  timestamp: '2025-02-18T17:45:31.920117+05:30'
+  fetched_at: 2025-02-18 17:45:31 IST
+- title: 'Hair: ''It’s just thrown away but it''s gold'''
+  link: https://www.bbc.com/news/articles/c2dl93l7w2go
+  published: '2025-02-18T03:57:15+05:30'
+  summary: India is the world's biggest exporter of human hair but it wants more of
+    the lucrative wig market.
+  guid: https://www.bbc.com/news/articles/c2dl93l7w2go#4
+  hash: e0454378a625b6859a8b011d8ee7d3e6
+  timestamp: '2025-02-18T17:45:31.920776+05:30'
+  fetched_at: 2025-02-18 17:45:31 IST
 - title: Meta plans globe-spanning sub-sea internet cable
   link: https://www.bbc.com/news/articles/ckgrgz8271go
   published: '2025-02-17T23:10:03+05:30'
@@ -860,39 +896,3 @@
   hash: 6ca2c58ebc0ecd30a7e1938d664505be
   timestamp: '2025-01-22T17:44:50.723273+05:30'
   fetched_at: 2025-01-22 17:44:50 IST
-- title: Tech giants announce $500bn 'Stargate' AI plan in US
-  link: https://www.bbc.com/news/articles/cy4m84d2xz2o
-  published: '2025-01-22T16:19:15+05:30'
-  summary: OpenAI, Oracle, Softbank and MGX  join forces to build artificial intelligence
-    infrastructure.
-  guid: https://www.bbc.com/news/articles/cy4m84d2xz2o#0
-  hash: 1afa76e253e5c517d9c8ee464d985c5b
-  timestamp: '2025-01-22T17:44:50.723552+05:30'
-  fetched_at: 2025-01-22 17:44:50 IST
-- title: US tech giants announce AI plan worth up to $500bn
-  link: https://www.bbc.com/news/articles/cy4m84d2xz2o
-  published: '2025-01-22T10:20:20+05:30'
-  summary: OpenAI, Oracle and Softbank join forces to build artificial intelligence
-    infrastructure.
-  guid: https://www.bbc.com/news/articles/cy4m84d2xz2o#0
-  hash: 2114a51009208fa88e0b234b37d644de
-  timestamp: '2025-01-22T11:42:10.316823+05:30'
-  fetched_at: 2025-01-22 11:42:10 IST
-- title: Netflix to raise prices as new subscribers soar
-  link: https://www.bbc.com/news/articles/c62693x4qr2o
-  published: '2025-01-22T06:14:13+05:30'
-  summary: Squid Game 2 and live sports, including the Jake Paul v Mike Tyson fight,
-    fuelled new memberships.
-  guid: https://www.bbc.com/news/articles/c62693x4qr2o#0
-  hash: a9b2d20a292abba6faf1ba5a45db5613
-  timestamp: '2025-01-22T11:42:10.317147+05:30'
-  fetched_at: 2025-01-22 11:42:10 IST
-- title: 'Tech Life: VPNs and India'
-  link: https://www.bbc.co.uk/sounds/play/w3ct5wnf
-  published: '2025-01-22T02:00:00+05:30'
-  summary: The mystery of the security and privacy apps disappearing from app stores
-    in India.
-  guid: https://www.bbc.co.uk/sounds/play/w3ct5wnf#3
-  hash: f2ae98ba1b4286f14628e690c895928a
-  timestamp: '2025-01-29T17:44:58.607880+05:30'
-  fetched_at: 2025-01-29 17:44:58 IST
