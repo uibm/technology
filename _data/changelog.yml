@@ -1,3 +1,21 @@
+- title: AI cracks superbug problem in two days that took scientists years
+  link: https://www.bbc.com/news/articles/clyz6e9edy3o
+  published: '2025-02-20T17:38:28+05:30'
+  summary: The lead researcher has told the BBC he was so astounded he assumed his
+    computer had been hacked.
+  guid: https://www.bbc.com/news/articles/clyz6e9edy3o#0
+  hash: 3a877fc2be6441ad89881abf14f1e2d4
+  timestamp: '2025-02-20T17:45:19.271795+05:30'
+  fetched_at: 2025-02-20 17:45:19 IST
+- title: Apple gambles on new iPhone with AI features at lower cost
+  link: https://www.bbc.com/news/articles/cvgw30dr0w3o
+  published: '2025-02-20T17:07:50+05:30'
+  summary: Apple is hoping its latest, lower cost iPhone model will boost sales of
+    its flagship device.
+  guid: https://www.bbc.com/news/articles/cvgw30dr0w3o#0
+  hash: bce9a9f621627c1a9af60566e2b950fd
+  timestamp: '2025-02-20T17:45:19.272032+05:30'
+  fetched_at: 2025-02-20 17:45:19 IST
 - title: Apple gambles on new iPhone with AI features at lower cost
   link: https://www.bbc.com/news/articles/cvgw30dr0w3o
   published: '2025-02-19T23:17:31+05:30'
@@ -16,6 +34,15 @@
   hash: d1a44835f7ae5b406e13d038ba2311f5
   timestamp: '2025-02-19T23:41:29.244212+05:30'
   fetched_at: 2025-02-19 23:41:29 IST
+- title: 'Tech Life: Human life under the oceans'
+  link: https://www.bbc.co.uk/sounds/play/w3ct5wnk
+  published: '2025-02-19T02:02:00+05:30'
+  summary: Plans are underway for humans to live and work in underwater habitats for
+    long durations
+  guid: https://www.bbc.co.uk/sounds/play/w3ct5wnk#3
+  hash: 5bd4ecb24cf2cfc80998e927cd59a760
+  timestamp: '2025-02-20T17:45:19.272275+05:30'
+  fetched_at: 2025-02-20 17:45:19 IST
 - title: '''Hopeless'' to potentially handy: law firm puts AI to the test'
   link: https://www.bbc.com/news/articles/c743j83d8kzo
   published: '2025-02-18T17:45:05+05:30'
@@ -869,30 +896,3 @@
   hash: e765d235f3e2d793f5935a68ed56ff24
   timestamp: '2025-01-24T17:44:37.524007+05:30'
   fetched_at: 2025-01-24 17:44:37 IST
-- title: ChatGPT back online after outage which hit thousands worldwide
-  link: https://www.bbc.com/news/articles/c30d80lg579o
-  published: '2025-01-23T21:06:02+05:30'
-  summary: It comes a day after owner OpenAI announced a massive investment in artificial
-    intelligence (AI).
-  guid: https://www.bbc.com/news/articles/c30d80lg579o#0
-  hash: 5b1be5a35d99d19f2b24f0e7c721eac2
-  timestamp: '2025-01-23T23:41:01.211990+05:30'
-  fetched_at: 2025-01-23 23:41:01 IST
-- title: Reddit groups ban X links in protest at Musk arm gesture
-  link: https://www.bbc.com/news/articles/c77r1p887e5o
-  published: '2025-01-23T17:15:11+05:30'
-  summary: Moderators of groups with millions of users say the block is a result of
-    the billionaire's on-stage gesture.
-  guid: https://www.bbc.com/news/articles/c77r1p887e5o#0
-  hash: 4f92a6cbcd164577e5e01551bcc26847
-  timestamp: '2025-01-23T17:45:19.524461+05:30'
-  fetched_at: 2025-01-23 17:45:19 IST
-- title: LinkedIn accused of using private messages to train AI
-  link: https://www.bbc.com/news/articles/cdxevpzy3yko
-  published: '2025-01-23T09:46:46+05:30'
-  summary: The lawsuit alleges LinkedIn tried to conceal its actions but the firm
-    says the claims are false.
-  guid: https://www.bbc.com/news/articles/cdxevpzy3yko#0
-  hash: 73e4d3cd88a1e541189b5938f11a7556
-  timestamp: '2025-01-23T11:41:51.275782+05:30'
-  fetched_at: 2025-01-23 11:41:51 IST
