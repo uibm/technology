@@ -1,3 +1,21 @@
+- title: Banks pay customers millions after month's worth of IT outages
+  link: https://www.bbc.com/news/articles/cjd3yzx3xgvo
+  published: '2025-03-06T17:37:41+05:30'
+  summary: MPs have discovered banking services went offline for more than 800 hours
+    over a two year period.
+  guid: https://www.bbc.com/news/articles/cjd3yzx3xgvo#0
+  hash: b3afef66afa45452f0ddd94bafbed181
+  timestamp: '2025-03-06T17:46:04.612074+05:30'
+  fetched_at: 2025-03-06 17:46:04 IST
+- title: I wish my job didn't exist - the team that has to find child abuse images
+  link: https://www.bbc.com/news/articles/ckg843y8y7no
+  published: '2025-03-06T17:32:06+05:30'
+  summary: Mabel works for a firm that trawls the internet looking to remove the worst
+    indecent images.
+  guid: https://www.bbc.com/news/articles/ckg843y8y7no#0
+  hash: af03e78f4936e8339d3be8c2a6d49a3b
+  timestamp: '2025-03-06T17:46:04.612417+05:30'
+  fetched_at: 2025-03-06 17:46:04 IST
 - title: '''I look at hundreds of child sex abuse images every week to stop them'''
   link: https://www.bbc.com/news/articles/ckg843y8y7no
   published: '2025-03-06T11:37:28+05:30'
@@ -882,21 +900,3 @@
   hash: 04b5a4c5b66f285e55cfe17557360794
   timestamp: '2025-02-03T06:10:08.111986+05:30'
   fetched_at: 2025-02-03 06:10:08 IST
-- title: Barclays working to update account balances after tech outage
-  link: https://www.bbc.com/news/articles/c5y7dpdje6xo
-  published: '2025-02-02T20:31:27+05:30'
-  summary: The bank says a technical issue, which began on Friday and impacted the
-    its app, online banking and payments, has been resolved.
-  guid: https://www.bbc.com/news/articles/c5y7dpdje6xo#0
-  hash: 57a4761c7ce7400bbf95c710b9010e59
-  timestamp: '2025-02-02T23:39:48.420331+05:30'
-  fetched_at: 2025-02-02 23:39:48 IST
-- title: Barclays says payment issues resolved after tech outage
-  link: https://www.bbc.com/news/articles/c5y7dpdje6xo
-  published: '2025-02-02T16:10:20+05:30'
-  summary: The bank says a technical issue, which began on Friday and impacted the
-    its app, online banking and payments, has been resolved.
-  guid: https://www.bbc.com/news/articles/c5y7dpdje6xo#0
-  hash: 5da174e7373474507da074a24fdf5dc5
-  timestamp: '2025-02-02T17:42:55.238983+05:30'
-  fetched_at: 2025-02-02 17:42:55 IST
