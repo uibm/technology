@@ -7,6 +7,15 @@
   hash: 79a9e29eb108832c443bf457988541a5
   timestamp: '2025-03-11T06:11:26.763373+05:30'
   fetched_at: 2025-03-11 06:11:26 IST
+- title: 'From chatbots to intelligent toys: How AI is booming in China'
+  link: https://www.bbc.com/news/articles/ckg8jqj393eo
+  published: '2025-03-11T04:04:20+05:30'
+  summary: China plans to invest more than a trillion dollars as it races against
+    the US to rule advanced tech.
+  guid: https://www.bbc.com/news/articles/ckg8jqj393eo#0
+  hash: 3722a179b415995fb8370b6a58a7186a
+  timestamp: '2025-03-11T11:42:52.353242+05:30'
+  fetched_at: 2025-03-11 11:42:52 IST
 - title: Software bug at firm left NHS data 'vulnerable to hackers'
   link: https://www.bbc.com/news/articles/c5yxv7wylz7o
   published: '2025-03-10T06:54:16+05:30'
@@ -890,12 +899,3 @@
   hash: c9abd93e591a270f4614702cae6510c5
   timestamp: '2025-02-07T11:42:26.203223+05:30'
   fetched_at: 2025-02-07 11:42:26 IST
-- title: Google remakes Super Bowl ad after AI cheese gaffe
-  link: https://www.bbc.com/news/articles/cx2j15r1g09o
-  published: '2025-02-06T19:01:58+05:30'
-  summary: Its Gemini tool wildly overestimated global gouda consumption in ad that
-    was meant to show off its capabilities.
-  guid: https://www.bbc.com/news/articles/cx2j15r1g09o#0
-  hash: 3b3dac3a02643f4e95125549d9a8d7d2
-  timestamp: '2025-02-06T23:40:57.670198+05:30'
-  fetched_at: 2025-02-06 23:40:57 IST
