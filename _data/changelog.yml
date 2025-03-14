@@ -1,3 +1,12 @@
+- title: Apple encrypted data row hearing begins in secret
+  link: https://www.bbc.com/news/articles/c9vy0m8ggz3o
+  published: '2025-03-14T22:50:31+05:30'
+  summary: The BBC - along with civil liberties groups and some US politicians - argue
+    the case should be heard in public.
+  guid: https://www.bbc.com/news/articles/c9vy0m8ggz3o#0
+  hash: fd638866c02500e2492491ff40f873f5
+  timestamp: '2025-03-14T23:41:19.448543+05:30'
+  fetched_at: 2025-03-14 23:41:19 IST
 - title: Two judges order Trump administration to give fired workers their jobs back
   link: https://www.bbc.com/news/articles/cgj5w052x3xo
   published: '2025-03-14T16:48:23+05:30'
@@ -890,12 +899,3 @@
   hash: 8f1666db0c93de0830d6691815d146e5
   timestamp: '2025-02-11T23:39:49.078908+05:30'
   fetched_at: 2025-02-11 23:39:49 IST
-- title: AI chatbots unable to accurately summarise news, BBC finds
-  link: https://www.bbc.com/news/articles/c0m17d8827ko
-  published: '2025-02-11T16:03:06+05:30'
-  summary: The BBC's head of news and current affairs says the developers of the tools
-    are "playing with fire."
-  guid: https://www.bbc.com/news/articles/c0m17d8827ko#0
-  hash: 17df544e7ceb9706de0746350a44611a
-  timestamp: '2025-02-11T17:45:30.297779+05:30'
-  fetched_at: 2025-02-11 17:45:30 IST
