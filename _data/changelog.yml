@@ -7,6 +7,15 @@
   hash: 4d359941353a4bfb62a1166e80dea45a
   timestamp: '2025-03-19T11:42:59.112075+05:30'
   fetched_at: 2025-03-19 11:42:59 IST
+- title: 'Tech Life: Archiving achievement'
+  link: https://www.bbc.co.uk/sounds/play/w3ct5wnp
+  published: '2025-03-19T02:00:00+05:30'
+  summary: How the US government’s crackdown on diversity deleted women’s military
+    contributions.
+  guid: https://www.bbc.co.uk/sounds/play/w3ct5wnp#3
+  hash: 169752d4e7fcf61a3f8146ad8b434a1f
+  timestamp: '2025-03-19T23:42:25.145788+05:30'
+  fetched_at: 2025-03-19 23:42:25 IST
 - title: Subsea fibre cables can 'listen out' for sabotage
   link: https://www.bbc.com/news/articles/cn52rglxr62o
   published: '2025-03-18T06:57:38+05:30'
@@ -888,13 +897,4 @@
   guid: https://www.bbc.com/news/articles/c5y6eq2zxlno#0
   hash: a054c6785461a87dcfae7bfa60962287
   timestamp: '2025-02-13T17:45:12.791927+05:30'
-  fetched_at: 2025-02-13 17:45:12 IST
-- title: Unofficial TikTok downloads surge in the US
-  link: https://www.bbc.com/news/articles/cqldw5y4y0no
-  published: '2025-02-13T16:22:34+05:30'
-  summary: Many people are turning to so-called "sideloading" because the app is unavailable
-    on official stores.
-  guid: https://www.bbc.com/news/articles/cqldw5y4y0no#0
-  hash: deea03d50029fa054198c0759c02472d
-  timestamp: '2025-02-13T17:45:12.791656+05:30'
   fetched_at: 2025-02-13 17:45:12 IST
