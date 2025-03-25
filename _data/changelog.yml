@@ -1,3 +1,12 @@
+- title: What is the Signal messaging app and how secure is it?
+  link: https://www.bbc.com/news/articles/c1kjd091019o
+  published: '2025-03-25T20:24:20+05:30'
+  summary: Experts say using even such a privacy-focussed platform for national security
+    matters is very unusual.
+  guid: https://www.bbc.com/news/articles/c1kjd091019o#0
+  hash: e941c3e0cc72faac035c586ec8a3cd3d
+  timestamp: '2025-03-25T23:42:18.357671+05:30'
+  fetched_at: 2025-03-25 23:42:18 IST
 - title: Chinese electric carmaker BYD sales beat Tesla
   link: https://www.bbc.com/news/articles/cd65d583qvzo
   published: '2025-03-25T08:54:09+05:30'
@@ -888,13 +897,4 @@
   guid: https://www.bbc.com/news/articles/c1w07nq8qqqo#0
   hash: d39223911abdcc64f483b0f21acf3e69
   timestamp: '2025-02-18T17:45:31.919970+05:30'
-  fetched_at: 2025-02-18 17:45:31 IST
-- title: DeepSeek 'shared user data' with TikTok owner ByteDance
-  link: https://www.bbc.com/news/articles/c4gex0x87g4o
-  published: '2025-02-18T17:10:23+05:30'
-  summary: South Korea's data protection regulator says user data was sent to the
-    Chinese owner of TikTok.
-  guid: https://www.bbc.com/news/articles/c4gex0x87g4o#0
-  hash: 72431eba97a9145df63357ce7fdd424c
-  timestamp: '2025-02-18T17:45:31.919704+05:30'
   fetched_at: 2025-02-18 17:45:31 IST
