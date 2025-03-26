@@ -1,3 +1,12 @@
+- title: 23andMe users struggle to delete their highly sensitive data
+  link: https://www.bbc.com/news/articles/cddy8d63262o
+  published: '2025-03-26T22:12:57+05:30'
+  summary: Multiple users said they had problems after the DNA-testing firm filed
+    for bankruptcy protection.
+  guid: https://www.bbc.com/news/articles/cddy8d63262o#0
+  hash: d993fb94a9d7b8d9ce0a4cf1e853b8df
+  timestamp: '2025-03-26T23:42:32.037183+05:30'
+  fetched_at: 2025-03-26 23:42:32 IST
 - title: Tech Life
   link: https://www.bbc.co.uk/sounds/play/w3ct5wnq
   published: '2025-03-26T02:02:00+05:30'
@@ -61,6 +70,15 @@
   hash: 081afbe608cae4c984b3c7657eb0861d
   timestamp: '2025-03-23T17:44:25.315871+05:30'
   fetched_at: 2025-03-23 17:44:25 IST
+- title: Honest or unrealistic? Roblox boss's online safety advice sparks debate
+  link: https://www.bbc.com/news/articles/clynwgdrr48o
+  published: '2025-03-22T06:24:21+05:30'
+  summary: Hundreds of people contacted the BBC after Dave Baszucki spoke about safety
+    on the hugely popular gaming platform.
+  guid: https://www.bbc.com/news/articles/clynwgdrr48o#0
+  hash: 841cf51eaeca6ff726dde974a74ee7d4
+  timestamp: '2025-03-26T23:42:32.037468+05:30'
+  fetched_at: 2025-03-26 23:42:32 IST
 - title: Honest or unrealistic? Roblox boss' online safety advice sparks debate
   link: https://www.bbc.com/news/articles/clynwgdrr48o
   published: '2025-03-22T06:24:21+05:30'
@@ -880,21 +898,3 @@
   hash: d1a44835f7ae5b406e13d038ba2311f5
   timestamp: '2025-02-19T23:41:29.244212+05:30'
   fetched_at: 2025-02-19 23:41:29 IST
-- title: 'Tech Life: Human life under the oceans'
-  link: https://www.bbc.co.uk/sounds/play/w3ct5wnk
-  published: '2025-02-19T02:02:00+05:30'
-  summary: Plans are underway for humans to live and work in underwater habitats for
-    long durations
-  guid: https://www.bbc.co.uk/sounds/play/w3ct5wnk#3
-  hash: 5bd4ecb24cf2cfc80998e927cd59a760
-  timestamp: '2025-02-20T17:45:19.272275+05:30'
-  fetched_at: 2025-02-20 17:45:19 IST
-- title: '''Hopeless'' to potentially handy: law firm puts AI to the test'
-  link: https://www.bbc.com/news/articles/c743j83d8kzo
-  published: '2025-02-18T17:45:05+05:30'
-  summary: Despite 'incredible' progress AI tools still aren't up to the level of
-    even a junior lawyer, research suggests.
-  guid: https://www.bbc.com/news/articles/c743j83d8kzo#0
-  hash: c50d47678cdf1fae1451c6269ebd695e
-  timestamp: '2025-02-18T23:41:59.772205+05:30'
-  fetched_at: 2025-02-18 23:41:59 IST
