@@ -1,3 +1,29 @@
+- title: Apple's encryption row with UK should not be secret, court rules
+  link: https://www.bbc.com/news/articles/cvgn1lz3v4no
+  published: '2025-04-07T17:41:12+05:30'
+  summary: The UK government sought to keep details of its row with Apple over requested
+    access to its encrypted cloud storage tool private.
+  guid: https://www.bbc.com/news/articles/cvgn1lz3v4no#0
+  hash: c34eb870b4fb7dedd19c380310762a31
+  timestamp: '2025-04-07T17:46:59.855257+05:30'
+  fetched_at: 2025-04-07 17:46:59 IST
+- title: Elon Musk's X to clamp down on parody accounts
+  link: https://www.bbc.com/news/articles/c4g37elkrxdo
+  published: '2025-04-07T16:29:09+05:30'
+  summary: Some users have complained about Elon Musk parody accounts on the platform.
+  guid: https://www.bbc.com/news/articles/c4g37elkrxdo#0
+  hash: c0681a5afb9edc399bcd790a4682ed02
+  timestamp: '2025-04-07T17:46:59.855532+05:30'
+  fetched_at: 2025-04-07 17:46:59 IST
+- title: Tech Now
+  link: https://www.bbc.co.uk/iplayer/episode/m0029w34
+  published: '2025-04-05T06:30:00+05:30'
+  summary: Marc Cieslak has the highlights from the Game Developer Conference in San
+    Francisco.
+  guid: https://www.bbc.co.uk/iplayer/episode/m0029w34#4
+  hash: 608c0a6db36284680d4bac0154911c87
+  timestamp: '2025-04-07T17:46:59.855809+05:30'
+  fetched_at: 2025-04-07 17:46:59 IST
 - title: Who's trying to buy TikTok?
   link: https://www.bbc.com/news/articles/clyng762q4eo
   published: '2025-04-05T05:43:30+05:30'
@@ -79,6 +105,15 @@
   hash: f5371b5aa566d8f0f0b3ae5699a7ea41
   timestamp: '2025-04-04T11:42:59.770190+05:30'
   fetched_at: 2025-04-04 11:42:59 IST
+- title: Business Daily
+  link: https://www.bbc.co.uk/sounds/play/w3ct6rrt
+  published: '2025-04-04T04:31:00+05:30'
+  summary: It's one of the world's biggest companies - we get exclusive access to
+    the Seattle HQ
+  guid: https://www.bbc.co.uk/sounds/play/w3ct6rrt#5
+  hash: 5fe7fe72796fec1e607f10df7757b700
+  timestamp: '2025-04-07T17:46:59.856143+05:30'
+  fetched_at: 2025-04-07 17:46:59 IST
 - title: I played the £75 Mario Kart World on Switch 2 - was it worth it?
   link: https://www.bbc.com/news/articles/cy9vjn9rg72o
   published: '2025-04-03T18:35:17+05:30'
@@ -861,39 +896,3 @@
   hash: b1e5025c282a475177ca8c4ea6e5b45a
   timestamp: '2025-03-05T06:11:40.098641+05:30'
   fetched_at: 2025-03-05 06:11:40 IST
-- title: Hellblade 2 leads the way at Bafta Games Awards
-  link: https://www.bbc.com/news/articles/c201p1w53ypo
-  published: '2025-03-04T19:41:09+05:30'
-  summary: Astro Bot, Still Wakes the Deep and Thank Goodness You're Here! complete
-    a varied field this year.
-  guid: https://www.bbc.com/news/articles/c201p1w53ypo#0
-  hash: 1ad0d071853daa34f7f5ddae8495a774
-  timestamp: '2025-03-04T23:41:58.071977+05:30'
-  fetched_at: 2025-03-04 23:41:58 IST
-- title: Man threatens to kill Twitch streamers during livestream from LA
-  link: https://www.bbc.com/news/articles/cn4ygnmj7jno
-  published: '2025-03-04T14:59:59+05:30'
-  summary: Cinna, Valkyrae and Emiru were streaming in LA when a man chased and threatened
-    to kill them.
-  guid: https://www.bbc.com/news/articles/cn4ygnmj7jno#0
-  hash: 7be64b2f0f9a60c611b152ba080c1f7c
-  timestamp: '2025-03-04T17:45:34.194847+05:30'
-  fetched_at: 2025-03-04 17:45:34 IST
-- title: Hegseth orders pause in US cyber-offensive against Russia
-  link: https://www.bbc.com/news/articles/c2er34w0jgdo
-  published: '2025-03-03T16:49:52+05:30'
-  summary: The reported directive from the defence secretary comes during an American
-    push to end the war in Ukraine.
-  guid: https://www.bbc.com/news/articles/c2er34w0jgdo#0
-  hash: 3a521cfbc546984d4b7f10f1b113d4f1
-  timestamp: '2025-03-03T17:46:32.805096+05:30'
-  fetched_at: 2025-03-03 17:46:32 IST
-- title: TikTok investigated over use of children's data
-  link: https://www.bbc.com/news/articles/c62xxz141plo
-  published: '2025-03-03T11:40:56+05:30'
-  summary: It will look into how the social media platform uses the data of 13 to
-    17-year-olds to recommend content.
-  guid: https://www.bbc.com/news/articles/c62xxz141plo#0
-  hash: ebabba3da1cd4e713d027a7e3f9cb135
-  timestamp: '2025-03-03T17:46:32.805344+05:30'
-  fetched_at: 2025-03-03 17:46:32 IST
