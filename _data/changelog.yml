@@ -1,3 +1,11 @@
+- title: What are semiconductors and why is Trump targeting them?
+  link: https://www.bbc.co.uk/news/technology-66394406
+  published: '2025-04-14T17:34:16+05:30'
+  summary: The US president has said he will unveil new tariffs targeting some electronics.
+  guid: https://www.bbc.co.uk/news/technology-66394406#0
+  hash: 5bebb4e42062d4c18e5b8d9820890747
+  timestamp: '2025-04-14T23:42:37.250498+05:30'
+  fetched_at: 2025-04-14 23:42:37 IST
 - title: PS5 price jumps £40 as Sony cites 'challenging' market conditions
   link: https://www.bbc.com/news/articles/ce82391x2kyo
   published: '2025-04-14T15:37:20+05:30'
@@ -16,6 +24,14 @@
   hash: bc47ab30ed840d1d46646f6bab7f9d52
   timestamp: '2025-04-14T06:16:16.786274+05:30'
   fetched_at: 2025-04-14 06:16:16 IST
+- title: Tech Now
+  link: https://www.bbc.co.uk/iplayer/episode/m002b37k
+  published: '2025-04-12T06:30:00+05:30'
+  summary: Could nuclear fusion supply endless clean energy?
+  guid: https://www.bbc.co.uk/iplayer/episode/m002b37k#4
+  hash: 244d16f19beaa912434e8a99e4119f4b
+  timestamp: '2025-04-14T23:42:37.250892+05:30'
+  fetched_at: 2025-04-14 23:42:37 IST
 - title: Everyone's jumping on the AI doll trend - but what are the concerns?
   link: https://www.bbc.com/news/articles/c5yg690e9eno
   published: '2025-04-12T04:58:02+05:30'
@@ -879,21 +895,3 @@
   hash: 36bf9cd60d0db1b9d80f0c75ae38c619
   timestamp: '2025-03-08T06:02:29.573269+05:30'
   fetched_at: 2025-03-08 06:02:29 IST
-- title: Granny gets X-rated message after Apple AI fail
-  link: https://www.bbc.com/news/articles/c0l1kpz3w32o
-  published: '2025-03-07T22:45:19+05:30'
-  summary: Louise Littlejohn said she was shocked and then laughed when she received
-    the error strewn voicemail transcription.
-  guid: https://www.bbc.com/news/articles/c0l1kpz3w32o#0
-  hash: f69a4346aad45f3ff4cec6701f838a70
-  timestamp: '2025-03-07T23:41:24.222210+05:30'
-  fetched_at: 2025-03-07 23:41:24 IST
-- title: Plan to make phone use safer for teens watered down
-  link: https://www.bbc.com/news/articles/cq8y7dvw9ddo
-  published: '2025-03-07T22:17:03+05:30'
-  summary: The MP behind the bill says proposals have been altered in a bid to gain
-    government support.
-  guid: https://www.bbc.com/news/articles/cq8y7dvw9ddo#0
-  hash: 7920517a289fd3903bfebded83bafce1
-  timestamp: '2025-03-07T23:41:24.222503+05:30'
-  fetched_at: 2025-03-07 23:41:24 IST
