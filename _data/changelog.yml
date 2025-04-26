@@ -471,6 +471,15 @@
   timestamp: '2025-04-07T17:46:59.855532+05:30'
   fetched_at: 2025-04-07 17:46:59 IST
 - title: Tech Now
+  link: https://www.bbc.co.uk/iplayer/live/bbcnews
+  published: '2025-04-05T06:30:00+05:30'
+  summary: Marc Cieslak has the highlights from the Game Developer Conference in San
+    Francisco.
+  guid: https://www.bbc.co.uk/iplayer/live/bbcnews#4
+  hash: 5417b9de243372d778b056d412b06449
+  timestamp: '2025-04-26T06:12:42.126519+05:30'
+  fetched_at: 2025-04-26 06:12:42 IST
+- title: Tech Now
   link: https://www.bbc.co.uk/iplayer/episode/m0029w34
   published: '2025-04-05T06:30:00+05:30'
   summary: Marc Cieslak has the highlights from the Game Developer Conference in San
@@ -884,12 +893,3 @@
   hash: 081afbe608cae4c984b3c7657eb0861d
   timestamp: '2025-03-23T17:44:25.315871+05:30'
   fetched_at: 2025-03-23 17:44:25 IST
-- title: Honest or unrealistic? Roblox boss's online safety advice sparks debate
-  link: https://www.bbc.com/news/articles/clynwgdrr48o
-  published: '2025-03-22T06:24:21+05:30'
-  summary: Hundreds of people contacted the BBC after Dave Baszucki spoke about safety
-    on the hugely popular gaming platform.
-  guid: https://www.bbc.com/news/articles/clynwgdrr48o#0
-  hash: 841cf51eaeca6ff726dde974a74ee7d4
-  timestamp: '2025-03-26T23:42:32.037468+05:30'
-  fetched_at: 2025-03-26 23:42:32 IST
