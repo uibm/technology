@@ -1,3 +1,12 @@
+- title: 'Co-op cyber attack: Staff urged to keep cameras on in meetings'
+  link: https://www.bbc.com/news/articles/cg72k851dd8o
+  published: '2025-05-01T15:51:22+05:30'
+  summary: Experts say the instruction suggests the company fears hackers could be
+    lurking on calls.
+  guid: https://www.bbc.com/news/articles/cg72k851dd8o#0
+  hash: 6faa9450f6f8c11660dd0f1cae9667f0
+  timestamp: '2025-05-01T17:46:14.766541+05:30'
+  fetched_at: 2025-05-01 17:46:14 IST
 - title: Apple referred for possible criminal contempt investigation
   link: https://www.bbc.com/news/articles/c62xv43xqq5o
   published: '2025-05-01T07:24:35+05:30'
@@ -52,6 +61,15 @@
   hash: 975f1486b283b3f6a12a563a749571f5
   timestamp: '2025-04-30T06:14:31.444133+05:30'
   fetched_at: 2025-04-30 06:14:31 IST
+- title: Tech Life
+  link: https://www.bbc.co.uk/sounds/play/w3ct6znm
+  published: '2025-04-30T01:00:00+05:30'
+  summary: The space mission to better understand how forests affect climate change
+    on Earth.
+  guid: https://www.bbc.co.uk/sounds/play/w3ct6znm#5
+  hash: 784fdf73cbc2958c64fd042707044d7d
+  timestamp: '2025-05-01T17:46:14.766918+05:30'
+  fetched_at: 2025-05-01 17:46:14 IST
 - title: Why is the M&S cyber attack chaos taking so long to resolve?
   link: https://www.bbc.com/news/articles/cz79547nywno
   published: '2025-04-29T20:42:19+05:30'
@@ -213,6 +231,15 @@
   hash: f2d664973c9c1a9c94c4d160af13e2ae
   timestamp: '2025-04-23T06:13:49.624809+05:30'
   fetched_at: 2025-04-23 06:13:49 IST
+- title: Tech Life
+  link: https://www.bbc.co.uk/sounds/play/w3ct6znl
+  published: '2025-04-23T01:00:00+05:30'
+  summary: Artificial intelligence is being used to unlock the mysteries of dolphin
+    communication.
+  guid: https://www.bbc.co.uk/sounds/play/w3ct6znl#5
+  hash: 5f4e6c5e146695128f6c79745303d761
+  timestamp: '2025-05-01T17:46:14.767070+05:30'
+  fetched_at: 2025-05-01 17:46:14 IST
 - title: Cyber attack on M&S leads to click and collect delays
   link: https://www.bbc.com/news/articles/c9djvzwn858o
   published: '2025-04-22T22:18:23+05:30'
@@ -383,6 +410,14 @@
   hash: b027105b41be322f98904983d11b5a1a
   timestamp: '2025-04-16T06:14:22.521378+05:30'
   fetched_at: 2025-04-16 06:14:22 IST
+- title: Tech Life
+  link: https://www.bbc.co.uk/sounds/play/w3ct6znk
+  published: '2025-04-16T01:00:00+05:30'
+  summary: What is AI discrimination, and can it be fixed ?
+  guid: https://www.bbc.co.uk/sounds/play/w3ct6znk#5
+  hash: 18e3c5367cc2006263e1b961fd74d261
+  timestamp: '2025-05-01T17:46:14.767217+05:30'
+  fetched_at: 2025-05-01 17:46:14 IST
 - title: Minister's X account hacked to promote crypto scam
   link: https://www.bbc.com/news/articles/cr5drp0n8zjo
   published: '2025-04-15T16:56:55+05:30'
@@ -857,39 +892,3 @@
   hash: 0a7af722f87f11667293afd3994a149e
   timestamp: '2025-03-28T06:12:01.060504+05:30'
   fetched_at: 2025-03-28 06:12:01 IST
-- title: H&M to use digital clones of models in ads and social media
-  link: https://www.bbc.com/news/articles/c3vwg73xndeo
-  published: '2025-03-27T20:14:02+05:30'
-  summary: Some fear the move could mean less work for models, photographers and make-up
-    artists.
-  guid: https://www.bbc.com/news/articles/c3vwg73xndeo#0
-  hash: 15a0d30aa673772e4a4a7084166c79ce
-  timestamp: '2025-03-27T23:42:08.597732+05:30'
-  fetched_at: 2025-03-27 23:42:08 IST
-- title: OnlyFans fined over user age-check information failings
-  link: https://www.bbc.com/news/articles/cr42g1lprw5o
-  published: '2025-03-27T17:03:19+05:30'
-  summary: The site - which is known for hosting explicit material - gave inaccurate
-    information about age verification.
-  guid: https://www.bbc.com/news/articles/cr42g1lprw5o#0
-  hash: 8de00bef75ddfd064ac4654c25658592
-  timestamp: '2025-03-27T17:46:47.639063+05:30'
-  fetched_at: 2025-03-27 17:46:47 IST
-- title: Social media ban not practical or effective, teens say
-  link: https://www.bbc.com/news/articles/c8x40qplk15o
-  published: '2025-03-27T13:51:27+05:30'
-  summary: The youth parliament says it wants more action from MPs and social media
-    companies on violent online content.
-  guid: https://www.bbc.com/news/articles/c8x40qplk15o#0
-  hash: 4e6933ddb42e41ae77fe18f2ed155046
-  timestamp: '2025-03-27T17:46:47.639325+05:30'
-  fetched_at: 2025-03-27 17:46:47 IST
-- title: China tariffs may be cut to seal TikTok sale, Trump says
-  link: https://www.bbc.com/news/articles/c241ezrpg69o
-  published: '2025-03-27T07:22:13+05:30'
-  summary: Trump also said he is willing to extend a 5 April deadline for a non-Chinese
-    buyer of the platform to be found.
-  guid: https://www.bbc.com/news/articles/c241ezrpg69o#0
-  hash: 6fb8a33f963780ce896414f822300d43
-  timestamp: '2025-03-27T11:42:50.446086+05:30'
-  fetched_at: 2025-03-27 11:42:50 IST
