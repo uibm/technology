@@ -1,3 +1,12 @@
+- title: Delivery delays and empty shelves at Co-op after cyber attack
+  link: https://www.bbc.com/news/articles/cze1eg3z307o
+  published: '2025-05-06T20:55:09+05:30'
+  summary: The retailer says "sustained malicious attempts by hackers" is affecting
+    its IT systems.
+  guid: https://www.bbc.com/news/articles/cze1eg3z307o#0
+  hash: 561f3f7a773034423c3cbf8c72609892
+  timestamp: '2025-05-06T23:42:55.517673+05:30'
+  fetched_at: 2025-05-06 23:42:55 IST
 - title: The people refusing to use AI
   link: https://www.bbc.com/news/articles/c15q5qzdjqxo
   published: '2025-05-06T04:46:41+05:30'
@@ -883,13 +892,4 @@
   guid: https://www.bbc.com/news/articles/c62gj52qjjlo#0
   hash: 15bc88369c75fb92d21a2790885c6148
   timestamp: '2025-04-03T17:46:22.273959+05:30'
-  fetched_at: 2025-04-03 17:46:22 IST
-- title: '''Google AI presented my April Fools'' story as real news'''
-  link: https://www.bbc.com/news/articles/cly12egqq5ko
-  published: '2025-04-03T10:44:06+05:30'
-  summary: Journalist Ben Black was "shocked" to discover his fake news from five
-    years ago used by AI.
-  guid: https://www.bbc.com/news/articles/cly12egqq5ko#0
-  hash: 29705e0533750766c12a49dd33a4a051
-  timestamp: '2025-04-03T17:46:22.274212+05:30'
   fetched_at: 2025-04-03 17:46:22 IST
