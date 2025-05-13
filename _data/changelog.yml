@@ -1,3 +1,12 @@
+- title: M&S says customer data stolen in cyber attack
+  link: https://www.bbc.com/news/articles/c62v34zv828o
+  published: '2025-05-13T23:18:13+05:30'
+  summary: The retail giant is still not taking online orders following a cyber attack
+    three weeks ago.
+  guid: https://www.bbc.com/news/articles/c62v34zv828o#0
+  hash: b22937bed6f399bf6f231a730ab0c079
+  timestamp: '2025-05-13T23:43:01.877976+05:30'
+  fetched_at: 2025-05-13 23:43:01 IST
 - title: US cuts tariffs on small parcels from Chinese firms like Shein and Temu
   link: https://www.bbc.com/news/articles/c308pg239n1o
   published: '2025-05-13T11:05:09+05:30'
@@ -884,12 +893,3 @@
   hash: d7967a7015abc17f6d889665f330635b
   timestamp: '2025-04-08T06:12:23.064570+05:30'
   fetched_at: 2025-04-08 06:12:23 IST
-- title: Apple's encryption row with UK should not be secret, court rules
-  link: https://www.bbc.com/news/articles/cvgn1lz3v4no
-  published: '2025-04-07T17:41:12+05:30'
-  summary: The UK government sought to keep details of its row with Apple over requested
-    access to its encrypted cloud storage tool private.
-  guid: https://www.bbc.com/news/articles/cvgn1lz3v4no#0
-  hash: c34eb870b4fb7dedd19c380310762a31
-  timestamp: '2025-04-07T17:46:59.855257+05:30'
-  fetched_at: 2025-04-07 17:46:59 IST
