@@ -1,3 +1,12 @@
+- title: Co-op says shelves to be more fully stocked this weekend
+  link: https://www.bbc.com/news/articles/ckg4zrpk5p7o
+  published: '2025-05-14T16:27:41+05:30'
+  summary: The grocery chain says it is working with its suppliers to restock shelves
+    after a cyber-attack.
+  guid: https://www.bbc.com/news/articles/ckg4zrpk5p7o#0
+  hash: 9e21723c3afd47c10bba50badf67a65b
+  timestamp: '2025-05-14T17:47:09.432938+05:30'
+  fetched_at: 2025-05-14 17:47:09 IST
 - title: Airbnb offers private chefs and massages as it revamps app
   link: https://www.bbc.com/news/articles/c1mglv2d455o
   published: '2025-05-14T09:28:05+05:30'
@@ -16,6 +25,14 @@
   hash: 00d38f41fdcc09b09bda99ce7400801e
   timestamp: '2025-05-14T06:15:04.394809+05:30'
   fetched_at: 2025-05-14 06:15:04 IST
+- title: Tech Life
+  link: https://www.bbc.co.uk/sounds/play/w3ct6znp
+  published: '2025-05-14T01:00:00+05:30'
+  summary: Young people from marginalised groups tell of the online abuse they receive.
+  guid: https://www.bbc.co.uk/sounds/play/w3ct6znp#4
+  hash: 934402f3a8afa2d4f2177ab995b4da20
+  timestamp: '2025-05-14T17:47:09.433427+05:30'
+  fetched_at: 2025-05-14 17:47:09 IST
 - title: M&S says customer data stolen in cyber attack
   link: https://www.bbc.com/news/articles/c62v34zv828o
   published: '2025-05-13T23:18:13+05:30'
@@ -168,6 +185,15 @@
   hash: 12e414a93580a6b50f47fbc7d669f20d
   timestamp: '2025-05-07T17:47:54.496159+05:30'
   fetched_at: 2025-05-07 17:47:54 IST
+- title: Customers complain as empty shelves continue at Co-op after hack
+  link: https://www.bbc.com/news/articles/cze1eg3z307o
+  published: '2025-05-06T20:55:09+05:30'
+  summary: The retailer says "sustained malicious attempts by hackers" is affecting
+    its IT systems.
+  guid: https://www.bbc.com/news/articles/cze1eg3z307o#2
+  hash: a9d7d3289b9f8bb96e03ff65bf08e10b
+  timestamp: '2025-05-14T17:47:09.433234+05:30'
+  fetched_at: 2025-05-14 17:47:09 IST
 - title: Delivery delays and empty shelves at Co-op after cyber attack
   link: https://www.bbc.com/news/articles/cze1eg3z307o
   published: '2025-05-06T20:55:09+05:30'
@@ -866,30 +892,3 @@
   hash: 021d50c3670177ed70d094f669eb20bf
   timestamp: '2025-04-09T06:12:34.479137+05:30'
   fetched_at: 2025-04-09 06:12:34 IST
-- title: Tech Life
-  link: https://www.bbc.co.uk/sounds/play/w3ct6znj
-  published: '2025-04-09T01:00:00+05:30'
-  summary: How do you get close enough to study a gigantic mass of ice floating in
-    cold waters ?
-  guid: https://www.bbc.co.uk/sounds/play/w3ct6znj#4
-  hash: 88dd7435537fc3506e654a361ed73469
-  timestamp: '2025-04-10T23:42:29.129994+05:30'
-  fetched_at: 2025-04-10 23:42:29 IST
-- title: Musk labels Trump trade adviser 'moron' over Tesla comments
-  link: https://www.bbc.com/news/articles/cdrgx4ky1xxo
-  published: '2025-04-08T21:33:07+05:30'
-  summary: Peter Navarro had described Musk's electric car company as a "car assembler"
-    rather than manufacturer.
-  guid: https://www.bbc.com/news/articles/cdrgx4ky1xxo#0
-  hash: 1ade09ff90f21ca08d1b669deac1f676
-  timestamp: '2025-04-08T23:41:42.855167+05:30'
-  fetched_at: 2025-04-08 23:41:42 IST
-- title: Meta expands restrictions for teen users to Facebook and Messenger
-  link: https://www.bbc.com/news/articles/cvgqe6yv0yzo
-  published: '2025-04-08T16:48:36+05:30'
-  summary: The system imposes more restricted settings on younger users - though campaigners
-    say it's unclear what difference they make.
-  guid: https://www.bbc.com/news/articles/cvgqe6yv0yzo#0
-  hash: 6d4e2a402c0a6adbedae3c5dda5c1275
-  timestamp: '2025-04-08T17:46:51.807497+05:30'
-  fetched_at: 2025-04-08 17:46:51 IST
