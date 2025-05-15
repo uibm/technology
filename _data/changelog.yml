@@ -1,3 +1,12 @@
+- title: Leading crypto firm Coinbase faces up to $400m hit from cyber attack
+  link: https://www.bbc.com/news/articles/c80k5plpx8do
+  published: '2025-05-15T20:49:08+05:30'
+  summary: The firm says hackers have obtained customer information by paying off
+    employees.
+  guid: https://www.bbc.com/news/articles/c80k5plpx8do#0
+  hash: 44c79194ab8ee8ccd02ede7ce2b802ad
+  timestamp: '2025-05-15T23:43:01.959246+05:30'
+  fetched_at: 2025-05-15 23:43:01 IST
 - title: '''They yanked their own plug'': How Co-op averted an even worse cyber attack'
   link: https://www.bbc.com/news/articles/cwy382w9eglo
   published: '2025-05-15T04:55:06+05:30'
@@ -158,6 +167,15 @@
   hash: 25aef24ffb08df3d69aa730ffb6a9cf8
   timestamp: '2025-05-08T11:44:02.467242+05:30'
   fetched_at: 2025-05-08 11:44:02 IST
+- title: Arizona man shot dead in road rage 'returns' to address his killer
+  link: https://www.bbc.com/news/articles/cq808px90wxo
+  published: '2025-05-08T03:57:48+05:30'
+  summary: With the help of artificial intelligence, a man was 'brought back to life'
+    at his killer's sentencing to deliver a victim's statement himself.
+  guid: https://www.bbc.com/news/articles/cq808px90wxo#2
+  hash: 2b3351606d77b7bbaa8883a1ec63ffca
+  timestamp: '2025-05-15T23:43:01.959600+05:30'
+  fetched_at: 2025-05-15 23:43:01 IST
 - title: Arizona man shot to death in road rage 'returns' to address his killer
   link: https://www.bbc.com/news/articles/cq808px90wxo
   published: '2025-05-08T03:57:48+05:30'
@@ -874,21 +892,3 @@
   hash: 85a26eb3c9a6f46e82f5bde1fa06c9d8
   timestamp: '2025-04-10T23:42:29.129598+05:30'
   fetched_at: 2025-04-10 23:42:29 IST
-- title: Leave school phone bans to head teachers, children's commissioner says
-  link: https://www.bbc.com/news/articles/cly11270npeo
-  published: '2025-04-10T05:36:30+05:30'
-  summary: Dame Rachel de Souza says most schools restrict phone use and children
-    are racking up screen time at home.
-  guid: https://www.bbc.com/news/articles/cly11270npeo#0
-  hash: 363684e1c1e4aab599cfe78693ae0b9e
-  timestamp: '2025-04-10T06:12:35.507300+05:30'
-  fetched_at: 2025-04-10 06:12:35 IST
-- title: First Ofcom probe launched into suicide site exposed by BBC
-  link: https://www.bbc.com/news/articles/c24q1n6905mo
-  published: '2025-04-09T10:30:20+05:30'
-  summary: BBC News found the forum, which has thousands of members, is linked to
-    at least 50 deaths in the UK.
-  guid: https://www.bbc.com/news/articles/c24q1n6905mo#0
-  hash: 207068ea0b833ba9a072bcf81f9f0e59
-  timestamp: '2025-04-09T17:46:20.490608+05:30'
-  fetched_at: 2025-04-09 17:46:20 IST
