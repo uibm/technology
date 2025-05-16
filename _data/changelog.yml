@@ -16,6 +16,15 @@
   hash: a88de0d1af26dd891c8123bb9177bfd6
   timestamp: '2025-05-16T11:43:55.213436+05:30'
   fetched_at: 2025-05-16 11:43:55 IST
+- title: 'The monthly AI or real quiz: May 2025'
+  link: https://www.bbc.co.uk/bitesize/articles/z2b7rmn
+  published: '2025-05-15T22:46:00+05:30'
+  summary: Challenge yourself with this edition of our monthly AI or real quiz and
+    see if you can get top marks!
+  guid: https://www.bbc.co.uk/bitesize/articles/z2b7rmn#5
+  hash: e44d5dd1e1ed08f60c821928eaf9d6b1
+  timestamp: '2025-05-16T17:47:53.761524+05:30'
+  fetched_at: 2025-05-16 17:47:53 IST
 - title: Leading crypto firm Coinbase faces up to $400m hit from cyber attack
   link: https://www.bbc.com/news/articles/c80k5plpx8do
   published: '2025-05-15T20:49:08+05:30'
@@ -883,12 +892,3 @@
   hash: 94b8aa18a60a6c4c9bdbf08d733f2626
   timestamp: '2025-04-12T06:12:11.616371+05:30'
   fetched_at: 2025-04-12 06:12:11 IST
-- title: Microsoft rolls out AI screenshot tool dubbed 'privacy nightmare'
-  link: https://www.bbc.com/news/articles/cj3xjrj7v78o
-  published: '2025-04-11T17:23:57+05:30'
-  summary: Recall had been dubbed a "privacy nightmare" but has made changes since
-    its original launch was pulled.
-  guid: https://www.bbc.com/news/articles/cj3xjrj7v78o#0
-  hash: de171869a7541767b0e5ed92245c321d
-  timestamp: '2025-04-11T17:46:28.880912+05:30'
-  fetched_at: 2025-04-11 17:46:28 IST
