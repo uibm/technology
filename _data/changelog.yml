@@ -7,6 +7,15 @@
   hash: 4e34dcc2194ad654f02d784b47e1f446
   timestamp: '2025-05-16T06:16:15.943963+05:30'
   fetched_at: 2025-05-16 06:16:15 IST
+- title: UK needs more nuclear to power AI, says Amazon boss
+  link: https://www.bbc.com/news/articles/cewd5014wpno
+  published: '2025-05-16T04:42:49+05:30'
+  summary: The world's largest cloud computing company plans to spend £8bn on new
+    data centres in the UK over the next four years.
+  guid: https://www.bbc.com/news/articles/cewd5014wpno#0
+  hash: a88de0d1af26dd891c8123bb9177bfd6
+  timestamp: '2025-05-16T11:43:55.213436+05:30'
+  fetched_at: 2025-05-16 11:43:55 IST
 - title: Leading crypto firm Coinbase faces up to $400m hit from cyber attack
   link: https://www.bbc.com/news/articles/c80k5plpx8do
   published: '2025-05-15T20:49:08+05:30'
@@ -882,13 +891,4 @@
   guid: https://www.bbc.com/news/articles/cj3xjrj7v78o#0
   hash: de171869a7541767b0e5ed92245c321d
   timestamp: '2025-04-11T17:46:28.880912+05:30'
-  fetched_at: 2025-04-11 17:46:28 IST
-- title: OpenAI sues Elon Musk claiming 'bad-faith tactics'
-  link: https://www.bbc.com/news/articles/cg4114271x2o
-  published: '2025-04-10T23:26:16+05:30'
-  summary: Claim follows Mr Musk's own lawsuit earlier this year against OpenAI's
-    Sam Altman.
-  guid: https://www.bbc.com/news/articles/cg4114271x2o#0
-  hash: ee95bc200fc0c16d6f656990ce27b5d0
-  timestamp: '2025-04-11T17:46:28.881171+05:30'
   fetched_at: 2025-04-11 17:46:28 IST
