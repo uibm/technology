@@ -1,3 +1,38 @@
+- title: Cyber attack threat keeps me awake at night, bank boss says
+  link: https://www.bbc.com/news/articles/c4g3372vl3yo
+  published: '2025-05-20T17:31:15+05:30'
+  summary: Ian Stuart, from HSBC, said banks were spending "enormous" sums shoring
+    up their IT systems.
+  guid: https://www.bbc.com/news/articles/c4g3372vl3yo#0
+  hash: 32c0dcebaa590c106327a539a4a4d260
+  timestamp: '2025-05-20T17:47:55.814345+05:30'
+  fetched_at: 2025-05-20 17:47:55 IST
+- title: Fortnite faces complaint from actors' union over AI Darth Vader
+  link: https://www.bbc.com/news/articles/cn844l3eznqo
+  published: '2025-05-20T16:06:25+05:30'
+  summary: Sag-Aftra says the hit video game has used tech to replace human performers.
+  guid: https://www.bbc.com/news/articles/cn844l3eznqo#0
+  hash: 39421b7019a9825a96266412f1f210df
+  timestamp: '2025-05-20T17:47:55.814616+05:30'
+  fetched_at: 2025-05-20 17:47:55 IST
+- title: India's 'Silicon Valley' flooded after heavy rains
+  link: https://www.bbc.com/news/articles/c7800l27ynzo
+  published: '2025-05-20T15:55:25+05:30'
+  summary: Three people have been killed in Bengaluru after the city received heavy
+    rainfall from Sunday night.
+  guid: https://www.bbc.com/news/articles/c7800l27ynzo#0
+  hash: 937a90f519a43c5e83007c9d4c9a16b3
+  timestamp: '2025-05-20T17:47:55.815055+05:30'
+  fetched_at: 2025-05-20 17:47:55 IST
+- title: Tesla battery maker sees shares jump in Hong Kong debut
+  link: https://www.bbc.com/news/articles/c3d4k1derzgo
+  published: '2025-05-20T10:25:31+05:30'
+  summary: China's CATL makes more than a third of electric vehicle batteries sold
+    worldwide and also supplies VW and Toyota.
+  guid: https://www.bbc.com/news/articles/c3d4k1derzgo#0
+  hash: 95e01616653583c369fbc1c0092df45e
+  timestamp: '2025-05-20T17:47:55.814922+05:30'
+  fetched_at: 2025-05-20 17:47:55 IST
 - title: Tesla battery maker sees shares jump on Hong Kong debut
   link: https://www.bbc.com/news/articles/c3d4k1derzgo
   published: '2025-05-20T10:25:31+05:30'
@@ -25,6 +60,15 @@
   hash: ce23c35e2861a6aab48f731b7b2fa8dd
   timestamp: '2025-05-20T06:17:07.760480+05:30'
   fetched_at: 2025-05-20 06:17:07 IST
+- title: Can AI therapists really be an alternative to human help?
+  link: https://www.bbc.com/news/articles/ced2ywg7246o
+  published: '2025-05-20T04:34:34+05:30'
+  summary: With NHS mental health waitlists at record highs, are chatbots a possible
+    solution?
+  guid: https://www.bbc.com/news/articles/ced2ywg7246o#0
+  hash: 9be4013a05db1b4dc2290d42c51cbf6b
+  timestamp: '2025-05-20T17:47:55.814765+05:30'
+  fetched_at: 2025-05-20 17:47:55 IST
 - title: 'My AI therapist got me through dark times: The good and bad of chatbot counselling'
   link: https://www.bbc.com/news/articles/ced2ywg7246o
   published: '2025-05-20T04:34:34+05:30'
@@ -851,48 +895,3 @@
   hash: 40582ada3796bc1fbd7ab98bbf71783b
   timestamp: '2025-04-19T17:44:08.895791+05:30'
   fetched_at: 2025-04-19 17:44:08 IST
-- title: AI dolls are taking over - but real artists are sick of them
-  link: https://www.bbc.com/news/articles/c3v9z45pe93o
-  published: '2025-04-19T06:09:08+05:30'
-  summary: Artists hit back on social media to warn artificial intelligence may be
-    endangering their livelihoods.
-  guid: https://www.bbc.com/news/articles/c3v9z45pe93o#0
-  hash: 881aa23eba2a3c6a3742d095a696ee7b
-  timestamp: '2025-04-19T11:41:46.665879+05:30'
-  fetched_at: 2025-04-19 11:41:46 IST
-- title: 'Designed in US, made in China: Why Apple is stuck'
-  link: https://www.bbc.com/news/articles/czx17361pw1o
-  published: '2025-04-19T04:26:24+05:30'
-  summary: China sits at the heart of Apple's supply chain - and has benefited hugely
-    from it. Can they break up?
-  guid: https://www.bbc.com/news/articles/czx17361pw1o#0
-  hash: 6040623662e91bad3b398899ad4090e4
-  timestamp: '2025-04-19T17:44:08.895522+05:30'
-  fetched_at: 2025-04-19 17:44:08 IST
-- title: 'Nvidia: The AI chip giant caught between US and China'
-  link: https://www.bbc.com/news/articles/cedy6gl99eno
-  published: '2025-04-18T14:12:48+05:30'
-  summary: Led by Jensen Huang, dubbed the 'Taylor Swift of tech', the chip giant
-    has become pivotal in the race for AI supremacy.
-  guid: https://www.bbc.com/news/articles/cedy6gl99eno#0
-  hash: 402f76b7e95f14d5419823c5798f476d
-  timestamp: '2025-04-18T17:45:55.182823+05:30'
-  fetched_at: 2025-04-18 17:45:55 IST
-- title: Google has illegal advertising monopoly, judge rules
-  link: https://www.bbc.com/news/articles/c3674nl7g74o
-  published: '2025-04-17T22:30:51+05:30'
-  summary: It is the second major case Google has lost in a year, after it was found
-    to have a monopoly on online search.
-  guid: https://www.bbc.com/news/articles/c3674nl7g74o#0
-  hash: 72af8019deba7e0995666e38f6ac1bae
-  timestamp: '2025-04-17T23:42:23.224086+05:30'
-  fetched_at: 2025-04-17 23:42:23 IST
-- title: Discord's face scanning age checks 'start of a bigger shift'
-  link: https://www.bbc.com/news/articles/cjr75wypg0vo
-  published: '2025-04-17T17:43:58+05:30'
-  summary: The social platform is testing age checks using facial scanning for access
-    to sensitive content.
-  guid: https://www.bbc.com/news/articles/cjr75wypg0vo#0
-  hash: b73637ca353768ffdf29f300d18ecd35
-  timestamp: '2025-04-17T17:46:36.528260+05:30'
-  fetched_at: 2025-04-17 17:46:36 IST
