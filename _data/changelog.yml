@@ -1,3 +1,21 @@
+- title: M&S website completely down, leaving users unable to browse
+  link: https://www.bbc.com/news/articles/c0k374x1y8do
+  published: '2025-05-22T03:21:37+05:30'
+  summary: 'The site reads: "Sorry you can''t browse the site currently. We''re making
+    some updates and will be back soon."'
+  guid: https://www.bbc.com/news/articles/c0k374x1y8do#0
+  hash: 7f224947deff921be565ea0e377c7cc1
+  timestamp: '2025-05-22T06:15:08.725547+05:30'
+  fetched_at: 2025-05-22 06:15:08 IST
+- title: Famous Apple designer Sir Jony Ive joins OpenAI
+  link: https://www.bbc.com/news/articles/c5y66yemjdmo
+  published: '2025-05-22T03:14:10+05:30'
+  summary: OpenAI is moving into hardware, in a threat to giants such as Sir Jony's
+    former firm.
+  guid: https://www.bbc.com/news/articles/c5y66yemjdmo#0
+  hash: c534ddb663a6ab481c15d5eb322ac602
+  timestamp: '2025-05-22T06:15:08.725816+05:30'
+  fetched_at: 2025-05-22 06:15:08 IST
 - title: UK exposes Russian cyber campaign targeting support for Ukraine
   link: https://www.bbc.com/news/articles/c17rrjdr79po
   published: '2025-05-21T22:07:38+05:30'
@@ -878,21 +896,3 @@
   hash: 0b30944cb1004d866e3a53e302263281
   timestamp: '2025-04-23T23:42:50.453894+05:30'
   fetched_at: 2025-04-23 23:42:50 IST
-- title: EU hits Apple and Meta with €700m of fines
-  link: https://www.bbc.com/news/articles/cm248vzg9jwo
-  published: '2025-04-23T17:13:28+05:30'
-  summary: The tech giants have reacted with fury, accusing the EU of unfairly pursuing
-    US companies.
-  guid: https://www.bbc.com/news/articles/cm248vzg9jwo#0
-  hash: 886dea795c9ee15144c7121bb8688762
-  timestamp: '2025-04-23T17:46:52.548082+05:30'
-  fetched_at: 2025-04-23 17:46:52 IST
-- title: ChatGPT-maker wants to buy Google Chrome
-  link: https://www.bbc.com/news/articles/c1dr6neg766o
-  published: '2025-04-23T15:24:45+05:30'
-  summary: An OpenAI executive told a US judge the company would be interested in
-    buying the popular browser.
-  guid: https://www.bbc.com/news/articles/c1dr6neg766o#0
-  hash: dcda3c169bad5872e8ae9b049442a13a
-  timestamp: '2025-04-23T17:46:52.548360+05:30'
-  fetched_at: 2025-04-23 17:46:52 IST
