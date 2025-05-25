@@ -1,413 +1,413 @@
-# name: Update BBC Tech News Changelog
+name: Update BBC Tech News Changelog
 
-# on:
-#   schedule:
-#     - cron: '0 */6 * * *'  # Every 5 minutes for testing
-#   workflow_dispatch:      # Allow manual trigger
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # Every 5 minutes for testing
+  workflow_dispatch:      # Allow manual trigger
 
-# permissions:
-#   contents: write
-#   pages: write
-#   id-token: write
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
-# jobs:
-#   update-changelog:
-#     runs-on: ubuntu-latest
-#     environment:
-#       name: github-pages
-#       url: ${{ steps.deployment.outputs.page_url }}
+jobs:
+  update-changelog:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     
-#     steps:
-#       - name: Checkout repository
-#         uses: actions/checkout@v4
-#         with:
-#           fetch-depth: 0
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-#       - name: Create requirements file
-#         run: |
-#           cat > requirements.txt << 'EOF'
-#           feedparser==6.0.11
-#           markdown==3.5.2
-#           PyYAML==6.0.1
-#           python-dateutil==2.8.2
-#           pytz==2024.1
-#           EOF
+      - name: Create requirements file
+        run: |
+          cat > requirements.txt << 'EOF'
+          feedparser==6.0.11
+          markdown==3.5.2
+          PyYAML==6.0.1
+          python-dateutil==2.8.2
+          pytz==2024.1
+          EOF
 
-#       - name: Set up Python
-#         uses: actions/setup-python@v5
-#         with:
-#           python-version: '3.11'
-#           cache: 'pip'
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
 
-#       - name: Install dependencies
-#         run: |
-#           python -m pip install --upgrade pip
-#           pip install -r requirements.txt
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
-#       - name: Create initial directories
-#         run: |
-#           mkdir -p _data
-#           # Initialize empty changelog if it doesn't exist
-#           if [ ! -f _data/changelog.yml ]; then
-#             echo "[]" > _data/changelog.yml
-#           fi
+      - name: Create initial directories
+        run: |
+          mkdir -p _data
+          # Initialize empty changelog if it doesn't exist
+          if [ ! -f _data/changelog.yml ]; then
+            echo "[]" > _data/changelog.yml
+          fi
 
-#       - name: Fetch and process RSS feed
-#         run: |
-#           cat > update_changelog.py << 'EOF'
-#           import feedparser
-#           import yaml
-#           from datetime import datetime
-#           import os
-#           from dateutil import parser
-#           import pytz
-#           import time
-#           import hashlib
-#           import sys
+      - name: Fetch and process RSS feed
+        run: |
+          cat > update_changelog.py << 'EOF'
+          import feedparser
+          import yaml
+          from datetime import datetime
+          import os
+          from dateutil import parser
+          import pytz
+          import time
+          import hashlib
+          import sys
 
-#           def generate_entry_hash(data):
-#               """Generate a unique hash based on content"""
-#               if isinstance(data, feedparser.FeedParserDict):
-#                   # For new RSS entries
-#                   content = f"{data.title}{data.summary}{data.link}"
-#               else:
-#                   # For existing changelog entries
-#                   content = f"{data.get('title', '')}{data.get('summary', '')}{data.get('link', '')}"
-#               return hashlib.md5(content.encode()).hexdigest()
+          def generate_entry_hash(data):
+              """Generate a unique hash based on content"""
+              if isinstance(data, feedparser.FeedParserDict):
+                  # For new RSS entries
+                  content = f"{data.title}{data.summary}{data.link}"
+              else:
+                  # For existing changelog entries
+                  content = f"{data.get('title', '')}{data.get('summary', '')}{data.get('link', '')}"
+              return hashlib.md5(content.encode()).hexdigest()
 
-#           def load_existing_entries():
-#               if os.path.exists('_data/changelog.yml'):
-#                   with open('_data/changelog.yml', 'r', encoding='utf-8') as f:
-#                       try:
-#                           entries = yaml.safe_load(f) or []
-#                           # Add hash if missing
-#                           for entry in entries:
-#                               if 'hash' not in entry:
-#                                   entry['hash'] = generate_entry_hash(entry)
-#                           return entries
-#                       except yaml.YAMLError as e:
-#                           print(f"Error loading YAML: {e}", file=sys.stderr)
-#                           return []
-#               return []
+          def load_existing_entries():
+              if os.path.exists('_data/changelog.yml'):
+                  with open('_data/changelog.yml', 'r', encoding='utf-8') as f:
+                      try:
+                          entries = yaml.safe_load(f) or []
+                          # Add hash if missing
+                          for entry in entries:
+                              if 'hash' not in entry:
+                                  entry['hash'] = generate_entry_hash(entry)
+                          return entries
+                      except yaml.YAMLError as e:
+                          print(f"Error loading YAML: {e}", file=sys.stderr)
+                          return []
+              return []
 
-#           def fetch_bbc_feed():
-#               max_retries = 3
-#               for attempt in range(max_retries):
-#                   try:
-#                       feed = feedparser.parse('https://feeds.bbci.co.uk/news/technology/rss.xml')
-#                       if not hasattr(feed, 'status') or feed.status != 200:
-#                           print(f"Feed status: {getattr(feed, 'status', 'unknown')}")
-#                           if attempt < max_retries - 1:
-#                               time.sleep(2 ** attempt)
-#                               continue
-#                       return feed.entries
-#                   except Exception as e:
-#                       print(f"Attempt {attempt + 1} failed: {str(e)}")
-#                       if attempt == max_retries - 1:
-#                           raise
-#                       time.sleep(2 ** attempt)
-#               return []
+          def fetch_bbc_feed():
+              max_retries = 3
+              for attempt in range(max_retries):
+                  try:
+                      feed = feedparser.parse('https://feeds.bbci.co.uk/news/technology/rss.xml')
+                      if not hasattr(feed, 'status') or feed.status != 200:
+                          print(f"Feed status: {getattr(feed, 'status', 'unknown')}")
+                          if attempt < max_retries - 1:
+                              time.sleep(2 ** attempt)
+                              continue
+                      return feed.entries
+                  except Exception as e:
+                      print(f"Attempt {attempt + 1} failed: {str(e)}")
+                      if attempt == max_retries - 1:
+                          raise
+                      time.sleep(2 ** attempt)
+              return []
 
-#           def create_changelog_entry(entry):
-#               ist_tz = pytz.timezone('Asia/Kolkata')
-#               current_time = datetime.now(ist_tz)
+          def create_changelog_entry(entry):
+              ist_tz = pytz.timezone('Asia/Kolkata')
+              current_time = datetime.now(ist_tz)
               
-#               return {
-#                   'title': entry.title,
-#                   'link': entry.link,
-#                   'published': parser.parse(entry.published).astimezone(ist_tz).isoformat(),
-#                   'summary': entry.summary,
-#                   'guid': entry.guid,
-#                   'hash': generate_entry_hash(entry),
-#                   'timestamp': current_time.isoformat(),
-#                   'fetched_at': current_time.strftime('%Y-%m-%d %H:%M:%S IST')
-#               }
+              return {
+                  'title': entry.title,
+                  'link': entry.link,
+                  'published': parser.parse(entry.published).astimezone(ist_tz).isoformat(),
+                  'summary': entry.summary,
+                  'guid': entry.guid,
+                  'hash': generate_entry_hash(entry),
+                  'timestamp': current_time.isoformat(),
+                  'fetched_at': current_time.strftime('%Y-%m-%d %H:%M:%S IST')
+              }
 
-#           def update_changelog():
-#               print(f"Starting changelog update at {datetime.now(pytz.timezone('Asia/Kolkata')).strftime('%Y-%m-%d %H:%M:%S IST')}")
+          def update_changelog():
+              print(f"Starting changelog update at {datetime.now(pytz.timezone('Asia/Kolkata')).strftime('%Y-%m-%d %H:%M:%S IST')}")
               
-#               existing_entries = load_existing_entries()
-#               print(f"Loaded {len(existing_entries)} existing entries")
+              existing_entries = load_existing_entries()
+              print(f"Loaded {len(existing_entries)} existing entries")
               
-#               existing_hashes = {entry['hash'] for entry in existing_entries}
-#               new_entries = fetch_bbc_feed()
-#               print(f"Fetched {len(new_entries)} entries from RSS")
+              existing_hashes = {entry['hash'] for entry in existing_entries}
+              new_entries = fetch_bbc_feed()
+              print(f"Fetched {len(new_entries)} entries from RSS")
               
-#               updates = []
-#               for entry in new_entries:
-#                   entry_hash = generate_entry_hash(entry)
-#                   if entry_hash not in existing_hashes:
-#                       updates.append(create_changelog_entry(entry))
+              updates = []
+              for entry in new_entries:
+                  entry_hash = generate_entry_hash(entry)
+                  if entry_hash not in existing_hashes:
+                      updates.append(create_changelog_entry(entry))
               
-#               print(f"Found {len(updates)} new unique entries")
+              print(f"Found {len(updates)} new unique entries")
               
-#               if not updates:
-#                   print("No new unique entries found")
-#                   return False
+              if not updates:
+                  print("No new unique entries found")
+                  return False
               
-#               all_entries = updates + existing_entries
-#               all_entries.sort(key=lambda x: x['published'], reverse=True)
-#               all_entries = all_entries[:100]
+              all_entries = updates + existing_entries
+              all_entries.sort(key=lambda x: x['published'], reverse=True)
+              all_entries = all_entries[:100]
               
-#               # Save changelog
-#               with open('_data/changelog.yml', 'w', encoding='utf-8') as f:
-#                   yaml.dump(all_entries, f, allow_unicode=True, sort_keys=False)
+              # Save changelog
+              with open('_data/changelog.yml', 'w', encoding='utf-8') as f:
+                  yaml.dump(all_entries, f, allow_unicode=True, sort_keys=False)
               
-#               # Generate HTML
-#               with open('index.html', 'w', encoding='utf-8') as f:
-#                   f.write('''
-#           <!DOCTYPE html>
-#           <html lang="en">
-#           <head>
-#               <meta charset="UTF-8">
-#               <meta name="viewport" content="width=device-width, initial-scale=1.0">
-#               <title>BBC Technology News Daily Changelog</title>
-#               <style>
-#                   :root {
-#                       --primary-color: #2c3e50;
-#                       --accent-color: #3498db;
-#                       --bg-color: #f5f5f5;
-#                       --card-bg: #ffffff;
-#                       --text-color: #2c3e50;
-#                       --meta-color: #666;
-#                       --shadow: rgba(0, 0, 0, 0.1);
-#                   }
+              # Generate HTML
+              with open('index.html', 'w', encoding='utf-8') as f:
+                  f.write('''
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>BBC Technology News Daily Changelog</title>
+              <style>
+                  :root {
+                      --primary-color: #2c3e50;
+                      --accent-color: #3498db;
+                      --bg-color: #f5f5f5;
+                      --card-bg: #ffffff;
+                      --text-color: #2c3e50;
+                      --meta-color: #666;
+                      --shadow: rgba(0, 0, 0, 0.1);
+                  }
 
-#                   * {
-#                       margin: 0;
-#                       padding: 0;
-#                       box-sizing: border-box;
-#                   }
+                  * {
+                      margin: 0;
+                      padding: 0;
+                      box-sizing: border-box;
+                  }
 
-#                   body {
-#                       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-#                       line-height: 1.6;
-#                       background: var(--bg-color);
-#                       color: var(--text-color);
-#                       padding: 2rem;
-#                   }
+                  body {
+                      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+                      line-height: 1.6;
+                      background: var(--bg-color);
+                      color: var(--text-color);
+                      padding: 2rem;
+                  }
 
-#                   .container {
-#                       max-width: 1200px;
-#                       margin: 0 auto;
-#                   }
+                  .container {
+                      max-width: 1200px;
+                      margin: 0 auto;
+                  }
 
-#                   .header {
-#                       text-align: center;
-#                       margin-bottom: 3rem;
-#                       padding: 2rem;
-#                       background: var(--card-bg);
-#                       border-radius: 12px;
-#                       box-shadow: 0 4px 6px var(--shadow);
-#                   }
+                  .header {
+                      text-align: center;
+                      margin-bottom: 3rem;
+                      padding: 2rem;
+                      background: var(--card-bg);
+                      border-radius: 12px;
+                      box-shadow: 0 4px 6px var(--shadow);
+                  }
 
-#                   .header h1 {
-#                       color: var(--primary-color);
-#                       font-size: 2.5rem;
-#                       margin-bottom: 1rem;
-#                   }
+                  .header h1 {
+                      color: var(--primary-color);
+                      font-size: 2.5rem;
+                      margin-bottom: 1rem;
+                  }
 
-#                   .meta-info {
-#                       background: var(--card-bg);
-#                       padding: 1rem;
-#                       border-radius: 8px;
-#                       margin-bottom: 2rem;
-#                       text-align: center;
-#                       box-shadow: 0 2px 4px var(--shadow);
-#                   }
+                  .meta-info {
+                      background: var(--card-bg);
+                      padding: 1rem;
+                      border-radius: 8px;
+                      margin-bottom: 2rem;
+                      text-align: center;
+                      box-shadow: 0 2px 4px var(--shadow);
+                  }
 
-#                   .last-updated {
-#                       color: var(--meta-color);
-#                       font-size: 0.9rem;
-#                       margin-bottom: 0.5rem;
-#                   }
+                  .last-updated {
+                      color: var(--meta-color);
+                      font-size: 0.9rem;
+                      margin-bottom: 0.5rem;
+                  }
 
-#                   .schedule-info {
-#                       color: var(--meta-color);
-#                       font-size: 0.8rem;
-#                   }
+                  .schedule-info {
+                      color: var(--meta-color);
+                      font-size: 0.8rem;
+                  }
 
-#                   .grid {
-#                       display: grid;
-#                       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-#                       gap: 2rem;
-#                       padding: 1rem;
-#                   }
+                  .grid {
+                      display: grid;
+                      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                      gap: 2rem;
+                      padding: 1rem;
+                  }
 
-#                   .entry {
-#                       background: var(--card-bg);
-#                       border-radius: 12px;
-#                       overflow: hidden;
-#                       box-shadow: 0 4px 6px var(--shadow);
-#                       transition: transform 0.3s ease, box-shadow 0.3s ease;
-#                       display: flex;
-#                       flex-direction: column;
-#                       height: 100%;
-#                   }
+                  .entry {
+                      background: var(--card-bg);
+                      border-radius: 12px;
+                      overflow: hidden;
+                      box-shadow: 0 4px 6px var(--shadow);
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                      display: flex;
+                      flex-direction: column;
+                      height: 100%;
+                  }
 
-#                   .entry:hover {
-#                       transform: translateY(-5px);
-#                       box-shadow: 0 8px 12px var(--shadow);
-#                   }
+                  .entry:hover {
+                      transform: translateY(-5px);
+                      box-shadow: 0 8px 12px var(--shadow);
+                  }
 
-#                   .entry-header {
-#                       padding: 1.5rem;
-#                       background: var(--primary-color);
-#                       color: white;
-#                   }
+                  .entry-header {
+                      padding: 1.5rem;
+                      background: var(--primary-color);
+                      color: white;
+                  }
 
-#                   .entry h2 {
-#                       font-size: 1.2rem;
-#                       margin-bottom: 0.5rem;
-#                   }
+                  .entry h2 {
+                      font-size: 1.2rem;
+                      margin-bottom: 0.5rem;
+                  }
 
-#                   .entry h2 a {
-#                       color: white;
-#                       text-decoration: none;
-#                   }
+                  .entry h2 a {
+                      color: white;
+                      text-decoration: none;
+                  }
 
-#                   .entry h2 a:hover {
-#                       text-decoration: underline;
-#                   }
+                  .entry h2 a:hover {
+                      text-decoration: underline;
+                  }
 
-#                   .entry-meta {
-#                       padding: 1rem 1.5rem;
-#                       color: var(--meta-color);
-#                       font-size: 0.9rem;
-#                       border-bottom: 1px solid #eee;
-#                       display: flex;
-#                       justify-content: space-between;
-#                       flex-wrap: wrap;
-#                       gap: 0.5rem;
-#                   }
+                  .entry-meta {
+                      padding: 1rem 1.5rem;
+                      color: var(--meta-color);
+                      font-size: 0.9rem;
+                      border-bottom: 1px solid #eee;
+                      display: flex;
+                      justify-content: space-between;
+                      flex-wrap: wrap;
+                      gap: 0.5rem;
+                  }
 
-#                   .entry-content {
-#                       padding: 1.5rem;
-#                       flex-grow: 1;
-#                       font-size: 0.95rem;
-#                   }
+                  .entry-content {
+                      padding: 1.5rem;
+                      flex-grow: 1;
+                      font-size: 0.95rem;
+                  }
 
-#                   @media (max-width: 768px) {
-#                       body {
-#                           padding: 1rem;
-#                       }
+                  @media (max-width: 768px) {
+                      body {
+                          padding: 1rem;
+                      }
 
-#                       .grid {
-#                           grid-template-columns: 1fr;
-#                           gap: 1.5rem;
-#                       }
+                      .grid {
+                          grid-template-columns: 1fr;
+                          gap: 1.5rem;
+                      }
 
-#                       .header h1 {
-#                           font-size: 2rem;
-#                       }
-#                   }
+                      .header h1 {
+                          font-size: 2rem;
+                      }
+                  }
 
-#                   @media (max-width: 480px) {
-#                       .entry-meta {
-#                           flex-direction: column;
-#                       }
-#                   }
-#               </style>
-#           </head>
-#           <body>
-#               <div class="container">
-#                   <header class="header">
-#                       <h1>BBC Technology News Daily Changelog</h1>
-#                   </header>
+                  @media (max-width: 480px) {
+                      .entry-meta {
+                          flex-direction: column;
+                      }
+                  }
+              </style>
+          </head>
+          <body>
+              <div class="container">
+                  <header class="header">
+                      <h1>BBC Technology News Daily Changelog</h1>
+                  </header>
 
-#                   <div class="meta-info">
-#                       <div class="last-updated">
-#                           Last updated: ''' + datetime.now(pytz.timezone('Asia/Kolkata')).strftime('%Y-%m-%d %H:%M:%S IST') + '''
-#                       </div>
-#                       <div class="schedule-info">
-#                           Updated every 5 minutes
-#                       </div>
-#                   </div>
+                  <div class="meta-info">
+                      <div class="last-updated">
+                          Last updated: ''' + datetime.now(pytz.timezone('Asia/Kolkata')).strftime('%Y-%m-%d %H:%M:%S IST') + '''
+                      </div>
+                      <div class="schedule-info">
+                          Updated every 5 minutes
+                      </div>
+                  </div>
 
-#                   <div class="grid">
-#           ''')
+                  <div class="grid">
+          ''')
                   
-#                   for entry in all_entries:
-#                       published = parser.parse(entry['published']).strftime('%Y-%m-%d %H:%M:%S IST')
-#                       f.write(f'''
-#                       <article class="entry">
-#                           <div class="entry-header">
-#                               <h2><a href="{entry['link']}" target="_blank">{entry['title']}</a></h2>
-#                           </div>
-#                           <div class="entry-meta">
-#                               <span>Published: {published}</span>
-#                               <span>Fetched: {entry.get('fetched_at', 'N/A')}</span>
-#                           </div>
-#                           <div class="entry-content">
-#                               {entry['summary']}
-#                           </div>
-#                       </article>
-#           ''')
+                  for entry in all_entries:
+                      published = parser.parse(entry['published']).strftime('%Y-%m-%d %H:%M:%S IST')
+                      f.write(f'''
+                      <article class="entry">
+                          <div class="entry-header">
+                              <h2><a href="{entry['link']}" target="_blank">{entry['title']}</a></h2>
+                          </div>
+                          <div class="entry-meta">
+                              <span>Published: {published}</span>
+                              <span>Fetched: {entry.get('fetched_at', 'N/A')}</span>
+                          </div>
+                          <div class="entry-content">
+                              {entry['summary']}
+                          </div>
+                      </article>
+          ''')
                   
-#                   f.write('''
-#                   </div>
-#               </div>
-#           </body>
-#           </html>
-#           ''')
+                  f.write('''
+                  </div>
+              </div>
+          </body>
+          </html>
+          ''')
               
-#               return True
+              return True
 
-#           if __name__ == '__main__':
-#               try:
-#                   update_changelog()
-#               except Exception as e:
-#                   print(f"Error: {str(e)}", file=sys.stderr)
-#                   sys.exit(1)
-#           EOF
+          if __name__ == '__main__':
+              try:
+                  update_changelog()
+              except Exception as e:
+                  print(f"Error: {str(e)}", file=sys.stderr)
+                  sys.exit(1)
+          EOF
 
-#           python update_changelog.py
+          python update_changelog.py
 
-#       - name: Setup Pages
-#         uses: actions/configure-pages@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
 
-#       - name: Upload artifact
-#         uses: actions/upload-pages-artifact@v3
-#         with:
-#           path: '.'
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
 
-#       - name: Deploy to GitHub Pages
-#         id: deployment
-#         uses: actions/deploy-pages@v4
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
-#       - name: Generate tag
-#         id: generate_tag
-#         run: |
-#           # Generate tag with timestamp in IST
-#           TAG_NAME=$(TZ=Asia/Kolkata date '+release-%Y%m%d-%H%M')
-#           echo "tag_name=$TAG_NAME" >> $GITHUB_OUTPUT
+      - name: Generate tag
+        id: generate_tag
+        run: |
+          # Generate tag with timestamp in IST
+          TAG_NAME=$(TZ=Asia/Kolkata date '+release-%Y%m%d-%H%M')
+          echo "tag_name=$TAG_NAME" >> $GITHUB_OUTPUT
           
-#           # Create changelog content
-#           echo "changelog<<EOF" >> $GITHUB_OUTPUT
-#           echo "BBC Tech News Update ($(TZ=Asia/Kolkata date '+%Y-%m-%d %H:%M:%S IST'))" >> $GITHUB_OUTPUT
-#           echo "" >> $GITHUB_OUTPUT
-#           if [ -f "_data/changelog.yml" ]; then
-#             echo "New articles added in this update:" >> $GITHUB_OUTPUT
-#             grep "title:" _data/changelog.yml | head -n 5 | sed 's/title: /- /' >> $GITHUB_OUTPUT
-#           fi
-#           echo "EOF" >> $GITHUB_OUTPUT
+          # Create changelog content
+          echo "changelog<<EOF" >> $GITHUB_OUTPUT
+          echo "BBC Tech News Update ($(TZ=Asia/Kolkata date '+%Y-%m-%d %H:%M:%S IST'))" >> $GITHUB_OUTPUT
+          echo "" >> $GITHUB_OUTPUT
+          if [ -f "_data/changelog.yml" ]; then
+            echo "New articles added in this update:" >> $GITHUB_OUTPUT
+            grep "title:" _data/changelog.yml | head -n 5 | sed 's/title: /- /' >> $GITHUB_OUTPUT
+          fi
+          echo "EOF" >> $GITHUB_OUTPUT
 
-#       - name: Create Release
-#         uses: softprops/action-gh-release@v1
-#         with:
-#           name: Release ${{ steps.generate_tag.outputs.tag_name }}
-#           tag_name: ${{ steps.generate_tag.outputs.tag_name }}
-#           body: ${{ steps.generate_tag.outputs.changelog }}
-#           draft: false
-#           prerelease: false
-#         env:
-#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          name: Release ${{ steps.generate_tag.outputs.tag_name }}
+          tag_name: ${{ steps.generate_tag.outputs.tag_name }}
+          body: ${{ steps.generate_tag.outputs.changelog }}
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-#       - name: Commit changes
-#         run: |
-#           git config --local user.email "ujjwal.kumar1@ibm.com"
-#           git config --local user.name "uibm"
-#           echo "Commit time UTC: $(date -u)" >> commit_time.txt
-#           echo "Commit time IST: $(TZ=Asia/Kolkata date)" >> commit_time.txt
-#           git add _data/changelog.yml index.html requirements.txt commit_time.txt
-#           git diff --quiet && git diff --staged --quiet || (git commit -m "Update changelog with latest BBC Tech news [$(TZ=Asia/Kolkata date '+%Y-%m-%d %H:%M:%S IST')]" && git push)
+      - name: Commit changes
+        run: |
+          git config --local user.email "ujjwal.kumar1@ibm.com"
+          git config --local user.name "uibm"
+          echo "Commit time UTC: $(date -u)" >> commit_time.txt
+          echo "Commit time IST: $(TZ=Asia/Kolkata date)" >> commit_time.txt
+          git add _data/changelog.yml index.html requirements.txt commit_time.txt
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update changelog with latest BBC Tech news [$(TZ=Asia/Kolkata date '+%Y-%m-%d %H:%M:%S IST')]" && git push)
