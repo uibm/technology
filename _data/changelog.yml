@@ -1,3 +1,12 @@
+- title: Telegram announces partnership with Musk's xAI
+  link: https://www.bbc.com/news/articles/cdxvr3n7wlxo
+  published: '2025-05-28T20:15:33+05:30'
+  summary: The $300m deal, which will last one year, will see xAI's assistant Grok
+    integrated into Telegram.
+  guid: https://www.bbc.com/news/articles/cdxvr3n7wlxo#0
+  hash: e8b85c2b91130eedf0b742915c5fbc09
+  timestamp: '2025-05-28T23:45:01.820356+05:30'
+  fetched_at: 2025-05-28 23:45:01 IST
 - title: Temu's Chinese owner sees profits plunge as trade war bites
   link: https://www.bbc.com/news/articles/cy8dvywypp2o
   published: '2025-05-28T08:47:34+05:30'
@@ -34,6 +43,15 @@
   hash: 21ade4530c97c143ec9121ec89c15f6f
   timestamp: '2025-05-28T06:26:56.713757+05:30'
   fetched_at: 2025-05-28 06:26:56 IST
+- title: Tech Life
+  link: https://www.bbc.co.uk/sounds/play/w3ct6znr
+  published: '2025-05-28T01:00:00+05:30'
+  summary: Using AI chatbots to recreate the voice or likeness of a loved one who
+    has passed away.
+  guid: https://www.bbc.co.uk/sounds/play/w3ct6znr#4
+  hash: 67d68910d7c373e2fce70325ad395b99
+  timestamp: '2025-05-28T23:45:01.820715+05:30'
+  fetched_at: 2025-05-28 23:45:01 IST
 - title: Adidas says customer data stolen in cyber attack
   link: https://www.bbc.com/news/articles/c071m82v80po
   published: '2025-05-27T21:43:10+05:30'
@@ -878,21 +896,3 @@
   hash: feb0830121faad5593998d3d9821cc90
   timestamp: '2025-05-01T23:42:24.137264+05:30'
   fetched_at: 2025-05-01 23:42:24 IST
-- title: 'Co-op cyber attack: Staff urged to keep cameras on in meetings'
-  link: https://www.bbc.com/news/articles/cg72k851dd8o
-  published: '2025-05-01T15:51:22+05:30'
-  summary: Experts say the instruction suggests the company fears hackers could be
-    lurking on calls.
-  guid: https://www.bbc.com/news/articles/cg72k851dd8o#0
-  hash: 6faa9450f6f8c11660dd0f1cae9667f0
-  timestamp: '2025-05-01T17:46:14.766541+05:30'
-  fetched_at: 2025-05-01 17:46:14 IST
-- title: Apple referred for possible criminal contempt investigation
-  link: https://www.bbc.com/news/articles/c62xv43xqq5o
-  published: '2025-05-01T07:24:35+05:30'
-  summary: The tech giant had been ordered in 2021 to allow greater competition and
-    open the App Store up to outside payment options.
-  guid: https://www.bbc.com/news/articles/c62xv43xqq5o#0
-  hash: f133de13275200706f90f3ae71861439
-  timestamp: '2025-05-01T11:43:52.775411+05:30'
-  fetched_at: 2025-05-01 11:43:52 IST
