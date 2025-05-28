@@ -1,3 +1,12 @@
+- title: Second suspect arrested in alleged crypto torture scheme
+  link: https://www.bbc.com/news/articles/cn84x31vw96o
+  published: '2025-05-28T04:41:23+05:30'
+  summary: Police say the two men kidnapped an Italian businessman and tortured him
+    with a gun, chainsaw and electrical wires for nearly three weeks.
+  guid: https://www.bbc.com/news/articles/cn84x31vw96o#0
+  hash: 21ade4530c97c143ec9121ec89c15f6f
+  timestamp: '2025-05-28T06:26:56.713757+05:30'
+  fetched_at: 2025-05-28 06:26:56 IST
 - title: Adidas says customer data stolen in cyber attack
   link: https://www.bbc.com/news/articles/c071m82v80po
   published: '2025-05-27T21:43:10+05:30'
@@ -52,6 +61,15 @@
   hash: 0d12093d066785b65ee8a33e961d15b5
   timestamp: '2025-05-26T06:28:29.555634+05:30'
   fetched_at: 2025-05-26 06:28:29 IST
+- title: Tech Now
+  link: https://www.bbc.co.uk/iplayer/live/bbcnews
+  published: '2025-05-24T05:30:00+05:30'
+  summary: A new form of testing claims to predict how likely an unborn child is to
+    develop diseases.
+  guid: https://www.bbc.co.uk/iplayer/live/bbcnews#4
+  hash: bd843ba1244d74556ce732266f54f85b
+  timestamp: '2025-05-28T06:26:56.714118+05:30'
+  fetched_at: 2025-05-28 06:26:56 IST
 - title: Tech Now
   link: https://www.bbc.co.uk/iplayer/episode/m002cw5g
   published: '2025-05-24T05:30:00+05:30'
@@ -878,21 +896,3 @@
   hash: c09fd4a078a080fa4daa2e54e25fd05d
   timestamp: '2025-04-30T17:46:47.255536+05:30'
   fetched_at: 2025-04-30 17:46:47 IST
-- title: Update that made ChatGPT 'dangerously' sycophantic pulled
-  link: https://www.bbc.com/news/articles/cn4jnwdvg9qo
-  published: '2025-04-30T16:18:33+05:30'
-  summary: Users said the chatbot endorsed ideas including stopping medication and
-    getting angry at strangers
-  guid: https://www.bbc.com/news/articles/cn4jnwdvg9qo#0
-  hash: e4afed748013ddf326ffbd33b3530f34
-  timestamp: '2025-04-30T17:46:47.255782+05:30'
-  fetched_at: 2025-04-30 17:46:47 IST
-- title: Robot vacuums 'could water plants or play with cat'
-  link: https://www.bbc.com/news/articles/c5yrzyzke8do
-  published: '2025-04-30T04:37:05+05:30'
-  summary: Scientists, including researchers in Bath, have come up with 100 proposed
-    uses for the robots.
-  guid: https://www.bbc.com/news/articles/c5yrzyzke8do#0
-  hash: 975f1486b283b3f6a12a563a749571f5
-  timestamp: '2025-04-30T06:14:31.444133+05:30'
-  fetched_at: 2025-04-30 06:14:31 IST
