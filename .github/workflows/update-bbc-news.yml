@@ -243,7 +243,7 @@ jobs:
           <head>
               <meta charset="UTF-8">
               <meta name="viewport" content="width=device-width, initial-scale=1.0">
-              <title>BBC Technology News - Premium Daily Digest</title>
+              <title>BBC Technology News - Daily Digest</title>
               <meta name="description" content="Stay ahead with the latest technology news from BBC, beautifully curated and automatically updated.">
               
               <!-- Preload critical resources -->
@@ -680,14 +680,12 @@ jobs:
                   /* Featured Article */
                   .featured-article {{
                       grid-column: 1 / -1;
-                      display: grid;
-                      grid-template-columns: 1fr 1fr;
-                      gap: var(--space-xl);
                       background: var(--bg-hero);
                       border-radius: var(--radius-2xl);
                       overflow: hidden;
                       margin-bottom: var(--space-xl);
                       position: relative;
+                      padding: var(--space-2xl);
                   }}
 
                   .featured-article::before {{
@@ -702,12 +700,12 @@ jobs:
                   }}
 
                   .featured-content {{
-                      padding: var(--space-2xl);
                       display: flex;
                       flex-direction: column;
                       justify-content: center;
                       position: relative;
                       z-index: 1;
+                      text-align: center;
                   }}
 
                   .featured-title {{
@@ -742,12 +740,6 @@ jobs:
                   .featured-button:hover {{
                       transform: translateY(-2px);
                       box-shadow: var(--shadow-lg);
-                  }}
-
-                  .featured-image {{
-                      width: 100%;
-                      height: 100%;
-                      object-fit: cover;
                   }}
 
                   /* Loading States */
@@ -932,7 +924,7 @@ jobs:
                   <header class="header">
                       <div class="header-content">
                           <h1>BBC Technology News</h1>
-                          <p class="header-subtitle">Premium Daily Digest • Automatically Updated</p>
+                          <p class="header-subtitle"> Daily Digest • Automatically Updated</p>
                           <div class="header-stats">
                               <div class="stat-item">
                                   <div class="stat-number">{len(entries)}</div>
@@ -993,10 +985,6 @@ jobs:
                                   <span>⏱️ {featured.get('reading_time', '5 min read')}</span>
                                   <span>👤 {featured.get('author', 'BBC Technology')}</span>
                               </div>
-                          </div>
-                          <div class="featured-image-container">
-                              <img src="{featured.get('image_url', 'https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=600&h=400&fit=crop')}" 
-                                   alt="{featured['title']}" class="featured-image" loading="lazy">
                           </div>
                       </article>''')
                   
@@ -1269,9 +1257,9 @@ jobs:
           git config --local user.name "uibm"
           echo "🕐 Commit time UTC: $(date -u)" >> commit_time.txt
           echo "🇮🇳 Commit time IST: $(TZ=Asia/Kolkata date)" >> commit_time.txt
-          echo "✨ Enhanced the UI design" >> commit_time.txt
+          echo "✨ Enhanced with UI design" >> commit_time.txt
           git add _data/changelog.yml index.html requirements.txt commit_time.txt
-          git diff --quiet && git diff --staged --quiet || (git commit -m "🚀 Update changelog  [$(TZ=Asia/Kolkata date '+%Y-%m-%d %H:%M:%S IST')]
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🚀 Update changelog with UI [$(TZ=Asia/Kolkata date '+%Y-%m-%d %H:%M:%S IST')]
 
           ✨ Features:
           - Premium glassmorphism design
