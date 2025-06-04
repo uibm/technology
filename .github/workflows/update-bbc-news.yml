@@ -999,7 +999,7 @@ jobs:
                                   Read Full Article
                                   <span>→</span>
                               </a>
-                              <div class="article-meta" style="display: none;">
+                              <div class="article-meta" style="color: rgba(255,255,255,0.7); margin-top: 1rem;">
                                   <span>📅 {published}</span>
                                   <span>⏱️ {featured.get('reading_time', '5 min read')}</span>
                                   <span>👤 {featured.get('author', 'BBC Technology')}</span>
@@ -1019,8 +1019,6 @@ jobs:
                       f.write(f'''
                       <!-- Article {i} -->
                       <article class="article-card" data-category="{entry.get('category', 'Technology')}">
-                          <img src="{entry.get('image_url', 'https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=250&fit=crop')}" 
-                               alt="{entry['title']}" class="article-image" loading="lazy">
                           <div class="article-content">
                               <div class="article-header">
                                   <span class="article-category">{entry.get('category', 'Technology')}</span>
