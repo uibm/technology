@@ -999,7 +999,7 @@ jobs:
                                   Read Full Article
                                   <span>→</span>
                               </a>
-                              <div class="article-meta" style="color: rgba(255,255,255,0.7); margin-top: 1rem;">
+                              <div class="article-meta" style="display: none;">
                                   <span>📅 {published}</span>
                                   <span>⏱️ {featured.get('reading_time', '5 min read')}</span>
                                   <span>👤 {featured.get('author', 'BBC Technology')}</span>
