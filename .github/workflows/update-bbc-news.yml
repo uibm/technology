@@ -2,7 +2,7 @@ name: Update BBC Tech News Changelog
 
 on:
   schedule:
-    - cron: '0 */23 * * *'  # Every 23 hours
+    - cron: '0 */6 * * *'  # Every 6 hours
   workflow_dispatch:      # Allow manual trigger
 
 permissions:
@@ -580,17 +580,6 @@ jobs:
                       opacity: 1;
                   }}
 
-                  .article-image {{
-                      width: 100%;
-                      height: 200px;
-                      object-fit: cover;
-                      transition: transform var(--transition-slow);
-                  }}
-
-                  .article-card:hover .article-image {{
-                      transform: scale(1.05);
-                  }}
-
                   .article-content {{
                       padding: var(--space-xl);
                       position: relative;
@@ -1031,10 +1020,6 @@ jobs:
                               </h3>
                               <p class="article-summary">{entry['summary']}</p>
                               <div class="article-footer">
-                                  <div class="article-meta">
-                                      <span>📅 {published}</span>
-                                      <span>👤 {entry.get('author', 'BBC Technology')}</span>
-                                  </div>
                                   <div class="article-tags">
                                       {tags_html}
                                   </div>
@@ -1284,9 +1269,9 @@ jobs:
           git config --local user.name "uibm"
           echo "🕐 Commit time UTC: $(date -u)" >> commit_time.txt
           echo "🇮🇳 Commit time IST: $(TZ=Asia/Kolkata date)" >> commit_time.txt
-          echo "✨ Enhanced with premium UI design" >> commit_time.txt
+          echo "✨ Enhanced the UI design" >> commit_time.txt
           git add _data/changelog.yml index.html requirements.txt commit_time.txt
-          git diff --quiet && git diff --staged --quiet || (git commit -m "🚀 Update changelog [$(TZ=Asia/Kolkata date '+%Y-%m-%d %H:%M:%S IST')]
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🚀 Update changelog  [$(TZ=Asia/Kolkata date '+%Y-%m-%d %H:%M:%S IST')]
 
           ✨ Features:
           - Premium glassmorphism design
