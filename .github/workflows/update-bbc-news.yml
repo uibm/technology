@@ -2,7 +2,7 @@ name: Update BBC Tech News Changelog
 
 on:
   schedule:
-    - cron: '0 */19 * * *'  # Every 19 hours
+    - cron: '0 */23 * * *'  # Every 23 hours
   workflow_dispatch:      # Allow manual trigger
 
 permissions:
