@@ -1,3 +1,32 @@
+- title: Tech Now
+  link: https://www.bbc.co.uk/iplayer/episode/m002dgb9
+  published: '2025-06-07T06:30:00+05:30'
+  summary: Ione Wells visits the Rubin Observatory in Chile's Atacama Desert.
+  guid: https://www.bbc.co.uk/iplayer/episode/m002dgb9#4
+  hash: e02c3a315b2bfcc6e1ab2dd2769f9766
+  timestamp: '2025-06-07T23:48:59.984486+05:30'
+  fetched_at: 2025-06-07 23:48:59 IST
+  image_url: https://ichef.bbci.co.uk/images/ic/1200x675/p0lgtktm.jpg
+  category: Technology
+  reading_time: 1 min read
+  author: BBC Technology
+  tags:
+  - Tech
+- title: Will Musk's explosive row with Trump help or harm his businesses?
+  link: https://www.bbc.com/news/articles/ceqgdnd2g9xo
+  published: '2025-06-07T04:48:39+05:30'
+  summary: Experts say his tech empire needs more of Musk's attention - but also the
+    continued custom of the government.
+  guid: https://www.bbc.com/news/articles/ceqgdnd2g9xo#0
+  hash: ff77ea0822ee3423530d449caf37123e
+  timestamp: '2025-06-07T23:48:59.595997+05:30'
+  fetched_at: 2025-06-07 23:48:59 IST
+  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/4e58/live/edab9910-42e7-11f0-90bf-b10bb5ee7272.jpg
+  category: Business & Finance
+  reading_time: 1 min read
+  author: BBC Technology
+  tags:
+  - tech
 - title: NatWest fixes app outage which left customers fuming
   link: https://www.bbc.com/news/articles/c4gry29g30qo
   published: '2025-06-06T20:35:18+05:30'
@@ -915,21 +944,3 @@
   hash: 82bdff7e241d722046c96b30bf333b22
   timestamp: '2025-05-10T06:12:55.440190+05:30'
   fetched_at: 2025-05-10 06:12:55 IST
-- title: Two porn sites investigated for suspected age check failings
-  link: https://www.bbc.com/news/articles/cx2qn1j0jd6o
-  published: '2025-05-09T17:39:22+05:30'
-  summary: The UK demanded in January that porn sites show how they were beefing up
-    age verification to stop children accessing them.
-  guid: https://www.bbc.com/news/articles/cx2qn1j0jd6o#0
-  hash: cc98c2630d438d1c8f18cb620cd8e57e
-  timestamp: '2025-05-09T17:46:39.824368+05:30'
-  fetched_at: 2025-05-09 17:46:39 IST
-- title: Visit the Arctic vault holding back-ups of great works
-  link: https://www.bbc.com/news/articles/c7vnyn17p57o
-  published: '2025-05-09T05:07:28+05:30'
-  summary: An arctic vault holds digital back-ups of some of humanity's great works
-    of art, history and technology.
-  guid: https://www.bbc.com/news/articles/c7vnyn17p57o#5
-  hash: f36060d4a33b3039e3b388cc94b12731
-  timestamp: '2025-05-09T06:14:57.194680+05:30'
-  fetched_at: 2025-05-09 06:14:57 IST
