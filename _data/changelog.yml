@@ -15,6 +15,21 @@
   - data
   - app
 - title: Tech Life
+  link: https://www.bbc.co.uk/sounds/play/w3ct6znt
+  published: '2025-06-11T01:02:00+05:30'
+  summary: In China, electric cars accounted for almost half of all car sales last
+    year.
+  guid: https://www.bbc.co.uk/sounds/play/w3ct6znt#4
+  hash: 8f1fc0584f219983fe74b1101cb6a727
+  timestamp: '2025-06-11T23:51:20.748794+05:30'
+  fetched_at: 2025-06-11 23:51:20 IST
+  image_url: https://ichef.bbci.co.uk/images/ic/1024x576/p0lhhfvt.jpg
+  category: Technology
+  reading_time: 1 min read
+  author: BBC Technology
+  tags:
+  - Tech
+- title: Tech Life
   link: https://www.bbc.co.uk/sounds/play/live:bbc_world_service
   published: '2025-06-11T01:02:00+05:30'
   summary: In China, electric cars accounted for almost half of all car sales last
@@ -991,12 +1006,3 @@
   hash: fd2b9184dd3c4477b8082ea91443d387
   timestamp: '2025-05-15T17:47:29.029080+05:30'
   fetched_at: 2025-05-15 17:47:29 IST
-- title: Co-op narrowly avoided an even worse cyber attack, BBC learns
-  link: https://www.bbc.com/news/articles/cwy382w9eglo
-  published: '2025-05-15T04:55:06+05:30'
-  summary: The revelation - from the criminals responsible - explains why the Co-op
-    is getting back to business faster than M&amp;S.
-  guid: https://www.bbc.com/news/articles/cwy382w9eglo#0
-  hash: b3dee42913e33920096bbcc309e80388
-  timestamp: '2025-05-15T06:14:22.630447+05:30'
-  fetched_at: 2025-05-15 06:14:22 IST
