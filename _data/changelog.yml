@@ -1040,10 +1040,16 @@
   timestamp: '2025-05-18T11:42:34.423362+05:30'
   fetched_at: 2025-05-18 11:42:34 IST
 - title: Tech Now
-  link: https://www.bbc.co.uk/iplayer/live/bbcnews
+  link: https://www.bbc.co.uk/iplayer/episode/m002cjrv
   published: '2025-05-17T06:30:00+05:30'
   summary: Alasdair Keane visits the McLaren Technology Centre.
-  guid: https://www.bbc.co.uk/iplayer/live/bbcnews#4
-  hash: ca7ada7118fb6660c2c10f780a76622b
-  timestamp: '2025-05-21T06:16:08.850359+05:30'
-  fetched_at: 2025-05-21 06:16:08 IST
+  guid: https://www.bbc.co.uk/iplayer/episode/m002cjrv#4
+  hash: 8efac2f1abaeb92f591935113010389a
+  timestamp: '2025-06-16T18:02:14.097998+05:30'
+  fetched_at: 2025-06-16 18:02:14 IST
+  image_url: https://ichef.bbci.co.uk/images/ic/1200x675/p0lbjcgm.jpg
+  category: AI & Machine Learning
+  reading_time: 1 min read
+  author: BBC Technology
+  tags:
+  - Tech
