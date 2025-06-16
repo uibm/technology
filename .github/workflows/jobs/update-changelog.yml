@@ -1,0 +1,65 @@
+name: Reusable - Update Changelog
+
+on:
+  workflow_call:
+    secrets: inherit
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Prepare data folders
+        run: |
+          mkdir -p _data assets/js assets/css
+          if [ ! -f _data/changelog.yml ]; then
+            echo "[]" > _data/changelog.yml
+          fi
+
+      - name: Run RSS script
+        run: python scripts/update_changelog.py
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Generate release tag and notes
+        id: generate_tag
+        run: bash scripts/generate_release_notes.sh
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          name: 🚀 Release ${{ steps.generate_tag.outputs.tag_name }}
+          tag_name: ${{ steps.generate_tag.outputs.tag_name }}
+          body: ${{ steps.generate_tag.outputs.changelog }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit changelog and HTML
+        run: bash scripts/commit_updated_files.sh

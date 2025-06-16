@@ -1,0 +1,16 @@
+name: Update BBC Tech News Changelog
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */23 * * *'  # Every 23 hours
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  update-changelog:
+    uses: ./.github/workflows/jobs/update-changelog.yml
+    secrets: inherit

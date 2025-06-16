@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title or 'BBC Technology News Digest' }}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>{{ title or 'BBC Technology News Digest' }}</h1>
+    <p class="subtitle">Curated automatically from BBC RSS • Updated {{ last_updated }}</p>
+    <div class="stat-box">
+      <div><strong>{{ stats.article_count }}</strong> Articles</div>
+      <div><strong>{{ stats.new_today }}</strong> New Today</div>
+      <div><strong>{{ stats.categories|length }}</strong> Categories</div>
+    </div>
+  </header>
+
+  <div class="search-filter">
+    <input type="search" id="searchInput" placeholder="Search articles...">
+    <div class="categories">
+      <button data-category="all" class="active">All</button>
+      {% for category, count in stats.categories.items() %}
+      <button data-category="{{ category }}">{{ category }} ({{ count }})</button>
+      {% endfor %}
+    </div>
+  </div>
+
+  <main id="articlesGrid">
+    {% if featured_article %}
+    <article class="featured">
+      <div class="meta">
+        <span class="category">{{ featured_article.category }}</span>
+        <span class="read-time">{{ featured_article.reading_time }}</span>
+      </div>
+      <h2><a href="{{ featured_article.link }}" target="_blank">{{ featured_article.title }}</a></h2>
+      <p>{{ featured_article.summary[:300] }}...</p>
+      <a class="read-more" href="{{ featured_article.link }}" target="_blank">Read Full</a>
+    </article>
+    {% endif %}
+
+    {% for article in entries %}
+    <article class="card" data-category="{{ article.category }}">
+      <h3><a href="{{ article.link }}" target="_blank">{{ article.title }}</a></h3>
+      <p>{{ article.summary[:180] }}...</p>
+      <div class="meta">
+        <span>⏱️ {{ article.reading_time }}</span>
+        <span>📅 {{ article.published[:10] }}</span>
+        <span>👤 {{ article.author }}</span>
+      </div>
+      <div class="tags">
+        {% for tag in article.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+      </div>
+    </article>
+    {% endfor %}
+  </main>
+
+  <footer class="footer">
+    <p>Last updated: {{ last_updated }}</p>
+    <p>🚀 Powered by <a href="https://www.bbc.com/news/technology" target="_blank">BBC Technology RSS</a></p>
+    <p>Curated by <code>GitHub Actions</code> • Styled with ❤️ by an elite UI crew</p>
+  </footer>
+
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>
