@@ -12,6 +12,7 @@ import sys
 import requests
 from bs4 import BeautifulSoup
 import re
+from render_index import render_index
 
 def generate_entry_hash(data):
     content = f"{data.get('title', '')}{data.get('summary', '')}{data.get('link', '')}"
@@ -105,7 +106,7 @@ def create_changelog_entry(entry):
         'category': categorize_article(entry.title, entry.summary),
         'reading_time': f"{reading_time} min read",
         'author': entry.get('author', 'BBC Technology'),
-        'tags': list(set(re.findall(r'\\b(?:AI|tech|data|cyber|mobile|app|software|hardware|startup|innovation)\\b', f"{entry.title} {entry.summary}", re.IGNORECASE)))[:3]
+        'tags': list(set(re.findall(r'\b(?:AI|tech|data|cyber|mobile|app|software|hardware|startup|innovation)\b', f"{entry.title} {entry.summary}", re.IGNORECASE)))[:3]
     }
 
 def update_changelog():
@@ -122,6 +123,8 @@ def update_changelog():
 
     with open('_data/changelog.yml', 'w', encoding='utf-8') as f:
         yaml.dump(all_entries, f, allow_unicode=True, sort_keys=False)
+
+    render_index(all_entries, output_path="index.html")
 
     return len(updates) > 0
 
