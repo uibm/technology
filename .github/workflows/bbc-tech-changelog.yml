@@ -12,5 +12,5 @@ permissions:
 
 jobs:
   update-changelog:
-    uses: ./.github/workflows/jobs/update-changelog.yml
+    uses: ./.github/workflows/update-changelog.yml
     secrets: inherit
