@@ -5,7 +5,6 @@ git config --local user.name "uibm"
 
 echo "🕐 Commit time UTC: $(date -u)" >> commit_time.txt
 echo "🇮🇳 Commit time IST: $(TZ=Asia/Kolkata date)" >> commit_time.txt
-echo "✨ Enhanced with UI design" >> commit_time.txt
 
 git add _data/changelog.yml index.html requirements.txt commit_time.txt
 
