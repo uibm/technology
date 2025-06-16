@@ -10,6 +10,6 @@ echo "✨ Enhanced with UI design" >> commit_time.txt
 git add _data/changelog.yml index.html requirements.txt commit_time.txt
 
 if ! git diff --quiet || ! git diff --staged --quiet; then
-  git commit -m "🚀 Update changelog with UI [$(TZ=Asia/Kolkata date '+%Y-%m-%d %H:%M:%S IST')]\n\n✨ Features: 📊 Stats: Updated with latest BBC Technology news"
+  git commit -m "🚀 Update changelog with UI [$(TZ=Asia/Kolkata date '+%Y-%m-%d %H:%M:%S IST')] ✨ Features: 📊 Stats: Updated with latest BBC Technology news"
   git push
 fi
