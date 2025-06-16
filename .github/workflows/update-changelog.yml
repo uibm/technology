@@ -54,7 +54,7 @@ jobs:
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
-          name: 🚀 Release ${{ steps.generate_tag.outputs.tag_name }}
+          name: Release ${{ steps.generate_tag.outputs.tag_name }}
           tag_name: ${{ steps.generate_tag.outputs.tag_name }}
           body: ${{ steps.generate_tag.outputs.changelog }}
         env:

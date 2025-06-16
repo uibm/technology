@@ -4,7 +4,7 @@ TAG_NAME=$(TZ=Asia/Kolkata date '+release-%Y%m%d-%H%M')
 echo "tag_name=$TAG_NAME" >> $GITHUB_OUTPUT
 
 echo "changelog<<EOF" >> $GITHUB_OUTPUT
-echo "🚀 BBC Tech News Update ($(TZ=Asia/Kolkata date '+%Y-%m-%d %H:%M:%S IST'))" >> $GITHUB_OUTPUT
+echo "BBC Tech News Update ($(TZ=Asia/Kolkata date '+%Y-%m-%d %H:%M:%S IST'))" >> $GITHUB_OUTPUT
 echo "" >> $GITHUB_OUTPUT
 echo "✨ **What's New:**" >> $GITHUB_OUTPUT
 if [ -f "_data/changelog.yml" ]; then
