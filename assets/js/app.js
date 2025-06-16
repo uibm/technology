@@ -1,5 +1,3 @@
-// assets/js/app.js
-
 document.addEventListener('DOMContentLoaded', () => {
   const searchInput = document.getElementById('searchInput');
   const articles = document.querySelectorAll('article.card, article.featured');
