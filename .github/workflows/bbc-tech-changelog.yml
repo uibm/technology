@@ -12,5 +12,5 @@ permissions:
 
 jobs:
   update-changelog:
-    uses: ./.github/workflows/update-changelog.yml
+    uses: uibm/technology/.github/workflows/update-changelog.yml@main
     secrets: inherit
