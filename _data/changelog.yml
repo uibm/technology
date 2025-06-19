@@ -1,3 +1,61 @@
+- title: 'Tech giants unleash AI on weather forecasts: are they any good?'
+  link: https://www.bbc.com/weather/articles/cwy6ykp7049o
+  published: '2025-06-20T04:32:58+05:30'
+  summary: The biggest tech firms are using AI to forecast the weather but is that
+    better than existing models?
+  guid: https://www.bbc.com/weather/articles/cwy6ykp7049o#5
+  hash: 4a7dbd1e1ff349194a45eb62de04fb78
+  timestamp: '2025-06-20T04:43:39.407097+05:30'
+  fetched_at: 2025-06-20 04:43:39 IST
+  image_url: https://ichef.bbci.co.uk/ace/branded_weather/1200/cpsprodpb/37b6/live/983edc70-3195-11f0-8519-3b5a01ebe413.jpg
+  category: AI & Machine Learning
+  reading_time: 1 min read
+  author: BBC Technology
+  tags:
+  - tech
+  - Tech
+  - AI
+- title: Trump confirms further delay to TikTok ban or sale deadline
+  link: https://www.bbc.com/news/articles/cd78xljd71yo
+  published: '2025-06-19T23:56:16+05:30'
+  summary: It's the third time the date has been moved back by Trump since he took
+    office in January.
+  guid: https://www.bbc.com/news/articles/cd78xljd71yo#0
+  hash: e559366cd15f9830e7da4051a051e0c7
+  timestamp: '2025-06-20T04:43:38.493915+05:30'
+  fetched_at: 2025-06-20 04:43:38 IST
+  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/30d3/live/e18c6dc0-4d29-11f0-9efb-9fc6c4760a4c.jpg
+  category: Social Media
+  reading_time: 1 min read
+  author: BBC Technology
+  tags: []
+- title: Texas Instruments pledges 'historic' $60bn US chip investment
+  link: https://www.bbc.com/news/articles/c5yl0877zzmo
+  published: '2025-06-19T07:49:57+05:30'
+  summary: The announcement comes as Trump pressures big technology firms to increase
+    manufacturing in America.
+  guid: https://www.bbc.com/news/articles/c5yl0877zzmo#0
+  hash: 2cb38148da51e7d5c7b1ab267f749344
+  timestamp: '2025-06-20T04:43:38.864870+05:30'
+  fetched_at: 2025-06-20 04:43:38 IST
+  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/097b/live/cfefd460-4cb8-11f0-ba4c-7f16eba7c93a.jpg
+  category: Business & Finance
+  reading_time: 1 min read
+  author: BBC Technology
+  tags: []
+- title: 'Print and shoot: How 3D-printed guns are spreading online'
+  link: https://www.bbc.com/news/articles/cvg84rke4ejo
+  published: '2025-06-19T05:47:34+05:30'
+  summary: The technology to build your own lethal weapon is promoted on social media
+  guid: https://www.bbc.com/news/articles/cvg84rke4ejo#0
+  hash: 4db4e88c5fc808999f130c45e25e36da
+  timestamp: '2025-06-20T04:43:38.947232+05:30'
+  fetched_at: 2025-06-20 04:43:38 IST
+  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/0307/live/ea26bdf0-4b80-11f0-86d5-3b52b53af158.png
+  category: Social Media
+  reading_time: 1 min read
+  author: BBC Technology
+  tags: []
 - title: 'OpenAI boss: Meta offering $100m plus to poach my staff'
   link: https://www.bbc.com/news/articles/c8730088e5do
   published: '2025-06-18T19:45:20+05:30'
@@ -1064,39 +1122,3 @@
   hash: 9be4013a05db1b4dc2290d42c51cbf6b
   timestamp: '2025-05-20T17:47:55.814765+05:30'
   fetched_at: 2025-05-20 17:47:55 IST
-- title: 'My AI therapist got me through dark times: The good and bad of chatbot counselling'
-  link: https://www.bbc.com/news/articles/ced2ywg7246o
-  published: '2025-05-20T04:34:34+05:30'
-  summary: With NHS mental health waitlists at record highs, are chatbots a possible
-    solution?
-  guid: https://www.bbc.com/news/articles/ced2ywg7246o#0
-  hash: 599c866b2ed25385a539ec28cd57d88a
-  timestamp: '2025-05-20T06:17:07.759117+05:30'
-  fetched_at: 2025-05-20 06:17:07 IST
-- title: UK weather forecast more accurate with Met Office supercomputer
-  link: https://www.bbc.com/news/articles/clyg4ygerpjo
-  published: '2025-05-19T21:35:39+05:30'
-  summary: Detailed weather forecasts and better predictions about the rain will soon
-    be enjoyed in the UK.
-  guid: https://www.bbc.com/news/articles/clyg4ygerpjo#0
-  hash: b3c68c4c16a644051f1c6c3e97927cd9
-  timestamp: '2025-05-19T23:43:06.096698+05:30'
-  fetched_at: 2025-05-19 23:43:06 IST
-- title: Struggling DNA testing firm 23andMe to be bought for $256m
-  link: https://www.bbc.com/news/articles/c0ln0e5g6kgo
-  published: '2025-05-19T20:41:23+05:30'
-  summary: It said new buyers Regeneron had committed to protect user data as part
-    of the deal.
-  guid: https://www.bbc.com/news/articles/c0ln0e5g6kgo#0
-  hash: 807a097854400524fe73d9ce68ecba18
-  timestamp: '2025-05-19T23:43:06.096989+05:30'
-  fetched_at: 2025-05-19 23:43:06 IST
-- title: Domestic abuse victim data stolen in Legal Aid hack
-  link: https://www.bbc.com/news/articles/cgr5g4pv2l0o
-  published: '2025-05-19T16:15:44+05:30'
-  summary: MoJ says data includes addresses, national ID numbers, criminal histories
-    and financial details dating to 2010.
-  guid: https://www.bbc.com/news/articles/cgr5g4pv2l0o#0
-  hash: a9c65e219e2806623dc88866ca6b6467
-  timestamp: '2025-05-19T17:48:05.861588+05:30'
-  fetched_at: 2025-05-19 17:48:05 IST
