@@ -1,3 +1,18 @@
+- title: BBC threatens AI firm with legal action over unauthorised content use
+  link: https://www.bbc.com/news/articles/cy7ndgylzzmo
+  published: '2025-06-20T19:27:46+05:30'
+  summary: It is first time that the BBC has taken such action regarding alleged scraping
+    of its content for AI.
+  guid: https://www.bbc.com/news/articles/cy7ndgylzzmo#0
+  hash: 81c4a5de1cc21364486d55fdac21facd
+  timestamp: '2025-06-21T04:43:42.314252+05:30'
+  fetched_at: 2025-06-21 04:43:42 IST
+  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/4f64/live/dadbece0-4db9-11f0-b275-6d80aed794e9.jpg
+  category: AI & Machine Learning
+  reading_time: 1 min read
+  author: BBC Technology
+  tags:
+  - AI
 - title: 'Tech giants unleash AI on weather forecasts: are they any good?'
   link: https://www.bbc.com/weather/articles/cwy6ykp7049o
   published: '2025-06-20T04:32:58+05:30'
@@ -1113,12 +1128,3 @@
   hash: ce23c35e2861a6aab48f731b7b2fa8dd
   timestamp: '2025-05-20T06:17:07.760480+05:30'
   fetched_at: 2025-05-20 06:17:07 IST
-- title: Can AI therapists really be an alternative to human help?
-  link: https://www.bbc.com/news/articles/ced2ywg7246o
-  published: '2025-05-20T04:34:34+05:30'
-  summary: With NHS mental health waitlists at record highs, are chatbots a possible
-    solution?
-  guid: https://www.bbc.com/news/articles/ced2ywg7246o#0
-  hash: 9be4013a05db1b4dc2290d42c51cbf6b
-  timestamp: '2025-05-20T17:47:55.814765+05:30'
-  fetched_at: 2025-05-20 17:47:55 IST
