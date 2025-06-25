@@ -1,3 +1,48 @@
+- title: Three network phone calls down but data still working
+  link: https://www.bbc.com/news/articles/cdxlqeyw95no
+  published: '2025-06-25T16:45:35+05:30'
+  summary: The phone operator said it was "aware of an issue affecting voice services"
+    and apologised for disruption.
+  guid: https://www.bbc.com/news/articles/cdxlqeyw95no#0
+  hash: faa46b8cee2ee7dd0842212f2698112c
+  timestamp: '2025-06-26T04:43:36.212582+05:30'
+  fetched_at: 2025-06-26 04:43:36 IST
+  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/cc24/live/c42761c0-51ae-11f0-93b8-19c0eb10ae72.jpg
+  category: AI & Machine Learning
+  reading_time: 1 min read
+  author: BBC Technology
+  tags:
+  - data
+- title: Judge backs AI firm over use of copyrighted books
+  link: https://www.bbc.com/news/articles/c77vr00enzyo
+  published: '2025-06-25T15:25:59+05:30'
+  summary: A US court has ruled Anthropic was not breaching copyright rules when it
+    trained its AI model on books.
+  guid: https://www.bbc.com/news/articles/c77vr00enzyo#0
+  hash: 5ff3b334110690f2f0cacc7b5ddbd6e7
+  timestamp: '2025-06-26T04:43:37.908145+05:30'
+  fetched_at: 2025-06-26 04:43:37 IST
+  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/f492/live/c8b12c70-51aa-11f0-a560-0ba338db13f3.jpg
+  category: AI & Machine Learning
+  reading_time: 1 min read
+  author: BBC Technology
+  tags:
+  - AI
+- title: '''Fast tech'' warning as demand for cheap gadgets heats up'
+  link: https://www.bbc.com/news/articles/cx20kd173z1o
+  published: '2025-06-25T04:32:05+05:30'
+  summary: A not-for-profit warns cheap, quickly disposed of gadgets could become
+    the new  "fast fashion".
+  guid: https://www.bbc.com/news/articles/cx20kd173z1o#0
+  hash: d89374cb2730a4c23dc81fdc11a6f458
+  timestamp: '2025-06-26T04:43:36.528642+05:30'
+  fetched_at: 2025-06-26 04:43:36 IST
+  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/8573/live/78428f80-5110-11f0-918d-fb788d4dd5b5.jpg
+  category: Technology
+  reading_time: 1 min read
+  author: BBC Technology
+  tags:
+  - tech
 - title: '''Fast tech'' warning as demand for cheap gadgets heats up'
   link: https://www.bbc.com/news/articles/cx20kd173z1o
   published: '2025-06-25T04:32:05+05:30'
@@ -13,6 +58,21 @@
   author: BBC Technology
   tags:
   - tech
+- title: Tech Life
+  link: https://www.bbc.co.uk/sounds/play/w3ct6znw
+  published: '2025-06-25T01:00:00+05:30'
+  summary: What are the advantages of creating a digital mirror of a city – or an
+    entire island?
+  guid: https://www.bbc.co.uk/sounds/play/w3ct6znw#4
+  hash: 58d3dd8982d1190a11c9d679a4218f2e
+  timestamp: '2025-06-26T04:43:38.745276+05:30'
+  fetched_at: 2025-06-26 04:43:38 IST
+  image_url: https://ichef.bbci.co.uk/images/ic/1024x576/p0ll4ljl.jpg
+  category: Technology
+  reading_time: 1 min read
+  author: BBC Technology
+  tags:
+  - Tech
 - title: US safety regulators contact Tesla over erratic robotaxis
   link: https://www.bbc.com/news/articles/cg75zv4gny2o
   published: '2025-06-24T16:09:09+05:30'
@@ -1129,39 +1189,3 @@
   hash: 1a32cf7934b52db5fc9d6f9fdb7d41f9
   timestamp: '2025-05-21T11:44:09.318869+05:30'
   fetched_at: 2025-05-21 11:44:09 IST
-- title: Police investigation into UK retail hacks focuses on English-speaking youths
-  link: https://www.bbc.com/news/articles/ckgnndrgxv3o
-  published: '2025-05-21T05:19:56+05:30'
-  summary: The National Crime Agency tells the BBC how it is trying to find the culprits
-    of the M&amp;S and Co-op hacks.
-  guid: https://www.bbc.com/news/articles/ckgnndrgxv3o#0
-  hash: 3872bf1075e18545635d8043bd58487e
-  timestamp: '2025-05-21T06:16:08.849664+05:30'
-  fetched_at: 2025-05-21 06:16:08 IST
-- title: AI chatbot to be embedded in Google search
-  link: https://www.bbc.com/news/articles/cpw77qwd117o
-  published: '2025-05-21T04:23:05+05:30'
-  summary: The new option in its marquee search engine comes as the firm is facing
-    competition from AI firms.
-  guid: https://www.bbc.com/news/articles/cpw77qwd117o#0
-  hash: 0ab81e4b5012653b75b7b5895eb94cc5
-  timestamp: '2025-05-21T06:16:08.849931+05:30'
-  fetched_at: 2025-05-21 06:16:08 IST
-- title: Tech Life
-  link: https://www.bbc.co.uk/sounds/play/w3ct6znq
-  published: '2025-05-21T01:00:00+05:30'
-  summary: You've had a 'lightbulb moment' and invented something amazing. Now you
-    need a patent.
-  guid: https://www.bbc.co.uk/sounds/play/w3ct6znq#4
-  hash: f22eb0482f2ac8a5992f13671f2ebf86
-  timestamp: '2025-05-21T17:47:40.654186+05:30'
-  fetched_at: 2025-05-21 17:47:40 IST
-- title: Cyber-attack threat keeps me awake at night, bank boss says
-  link: https://www.bbc.com/news/articles/c4g3372vl3yo
-  published: '2025-05-20T19:20:18+05:30'
-  summary: Ian Stuart, from HSBC, said banks were spending "enormous" sums shoring
-    up their IT systems.
-  guid: https://www.bbc.com/news/articles/c4g3372vl3yo#0
-  hash: 0d58d3e59140f305a60039bd5ae4eb79
-  timestamp: '2025-05-21T06:16:08.850086+05:30'
-  fetched_at: 2025-05-21 06:16:08 IST
