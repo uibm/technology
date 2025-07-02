@@ -1,3 +1,33 @@
+- title: Tesla deliveries fall for second quarter in a row
+  link: https://www.bbc.com/news/articles/ckgdydzxe6go
+  published: '2025-07-02T20:00:49+05:30'
+  summary: Elon Musk's controversial role in the Trump administration has been blamed
+    for the collapse in sales.
+  guid: https://www.bbc.com/news/articles/ckgdydzxe6go#0
+  hash: c35fd9a78542619fcf3d0fcb013bffcb
+  timestamp: '2025-07-03T04:43:47.174984+05:30'
+  fetched_at: 2025-07-03 04:43:47 IST
+  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/bd61/live/c3f949a0-5750-11f0-8336-adbec68af00b.jpg
+  category: Technology
+  reading_time: 1 min read
+  author: BBC Technology
+  tags: []
+- title: Qantas data breach exposes up to six million customer profiles
+  link: https://www.bbc.com/news/articles/cd6gnyl9923o
+  published: '2025-07-02T09:42:21+05:30'
+  summary: The airline was hit by a cyber attack on a platform storing names, email
+    addresses and phone numbers.
+  guid: https://www.bbc.com/news/articles/cd6gnyl9923o#0
+  hash: bfba17cb735935e8f82e8197ee0399a9
+  timestamp: '2025-07-03T04:43:47.488769+05:30'
+  fetched_at: 2025-07-03 04:43:47 IST
+  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/0658/live/4f928950-56dd-11f0-960d-e9f1088a89fe.jpg
+  category: AI & Machine Learning
+  reading_time: 1 min read
+  author: BBC Technology
+  tags:
+  - data
+  - cyber
 - title: Millions of websites to get 'game-changing' AI bot blocker
   link: https://www.bbc.com/news/articles/cvg885p923jo
   published: '2025-07-01T20:45:29+05:30'
@@ -1229,22 +1259,4 @@
   guid: https://www.bbc.com/news/articles/c989le2p3lno#0
   hash: 34151a060b47563ffa4c2f8946feb765
   timestamp: '2025-05-26T05:15:11.619030+05:30'
-  fetched_at: 2025-05-26 05:15:11 IST
-- title: AI system resorts to blackmail if told it will be removed
-  link: https://www.bbc.com/news/articles/cpqeng9d20go
-  published: '2025-05-23T17:45:22+05:30'
-  summary: In a fictional scenario, the model was willing to expose that the engineer
-    seeking to replace it was having an affair.
-  guid: https://www.bbc.com/news/articles/cpqeng9d20go#0
-  hash: f02a1c3914e7993c21be36e7f6377307
-  timestamp: '2025-05-26T05:15:11.619341+05:30'
-  fetched_at: 2025-05-26 05:15:11 IST
-- title: Protestors accuse Trump of corruption as he hosts crypto gala dinner
-  link: https://www.bbc.com/news/articles/c74nn4ppdvdo
-  published: '2025-05-23T14:52:18+05:30'
-  summary: Trump hosted the biggest investors in his own cryptocurrency, but insisted
-    he put the country ahead of his  businesses interests.
-  guid: https://www.bbc.com/news/articles/c74nn4ppdvdo#0
-  hash: cc693e8c477cf4c457180d8892536fda
-  timestamp: '2025-05-26T05:15:11.619522+05:30'
   fetched_at: 2025-05-26 05:15:11 IST
