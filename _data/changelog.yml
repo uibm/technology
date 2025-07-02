@@ -28,6 +28,20 @@
   reading_time: 1 min read
   author: BBC Technology
   tags: []
+- title: Singapore police can now seize bank accounts to stop scams
+  link: https://www.bbc.com/news/articles/c2k1148dwdwo
+  published: '2025-07-01T12:38:17+05:30'
+  summary: The new law was passed to combat Singapore's worsening scam problem, but
+    some have said it is too intrusive.
+  guid: https://www.bbc.com/news/articles/c2k1148dwdwo#0
+  hash: b0560d73527d44fc271d954448fc42bb
+  timestamp: '2025-07-02T06:39:50.573590+05:30'
+  fetched_at: 2025-07-02 06:39:50 IST
+  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/a8f5/live/94214770-5640-11f0-91ce-75a7c213ee0c.jpg
+  category: AI & Machine Learning
+  reading_time: 1 min read
+  author: BBC Technology
+  tags: []
 - title: Tech firms face demands to stop illegal content going viral
   link: https://www.bbc.com/news/articles/cgrxxyy2v1jo
   published: '2025-06-30T21:51:31+05:30'
@@ -1233,13 +1247,4 @@
   guid: https://www.bbc.com/news/articles/c74nn4ppdvdo#0
   hash: cc693e8c477cf4c457180d8892536fda
   timestamp: '2025-05-26T05:15:11.619522+05:30'
-  fetched_at: 2025-05-26 05:15:11 IST
-- title: Why so many military veterans move into cybersecurity
-  link: https://www.bbc.com/news/articles/ce3vgjzwl04o
-  published: '2025-05-23T04:34:39+05:30'
-  summary: The vigilance needed in the military can be an asset in the cybersecurity
-    industry.
-  guid: https://www.bbc.com/news/articles/ce3vgjzwl04o#2
-  hash: 3345cd8cf6151e45e0139bae11ef0fdb
-  timestamp: '2025-05-26T05:15:11.619772+05:30'
   fetched_at: 2025-05-26 05:15:11 IST
