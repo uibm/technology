@@ -1,3 +1,33 @@
+- title: Viral band finds itself at the centre of AI claims and hoaxes
+  link: https://www.bbc.com/news/articles/cp8mjnn7eqno
+  published: '2025-07-04T04:37:54+05:30'
+  summary: Velvet Sundown has racked up hundreds of thousands of streams on Spotify
+    - without anyone even being sure if it's real.
+  guid: https://www.bbc.com/news/articles/cp8mjnn7eqno#0
+  hash: 91b25f5dd8a592faa11593216153c06b
+  timestamp: '2025-07-04T06:39:16.159151+05:30'
+  fetched_at: 2025-07-04 06:39:16 IST
+  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/7353/live/e22aecd0-584f-11f0-a07d-dd7c432cf458.jpg
+  category: AI & Machine Learning
+  reading_time: 1 min read
+  author: BBC Technology
+  tags:
+  - AI
+- title: '''I''m being paid to fix issues caused by AI'''
+  link: https://www.bbc.com/news/articles/cyvm1dyp9v2o
+  published: '2025-07-04T04:34:45+05:30'
+  summary: Businesses that rush to use AI to write content or computer code, often
+    have to pay humans to fix it.
+  guid: https://www.bbc.com/news/articles/cyvm1dyp9v2o#0
+  hash: 3bc477221154f7343ef5ba6ae0a64c74
+  timestamp: '2025-07-04T06:39:16.497113+05:30'
+  fetched_at: 2025-07-04 06:39:16 IST
+  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/d373/live/60039560-41e1-11f0-b6e6-4ddb91039da1.jpg
+  category: AI & Machine Learning
+  reading_time: 1 min read
+  author: BBC Technology
+  tags:
+  - AI
 - title: Microsoft to cut up to 9,000 more jobs as it invests in AI
   link: https://www.bbc.com/news/articles/cdxl0w1w394o
   published: '2025-07-03T16:58:48+05:30'
@@ -1267,21 +1297,3 @@
   hash: 82810d6c273ea1c21d65dd73cdbea67c
   timestamp: '2025-05-27T06:25:43.953015+05:30'
   fetched_at: 2025-05-27 06:25:43 IST
-- title: Humanoid robots fight in Chinese kick-boxing competition
-  link: https://www.bbc.com/news/videos/cgeg2x3lwepo
-  published: '2025-05-26T11:39:34+05:30'
-  summary: The two humanoid robots traded punches while fans watched on, in a world-first
-    humanoid robot fighting event.
-  guid: https://www.bbc.com/news/videos/cgeg2x3lwepo#0
-  hash: 0cd663ec44fe8eb8032f50439baa915e
-  timestamp: '2025-05-26T17:51:38.258518+05:30'
-  fetched_at: 2025-05-26 17:51:38 IST
-- title: The people who think AI might become conscious
-  link: https://www.bbc.com/news/articles/c0k3700zljjo
-  published: '2025-05-26T06:08:27+05:30'
-  summary: With a leap in the evolution of large language models, some leading thinkers
-    are questioning whether AI might become sentient
-  guid: https://www.bbc.com/news/articles/c0k3700zljjo#0
-  hash: 1b121e24b34152228cad54572fc4c351
-  timestamp: '2025-05-26T17:51:38.258230+05:30'
-  fetched_at: 2025-05-26 17:51:38 IST
