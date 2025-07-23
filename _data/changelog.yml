@@ -1,3 +1,35 @@
+- title: Microsoft servers hacked by Chinese groups, firm says
+  link: https://www.bbc.com/news/articles/c4gdnz1nlgyo
+  published: '2025-07-23T08:23:31+05:30'
+  summary: The US tech giant is recommending some users install security updates after
+    the data breach.
+  guid: https://www.bbc.com/news/articles/c4gdnz1nlgyo#0
+  hash: ecefaa20a861d691491fb461b5780d04
+  timestamp: '2025-07-23T09:31:06.457427+05:30'
+  fetched_at: 2025-07-23 09:31:06 IST
+  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/6f1c/live/13b822b0-674e-11f0-9a2f-71177f780e96.jpg
+  category: Cybersecurity
+  reading_time: 1 min read
+  author: BBC Technology
+  tags:
+  - tech
+  - data
+- title: OpenAI and UK sign deal to use AI in public services
+  link: https://www.bbc.com/news/articles/czdv68gejm7o
+  published: '2025-07-22T17:30:26+05:30'
+  summary: The US tech firm behind ChatGPT say it will work with the UK government
+    to 'deliver prosperity for all'.
+  guid: https://www.bbc.com/news/articles/czdv68gejm7o#0
+  hash: 60437bcd266d5f86093be2541d3a2bcc
+  timestamp: '2025-07-23T09:31:06.835715+05:30'
+  fetched_at: 2025-07-23 09:31:06 IST
+  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/a2a1/live/69d08420-6682-11f0-b9ba-4319ccde8daa.jpg
+  category: AI & Machine Learning
+  reading_time: 1 min read
+  author: BBC Technology
+  tags:
+  - AI
+  - tech
 - title: Trucking's uneasy relationship with new tech
   link: https://www.bbc.com/news/articles/c5yeyn4gl80o
   published: '2025-07-22T04:50:14+05:30'
@@ -1425,35 +1457,6 @@
   fetched_at: 2025-06-10 18:01:49 IST
   image_url: https://ichef.bbci.co.uk/news/1024/branded_news/84f9/live/6a281280-45df-11f0-9122-31b55bf3a162.jpg
   category: Technology
-  reading_time: 1 min read
-  author: BBC Technology
-  tags: []
-- title: Uber brings forward trialling driverless taxis in UK
-  link: https://www.bbc.com/news/articles/cwynm4wl1j7o
-  published: '2025-06-10T14:00:42+05:30'
-  summary: The autonomous cars with no human safety driver at the wheel will be trialled
-    in London next spring.
-  guid: https://www.bbc.com/news/articles/cwynm4wl1j7o#0
-  hash: 45162a444bb9b93a1d90e9378210f96b
-  timestamp: '2025-06-10T18:01:49.954063+05:30'
-  fetched_at: 2025-06-10 18:01:49 IST
-  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/c767/live/5fef7f00-4540-11f0-b6e6-4ddb91039da1.png
-  category: Technology
-  reading_time: 1 min read
-  author: BBC Technology
-  tags: []
-- title: China's electric cars are becoming slicker and cheaper - but is there a deeper
-    cost?
-  link: https://www.bbc.com/news/articles/cy8d4v69jw6o
-  published: '2025-06-10T04:34:10+05:30'
-  summary: The future for EVs will inevitably involve China. But where does that leave
-    the UK and Europe markets – and what of the questions around national security?
-  guid: https://www.bbc.com/news/articles/cy8d4v69jw6o#0
-  hash: 0896507947aa315769cd1e0fd7628fb4
-  timestamp: '2025-06-10T11:52:17.018819+05:30'
-  fetched_at: 2025-06-10 11:52:17 IST
-  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/1581/live/40c2a090-3d6a-11f0-af00-f94ff1cabcc0.png
-  category: Cybersecurity
   reading_time: 1 min read
   author: BBC Technology
   tags: []
