@@ -1,3 +1,32 @@
+- title: Artificial food colours are out, so what's next?
+  link: https://www.bbc.com/news/articles/c4g83dpeendo
+  published: '2025-07-25T04:31:09+05:30'
+  summary: Big food firms are phasing out artificial colours, so tech firms are rushing
+    to fill the gap.
+  guid: https://www.bbc.com/news/articles/c4g83dpeendo#5
+  hash: 60c145a3d485860c02231903967f452e
+  timestamp: '2025-07-25T08:48:39.387489+05:30'
+  fetched_at: 2025-07-25 08:48:39 IST
+  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/eca0/live/904bc9f0-5586-11f0-a9c4-6559fc28b390.jpg
+  category: Technology
+  reading_time: 1 min read
+  author: BBC Technology
+  tags:
+  - tech
+- title: EE and BT network outage resolved, firm says
+  link: https://www.bbc.com/news/articles/cnvmvqrnq7go
+  published: '2025-07-25T02:10:14+05:30'
+  summary: The government says "EE and BT digital voice calls to 999 have now been
+    restored."
+  guid: https://www.bbc.com/news/articles/cnvmvqrnq7go#0
+  hash: aa025f9529fa1561b8297b3a0f7c36c7
+  timestamp: '2025-07-25T08:48:37.085860+05:30'
+  fetched_at: 2025-07-25 08:48:37 IST
+  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/e6cc/live/3ed45dd0-689b-11f0-9f22-b51d9ce822ea.jpg
+  category: Technology
+  reading_time: 1 min read
+  author: BBC Technology
+  tags: []
 - title: South Park to stream on Paramount+ after bidding war
   link: https://www.bbc.com/news/articles/cr4wgywwg0qo
   published: '2025-07-24T09:44:14+05:30'
@@ -1429,33 +1458,3 @@
   tags:
   - AI
   - Data
-- title: Meta sues app-maker as it cracks down on 'nudifying'
-  link: https://www.bbc.com/news/articles/cgr58dlnne5o
-  published: '2025-06-12T16:58:16+05:30'
-  summary: The apps use artificial intelligence to create fake nude images of people
-    without their consent.
-  guid: https://www.bbc.com/news/articles/cgr58dlnne5o#0
-  hash: a52e266c19a07ebb3808f760a41c3d91
-  timestamp: '2025-06-12T18:00:48.903747+05:30'
-  fetched_at: 2025-06-12 18:00:48 IST
-  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/fa71/live/3e715690-477b-11f0-915e-3595f829bdc8.jpg
-  category: AI & Machine Learning
-  reading_time: 1 min read
-  author: BBC Technology
-  tags:
-  - app
-- title: Disney and Universal sue AI firm Midjourney over images
-  link: https://www.bbc.com/news/articles/cg5vjqdm1ypo
-  published: '2025-06-12T05:41:26+05:30'
-  summary: The Hollywood studios allege Midjourney's image generator is a "bottomless
-    pit of plagiarism".
-  guid: https://www.bbc.com/news/articles/cg5vjqdm1ypo#0
-  hash: dd145839c9c3b32bd51b9f6bd7925c59
-  timestamp: '2025-06-12T06:44:04.373202+05:30'
-  fetched_at: 2025-06-12 06:44:04 IST
-  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/15b7/live/483b4440-471e-11f0-9278-836649617e8a.jpg
-  category: AI & Machine Learning
-  reading_time: 1 min read
-  author: BBC Technology
-  tags:
-  - AI
