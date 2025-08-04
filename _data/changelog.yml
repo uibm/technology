@@ -1,3 +1,32 @@
+- title: Chess grandmaster Carlsen wins at Esports World Cup
+  link: https://www.bbc.com/news/articles/ce3jl1kgyv0o?at_medium=RSS&at_campaign=rss
+  published: '2025-08-02T07:19:02+05:30'
+  summary: World number one Magnus Carlsen takes home $250,000 (£188,000) for winning
+    the online competition.
+  guid: https://www.bbc.com/news/articles/ce3jl1kgyv0o#0
+  hash: 795cdfce179db4b75db51d2321feb98c
+  timestamp: '2025-08-04T10:17:02.425223+05:30'
+  fetched_at: 2025-08-04 10:17:02 IST
+  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/f23f/live/96e57470-6f42-11f0-8dbd-f3d32ebd3327.jpg
+  category: Gaming
+  reading_time: 1 min read
+  author: BBC Technology
+  tags: []
+- title: Some Gaza and Ukraine posts blocked under new age checks
+  link: https://www.bbc.com/news/articles/cj3l0e4vr0ko?at_medium=RSS&at_campaign=rss
+  published: '2025-08-01T05:08:38+05:30'
+  summary: Tech companies are restricting debates of public interest to comply the
+    Online Safety Act, analysis shows.
+  guid: https://www.bbc.com/news/articles/cj3l0e4vr0ko#0
+  hash: cffac0d5335ab3d7dcda1bc25ae68561
+  timestamp: '2025-08-04T10:17:02.836729+05:30'
+  fetched_at: 2025-08-04 10:17:02 IST
+  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/d09c/live/ac5b49f0-6dfe-11f0-af20-030418be2ca5.jpg
+  category: AI & Machine Learning
+  reading_time: 1 min read
+  author: BBC Technology
+  tags:
+  - Tech
 - title: Tech giants blocking some Ukraine and Gaza posts under new online rules
   link: https://www.bbc.com/news/articles/cj3l0e4vr0ko?at_medium=RSS&at_campaign=rss
   published: '2025-08-01T05:08:38+05:30'
@@ -1423,34 +1452,6 @@
   fetched_at: 2025-07-08 04:43:34 IST
   image_url: https://ichef.bbci.co.uk/news/1024/branded_news/83a9/live/f13da3d0-5b2d-11f0-a40e-a1af2950b220.jpg
   category: Mobile & Apps
-  reading_time: 1 min read
-  author: BBC Technology
-  tags: []
-- title: Why don't we trust technology in sport?
-  link: https://www.bbc.com/sport/tennis/articles/cdr3nk7vd28o
-  published: '2025-07-08T02:45:57+05:30'
-  summary: Technology editor Zoe Kleinman explores the tensions between humans and
-    machines that were encapsulated at Wimbledon.
-  guid: https://www.bbc.com/sport/tennis/articles/cdr3nk7vd28o#0
-  hash: aa66fd66cde2dd30e0bb3f314f6b8b7e
-  timestamp: '2025-07-10T10:04:35.181245+05:30'
-  fetched_at: 2025-07-10 10:04:35 IST
-  image_url: https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/3815/live/08537b50-5b77-11f0-bad8-4b8bad28fe42.jpg
-  category: Technology
-  reading_time: 1 min read
-  author: BBC Technology
-  tags: []
-- title: Why don't we trust technology in sport?
-  link: https://www.bbc.com/sport/tennis/articles/cdr3nk7vd28o
-  published: '2025-07-08T02:45:57+05:30'
-  summary: Technology editor Zoe Kleinman explores the tensions between between humans
-    and machines that were encapsulated at Wimbledon.
-  guid: https://www.bbc.com/sport/tennis/articles/cdr3nk7vd28o#0
-  hash: a1e6fb58e2e857375a952b963e5898f7
-  timestamp: '2025-07-08T04:43:33.674399+05:30'
-  fetched_at: 2025-07-08 04:43:33 IST
-  image_url: https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/3815/live/08537b50-5b77-11f0-bad8-4b8bad28fe42.jpg
-  category: Technology
   reading_time: 1 min read
   author: BBC Technology
   tags: []
