@@ -1,3 +1,45 @@
+- title: WhatsApp deletes over 6.8m accounts linked to scams, Meta says
+  link: https://www.bbc.com/news/articles/ce35q2ly1w5o?at_medium=RSS&at_campaign=rss
+  published: '2025-08-06T07:15:06+05:30'
+  summary: Many of the accounts were linked to criminal groups operating in South
+    East Asia, the social media giant said.
+  guid: https://www.bbc.com/news/articles/ce35q2ly1w5o#0
+  hash: 3786be1de63b37d987abecbc59adeeb6
+  timestamp: '2025-08-06T09:42:55.187491+05:30'
+  fetched_at: 2025-08-06 09:42:55 IST
+  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/be03/live/e6b74610-7256-11f0-845c-a908d0626256.jpg
+  category: AI & Machine Learning
+  reading_time: 1 min read
+  author: BBC Technology
+  tags: []
+- title: Call to vet YouTube ads like regular TV to stop scams
+  link: https://www.bbc.com/news/articles/ckge5xdwjx5o?at_medium=RSS&at_campaign=rss
+  published: '2025-08-06T06:58:14+05:30'
+  summary: Liberal Democrats say regulations need to catch up with "the reality of
+    how people are watching content".
+  guid: https://www.bbc.com/news/articles/ckge5xdwjx5o#0
+  hash: 1d78bc874a15a2040f9171cd6fda9284
+  timestamp: '2025-08-06T09:42:54.812636+05:30'
+  fetched_at: 2025-08-06 09:42:54 IST
+  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/da6c/live/863d7460-722b-11f0-98eb-013d7c708bf5.jpg
+  category: Technology
+  reading_time: 1 min read
+  author: BBC Technology
+  tags: []
+- title: Jobs in video games dried up, so we made our own
+  link: https://www.bbc.com/news/articles/c87e82pd97wo?at_medium=RSS&at_campaign=rss
+  published: '2025-08-05T13:51:03+05:30'
+  summary: Getting work in gaming is harder and harder, especially for new starters.
+    How are young developers following their passions?
+  guid: https://www.bbc.com/news/articles/c87e82pd97wo#0
+  hash: 02c3a62c388e8f33fe56b6a9f4e82d8e
+  timestamp: '2025-08-06T09:42:55.255304+05:30'
+  fetched_at: 2025-08-06 09:42:55 IST
+  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/2842/live/60f8f360-6efb-11f0-8415-3f856a662103.jpg
+  category: Gaming
+  reading_time: 1 min read
+  author: BBC Technology
+  tags: []
 - title: Chess grandmaster Carlsen wins at Esports World Cup
   link: https://www.bbc.com/news/articles/ce3jl1kgyv0o?at_medium=RSS&at_campaign=rss
   published: '2025-08-02T07:19:02+05:30'
@@ -9,6 +51,34 @@
   fetched_at: 2025-08-04 10:17:02 IST
   image_url: https://ichef.bbci.co.uk/news/1024/branded_news/f23f/live/96e57470-6f42-11f0-8dbd-f3d32ebd3327.jpg
   category: Gaming
+  reading_time: 1 min read
+  author: BBC Technology
+  tags: []
+- title: Tech Now
+  link: https://www.bbc.co.uk/iplayer/episode/m002gw67?at_medium=RSS&at_campaign=rss
+  published: '2025-08-02T06:30:00+05:30'
+  summary: Joe Tidy explores how the rise of artificial intelligence may play out.
+  guid: https://www.bbc.co.uk/iplayer/episode/m002gw67#4
+  hash: d8458945759b2b53e7dc906ede3c7624
+  timestamp: '2025-08-06T09:42:55.404363+05:30'
+  fetched_at: 2025-08-06 09:42:55 IST
+  image_url: https://ichef.bbci.co.uk/images/ic/1200x675/p0ltfqv2.jpg
+  category: AI & Machine Learning
+  reading_time: 1 min read
+  author: BBC Technology
+  tags:
+  - Tech
+- title: Tesla found partly to blame for fatal Autopilot crash
+  link: https://www.bbc.com/news/articles/c93dqpkwx4xo?at_medium=RSS&at_campaign=rss
+  published: '2025-08-02T04:47:40+05:30'
+  summary: The company's self-driving technology failed to prevent a 2019 crash which
+    killed a 22-year-old woman and severely injured her boyfriend in Florida.
+  guid: https://www.bbc.com/news/articles/c93dqpkwx4xo#0
+  hash: 8168643a7967e3479cd7d5b98e3ea915
+  timestamp: '2025-08-06T09:42:55.324266+05:30'
+  fetched_at: 2025-08-06 09:42:55 IST
+  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/cc2c/live/19375f90-6f0e-11f0-8dbd-f3d32ebd3327.jpg
+  category: AI & Machine Learning
   reading_time: 1 min read
   author: BBC Technology
   tags: []
@@ -1383,75 +1453,3 @@
   tags:
   - Tech
   - AI
-- title: 'Esports World Cup: The contest teams can''t afford to miss'
-  link: https://www.bbc.com/news/articles/ce8zqvgpm3lo
-  published: '2025-07-08T20:53:35+05:30'
-  summary: The controversial competition returns for a second year - and competitors
-    say its vital for them to be involved.
-  guid: https://www.bbc.com/news/articles/ce8zqvgpm3lo#1
-  hash: 155b28995eede3e5503fbdba0b510f52
-  timestamp: '2025-07-10T10:04:35.313047+05:30'
-  fetched_at: 2025-07-10 10:04:35 IST
-  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/db36/live/59ccd780-5bcf-11f0-aee9-4be0a810fe02.jpg
-  category: Gaming
-  reading_time: 1 min read
-  author: BBC Technology
-  tags: []
-- title: Emergency alert to be sent to smartphones in UK test
-  link: https://www.bbc.com/news/articles/c4ge9xk8wj0o
-  published: '2025-07-08T18:07:11+05:30'
-  summary: A test message will be sent to smartphones on 7 September, after a previous
-    test revealed technical issues.
-  guid: https://www.bbc.com/news/articles/c4ge9xk8wj0o#0
-  hash: 2460ec83602592d74d43a15a42df7d22
-  timestamp: '2025-07-10T10:04:35.251308+05:30'
-  fetched_at: 2025-07-10 10:04:35 IST
-  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/83a9/live/f13da3d0-5b2d-11f0-a40e-a1af2950b220.jpg
-  category: Mobile & Apps
-  reading_time: 1 min read
-  author: BBC Technology
-  tags: []
-- title: Why little Lithuania has big plans for space tech
-  link: https://www.bbc.com/news/articles/c4g2ezl7xqyo?at_medium=RSS&at_campaign=rss
-  published: '2025-07-08T04:32:48+05:30'
-  summary: Lithuania has a promising space tech sector, but it wants more government
-    support.
-  guid: https://www.bbc.com/news/articles/c4g2ezl7xqyo#5
-  hash: 37ecb50758d29778794a9d8839da6b7e
-  timestamp: '2025-07-28T20:35:11.764421+05:30'
-  fetched_at: 2025-07-28 20:35:11 IST
-  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/d997/live/34200f20-41f3-11f0-835b-310c7b938e84.jpg
-  category: Technology
-  reading_time: 1 min read
-  author: BBC Technology
-  tags:
-  - tech
-- title: Why little Lithuania has big plans for space tech
-  link: https://www.bbc.com/news/articles/c4g2ezl7xqyo
-  published: '2025-07-08T04:32:48+05:30'
-  summary: Lithuania has a promising space tech sector, but it wants more government
-    support.
-  guid: https://www.bbc.com/news/articles/c4g2ezl7xqyo#5
-  hash: 0d840075c9b07bdccc392ca9cff54db8
-  timestamp: '2025-07-08T04:43:34.901587+05:30'
-  fetched_at: 2025-07-08 04:43:34 IST
-  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/d997/live/34200f20-41f3-11f0-835b-310c7b938e84.jpg
-  category: Technology
-  reading_time: 1 min read
-  author: BBC Technology
-  tags:
-  - tech
-- title: Emergency alerts to be sent to UK smartphones
-  link: https://www.bbc.com/news/articles/c4ge9xk8wj0o
-  published: '2025-07-08T03:00:45+05:30'
-  summary: A test message will be sent to smartphones on 7 September, after a previous
-    test revealed technical issues.
-  guid: https://www.bbc.com/news/articles/c4ge9xk8wj0o#0
-  hash: 2e33176f3b6e66c53d007a092700352a
-  timestamp: '2025-07-08T04:43:34.037132+05:30'
-  fetched_at: 2025-07-08 04:43:34 IST
-  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/83a9/live/f13da3d0-5b2d-11f0-a40e-a1af2950b220.jpg
-  category: Mobile & Apps
-  reading_time: 1 min read
-  author: BBC Technology
-  tags: []
