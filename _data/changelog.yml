@@ -1,3 +1,32 @@
+- title: Woman awarded £150,000 after LG phone sparks fire in her home
+  link: https://www.bbc.com/news/articles/c04r5ye59w2o?at_medium=RSS&at_campaign=rss
+  published: '2025-08-07T00:27:50+05:30'
+  summary: Denise Parks was in bed in her home in Coatbridge when a fire broke out
+    in the early hours of the morning.
+  guid: https://www.bbc.com/news/articles/c04r5ye59w2o#0
+  hash: 145a18a67d263089f60b495cf32bd218
+  timestamp: '2025-08-07T09:16:44.185386+05:30'
+  fetched_at: 2025-08-07 09:16:44 IST
+  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/1e64/live/955db490-72c7-11f0-bc0b-71ff4b1302b0.jpg
+  category: Technology
+  reading_time: 1 min read
+  author: BBC Technology
+  tags: []
+- title: Chinese nationals charged with exporting Nvidia AI chips to China
+  link: https://www.bbc.com/news/articles/c4gm921x424o?at_medium=RSS&at_campaign=rss
+  published: '2025-08-06T15:26:37+05:30'
+  summary: Chuan Geng and Shiwei Yang are accused of exporting the chips from the
+    US to China through Singapore and Malaysia.
+  guid: https://www.bbc.com/news/articles/c4gm921x424o#0
+  hash: 51cfb1b888c3cf58e76330bae2e1199c
+  timestamp: '2025-08-07T09:16:45.648368+05:30'
+  fetched_at: 2025-08-07 09:16:45 IST
+  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/e711/live/ebaaebc0-7276-11f0-bf74-4b1abc8e5958.jpg
+  category: AI & Machine Learning
+  reading_time: 1 min read
+  author: BBC Technology
+  tags:
+  - AI
 - title: WhatsApp deletes over 6.8m accounts linked to scams, Meta says
   link: https://www.bbc.com/news/articles/ce35q2ly1w5o?at_medium=RSS&at_campaign=rss
   published: '2025-08-06T07:15:06+05:30'
@@ -22,6 +51,36 @@
   timestamp: '2025-08-06T09:42:54.812636+05:30'
   fetched_at: 2025-08-06 09:42:54 IST
   image_url: https://ichef.bbci.co.uk/news/1024/branded_news/da6c/live/863d7460-722b-11f0-98eb-013d7c708bf5.jpg
+  category: Technology
+  reading_time: 1 min read
+  author: BBC Technology
+  tags: []
+- title: Tech Life
+  link: https://www.bbc.co.uk/sounds/play/w3ct6zp2?at_medium=RSS&at_campaign=rss
+  published: '2025-08-06T01:00:00+05:30'
+  summary: 'China’s DeepSeek took the AI world by storm this year. Where is it now?
+    And: AI doomsday?'
+  guid: https://www.bbc.co.uk/sounds/play/w3ct6zp2#4
+  hash: 9a3e169b6aac400a532ef326ddeaf3a4
+  timestamp: '2025-08-07T09:16:46.877570+05:30'
+  fetched_at: 2025-08-07 09:16:46 IST
+  image_url: https://ichef.bbci.co.uk/images/ic/1024x576/p0lv85st.jpg
+  category: AI & Machine Learning
+  reading_time: 1 min read
+  author: BBC Technology
+  tags:
+  - Tech
+  - AI
+- title: The history behind the QR code
+  link: https://www.bbc.com/news/videos/c1jnpkdjjryo?at_medium=RSS&at_campaign=rss
+  published: '2025-08-05T13:54:56+05:30'
+  summary: It's used by millions of us every day, but why was the Quick Response code
+    invented?
+  guid: https://www.bbc.com/news/videos/c1jnpkdjjryo#4
+  hash: c618b5f9ec2c5bde7fc5284afd77bd8a
+  timestamp: '2025-08-07T09:16:45.743062+05:30'
+  fetched_at: 2025-08-07 09:16:45 IST
+  image_url: https://ichef.bbci.co.uk/images/ic/1024xn/ichef.bbci.co.uk/images/ic/$widthxn/p0lv5zyz.jpg
   category: Technology
   reading_time: 1 min read
   author: BBC Technology
@@ -54,6 +113,20 @@
   reading_time: 1 min read
   author: BBC Technology
   tags: []
+- title: Tech Now
+  link: https://www.bbc.co.uk/iplayer/live/bbcnews?at_medium=RSS&at_campaign=rss
+  published: '2025-08-02T06:30:00+05:30'
+  summary: Joe Tidy explores how the rise of artificial intelligence may play out.
+  guid: https://www.bbc.co.uk/iplayer/live/bbcnews#4
+  hash: a8479df6bced1ce4edd94ef86689fabe
+  timestamp: '2025-08-07T09:16:47.055515+05:30'
+  fetched_at: 2025-08-07 09:16:47 IST
+  image_url: https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=250&fit=crop
+  category: AI & Machine Learning
+  reading_time: 1 min read
+  author: BBC Technology
+  tags:
+  - Tech
 - title: Tech Now
   link: https://www.bbc.co.uk/iplayer/episode/m002gw67?at_medium=RSS&at_campaign=rss
   published: '2025-08-02T06:30:00+05:30'
@@ -1380,76 +1453,3 @@
   reading_time: 1 min read
   author: BBC Technology
   tags: []
-- title: Teachers urge parents not to buy children smartphones
-  link: https://www.bbc.com/news/articles/cwyxggv9j9zo
-  published: '2025-07-09T16:08:48+05:30'
-  summary: Teachers fear some children use smartphones for eight hours a day and overnight.
-  guid: https://www.bbc.com/news/articles/cwyxggv9j9zo#0
-  hash: 048d5b6c4533362b385b58a2936e36a3
-  timestamp: '2025-07-10T10:04:35.088548+05:30'
-  fetched_at: 2025-07-10 10:04:35 IST
-  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/86c4/live/4648a610-5be5-11f0-a40e-a1af2950b220.jpg
-  category: Mobile & Apps
-  reading_time: 1 min read
-  author: BBC Technology
-  tags: []
-- title: Instagram wrongly accuses some users of breaching child sex abuse rules
-  link: https://www.bbc.com/news/articles/cy8kjdz9nr3o?at_medium=RSS&at_campaign=rss
-  published: '2025-07-09T05:39:29+05:30'
-  summary: It was "horrible", "stressful" and "isolating" those affected tell BBC
-    News.
-  guid: https://www.bbc.com/news/articles/cy8kjdz9nr3o#2
-  hash: ecfffd878566427c6bd569805e668aa1
-  timestamp: '2025-07-28T20:35:06.715856+05:30'
-  fetched_at: 2025-07-28 20:35:06 IST
-  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/d256/live/e05953e0-5bee-11f0-9584-0dcfb55e8671.jpg
-  category: Cybersecurity
-  reading_time: 1 min read
-  author: BBC Technology
-  tags: []
-- title: Instagram wrongly accuses some users of breaching child sex abuse rules
-  link: https://www.bbc.com/news/articles/cy8kjdz9nr3o
-  published: '2025-07-09T05:39:29+05:30'
-  summary: It was "horrible", "stressful" and "isolating" those affected tell BBC
-    News.
-  guid: https://www.bbc.com/news/articles/cy8kjdz9nr3o#0
-  hash: da969c7d1ed25ee9eb882fd42e62967b
-  timestamp: '2025-07-10T10:04:35.009943+05:30'
-  fetched_at: 2025-07-10 10:04:35 IST
-  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/d256/live/e05953e0-5bee-11f0-9584-0dcfb55e8671.jpg
-  category: Cybersecurity
-  reading_time: 1 min read
-  author: BBC Technology
-  tags: []
-- title: Tech Life
-  link: https://www.bbc.co.uk/sounds/play/w3ct6zny?at_medium=RSS&at_campaign=rss
-  published: '2025-07-09T01:00:00+05:30'
-  summary: Find out about the AI safe driving system that's watching the road ahead,
-    and the driver.
-  guid: https://www.bbc.co.uk/sounds/play/w3ct6zny#4
-  hash: 79f7a2b969064f6127c3c60efff698e3
-  timestamp: '2025-07-28T20:35:09.631064+05:30'
-  fetched_at: 2025-07-28 20:35:09 IST
-  image_url: https://ichef.bbci.co.uk/images/ic/1024x576/p0lnxtp8.jpg
-  category: AI & Machine Learning
-  reading_time: 1 min read
-  author: BBC Technology
-  tags:
-  - Tech
-  - AI
-- title: Tech Life
-  link: https://www.bbc.co.uk/sounds/play/w3ct6zny
-  published: '2025-07-09T01:00:00+05:30'
-  summary: Find out about the AI safe driving system that's watching the road ahead,
-    and the driver.
-  guid: https://www.bbc.co.uk/sounds/play/w3ct6zny#4
-  hash: 3448e3366b88f6d996cb4e2209eb3d2a
-  timestamp: '2025-07-18T10:12:54.248069+05:30'
-  fetched_at: 2025-07-18 10:12:54 IST
-  image_url: https://ichef.bbci.co.uk/images/ic/1024x576/p0lnxtp8.jpg
-  category: AI & Machine Learning
-  reading_time: 1 min read
-  author: BBC Technology
-  tags:
-  - Tech
-  - AI
