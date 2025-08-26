@@ -1,3 +1,31 @@
+- title: Child sex abuse victim begs Elon Musk to remove links to her images
+  link: https://www.bbc.com/news/articles/cq587wv4d5go?at_medium=RSS&at_campaign=rss
+  published: '2025-08-26T04:47:45+05:30'
+  summary: BBC investigation finds US victim's images are traded globally by an operator
+    based in Indonesia.
+  guid: https://www.bbc.com/news/articles/cq587wv4d5go#0
+  hash: 4ba22df69c28c814aee00c38acb276bd
+  timestamp: '2025-08-26T11:29:09.998944+05:30'
+  fetched_at: 2025-08-26 11:29:09 IST
+  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/b0a0/live/9b341db0-7cee-11f0-83cc-c5da98c419b8.png
+  category: Technology
+  reading_time: 1 min read
+  author: BBC Technology
+  tags: []
+- title: Musk firms sue Apple and OpenAI, alleging they hurt competition
+  link: https://www.bbc.com/news/articles/cly6xjg9nnyo?at_medium=RSS&at_campaign=rss
+  published: '2025-08-25T22:51:41+05:30'
+  summary: The lawsuit takes aim at Apple's decision to integrate ChatGPT into the
+    operating systems of its smartphones.
+  guid: https://www.bbc.com/news/articles/cly6xjg9nnyo#0
+  hash: c1ed0e15abdb4bbbe4461624950eac3d
+  timestamp: '2025-08-26T11:29:09.279912+05:30'
+  fetched_at: 2025-08-26 11:29:09 IST
+  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/904c/live/c8853bb0-81d4-11f0-9fb8-d74a5f4416f6.jpg
+  category: AI & Machine Learning
+  reading_time: 1 min read
+  author: BBC Technology
+  tags: []
 - title: Women aren't just 'cosy gamers' - I play horror games and 600,000 watch
   link: https://www.bbc.com/news/articles/cm21xy23npyo?at_medium=RSS&at_campaign=rss
   published: '2025-08-25T04:35:06+05:30'
@@ -1427,35 +1455,4 @@
   reading_time: 1 min read
   author: BBC Technology
   tags:
-  - tech
-- title: Apple and Google have 'effective duopoly' in UK says regulator
-  link: https://www.bbc.com/news/articles/c5yknl04dnno
-  published: '2025-07-23T16:41:23+05:30'
-  summary: The tech giants both expressed concern at the rulings, but said they will
-    co-operate with investigations.
-  guid: https://www.bbc.com/news/articles/c5yknl04dnno#0
-  hash: 411507d8c59d3d78561f219822490a57
-  timestamp: '2025-07-24T13:45:44.466144+05:30'
-  fetched_at: 2025-07-24 13:45:44 IST
-  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/f192/live/8d6d4da0-6646-11f0-b399-07ad39de86f7.jpg
-  category: AI & Machine Learning
-  reading_time: 1 min read
-  author: BBC Technology
-  tags:
-  - tech
-- title: Microsoft servers hacked by Chinese groups, says tech giant
-  link: https://www.bbc.com/news/articles/c4gdnz1nlgyo?at_medium=RSS&at_campaign=rss
-  published: '2025-07-23T08:23:31+05:30'
-  summary: The US tech giant is recommending some users install security updates after
-    the data breach.
-  guid: https://www.bbc.com/news/articles/c4gdnz1nlgyo#1
-  hash: 3d57853902f47eff8e9b2f103cc0ffed
-  timestamp: '2025-07-28T20:34:59.893533+05:30'
-  fetched_at: 2025-07-28 20:34:59 IST
-  image_url: https://ichef.bbci.co.uk/news/1024/branded_news/6f1c/live/13b822b0-674e-11f0-9a2f-71177f780e96.jpg
-  category: Cybersecurity
-  reading_time: 1 min read
-  author: BBC Technology
-  tags:
-  - data
   - tech
